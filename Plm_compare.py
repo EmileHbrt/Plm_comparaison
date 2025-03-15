@@ -28,26 +28,28 @@ def main():
 
 	if options.score_arg is not None :
 		score_arg = options.score_arg
-		df = df.loc[df['score']>=score_arg,:]
+		df = df.loc[df['score']>= float(score_arg) ,:]
 	
 	if options.col_choose is not None :
 		list_brute = options.col_choose
+		print(list_brute)
 		col_list = [] 
 		name = ''
 		for elm in list_brute :
 			if elm == "," :
 				col_list.append(name)
-				nam = ''
+				name = ''
 			elif elm == ' ':
 				continue
 			else :
-				name.append(elm)
+				name += elm
+		col_list.append(name)
 		
 		# mettre le is_existing() ~~ try/ expect 
-
+		print(col_list)
 		df = df.loc[:,col_list]
 
-	writer_tab(df)
+	writer_tab(df, output_file)
 
 #==================================================================================================================
 
