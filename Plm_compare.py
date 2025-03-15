@@ -9,6 +9,20 @@ def writer_tab(df, output):
 	df.to_csv(output,index=False)	 
 
 #==================================================================================================================
+
+def list_creater(str_arg):
+	col_list = [] 
+	name = ''
+	for elm in str_arg:
+		if elm == "," :
+			col_list.append(name)
+			name = ''
+		else :
+			name += elm
+	col_list.append(name)
+	return col_list
+
+#==================================================================================================================
 # 											main
 #==================================================================================================================
 def main():
@@ -18,7 +32,7 @@ def main():
 	parser.add_option("-o", "--output_file", dest="output_file", help="path for the file parsed")
 	parser.add_option("-s", "--score_arg", dest="score_arg", help="desired score limit")
 	parser.add_option("-c", "--col_choose", dest="col_choose", help="list of colone for the output")
-	
+
 	(options, args) = parser.parse_args()
 	input_file = options.input_file
 	output_file = options.output_file
@@ -32,20 +46,10 @@ def main():
 	
 	if options.col_choose is not None :
 		list_brute = options.col_choose
-		print(list_brute)
-		col_list = [] 
-		name = ''
-		for elm in list_brute :
-			if elm == "," :
-				col_list.append(name)
-				name = ''
-			elif elm == ' ':
-				continue
-			else :
-				name += elm
-		col_list.append(name)
+		col_list = list_creater(list_brute)
 		
 		# mettre le is_existing() ~~ try/ expect 
+
 		print(col_list)
 		df = df.loc[:,col_list]
 
