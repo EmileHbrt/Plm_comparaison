@@ -1,6 +1,8 @@
 # Plm_comparaison Dorian & Emile 
 
 from optparse import OptionParser
+import pandas as pd
+
 #==================================================================================================================
 
 def filtre_score(score_column, score_limit):
@@ -20,8 +22,19 @@ def main():
 	parser.add_option("-s", "--score_arg", dest="score_arg", help="desired score limit")
 	
 	(options, args) = parser.parse_args()
+	input_file = options.input_file
+	output_file = options.output_file
 	
 	
+	df = pd.read_csv(input_file,low_memory=False)
+	if options.score_arg is not None :
+		score_arg = options.score_arg
+		colone_score = df['score']
+		list_cons_scor = filtre_score(colone_score,score_arg)
+
+	
+	
+
 
 
 #==================================================================================================================
