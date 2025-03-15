@@ -1,6 +1,14 @@
 # Plm_comparaison Dorian & Emile 
 
 from optparse import OptionParser
+#==================================================================================================================
+
+def filtre_score(score_column, score_limit):
+	list_idx_save=[]
+	for idx in range(len(score_column)):
+		if score_column[idx] >= score_limit:
+			list_idx_save.append(idx)
+	return list_idx_save
 
 #==================================================================================================================
 
@@ -15,10 +23,9 @@ def main():
 	input_file = options.input_file
 	output_file = options.output_file
 	score_arg = options.score_arg
-	print('input :' , input_file)
-	print('output :' , output_file)
-	print('score :' , score_arg)
 	
+
+
 #==================================================================================================================
 
 if __name__ == "__main__":
