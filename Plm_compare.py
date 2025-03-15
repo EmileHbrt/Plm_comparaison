@@ -20,9 +20,7 @@ def main():
 	parser.add_option("-s", "--score_arg", dest="score_arg", help="desired score limit")
 	
 	(options, args) = parser.parse_args()
-	input_file = options.input_file
-	output_file = options.output_file
-	score_arg = options.score_arg
+	
 	
 
 
