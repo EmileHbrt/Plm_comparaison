@@ -5,15 +5,12 @@ import pandas as pd
 
 #==================================================================================================================
 
-def filtre_score(score_column, score_limit):
-	list_idx_save=[]
-	for idx in range(len(score_column)):
-		if score_column[idx] >= score_limit:
-			list_idx_save.append(idx)
-	return list_idx_save
+def writer_tab(df, output):
+	df.to_csv(output,index=False)	 
 
 #==================================================================================================================
-
+# 											main
+#==================================================================================================================
 def main():
 	usage = usage = "python Parser_tab.py -i <input_file> -o <output_file> -s <score_arg> \n"
 	parser = OptionParser(usage)
@@ -27,15 +24,12 @@ def main():
 	
 	
 	df = pd.read_csv(input_file,low_memory=False)
+
 	if options.score_arg is not None :
 		score_arg = options.score_arg
-		colone_score = df['score']
-		list_cons_scor = filtre_score(colone_score,score_arg)
-
+		df = df.loc[df['score']>=score_arg,:]
 	
-	
-
-
+	writer_tab(df)
 
 #==================================================================================================================
 
