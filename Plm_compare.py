@@ -37,8 +37,10 @@ def main():
 	input_file = options.input_file
 	output_file = options.output_file
 	
-	
-	df = pd.read_csv(input_file,low_memory=False)
+	try:
+		df = pd.read_csv(input_file,low_memory=False)
+	except:
+		print(' error with -i : correspond to the path of the dataset ')
 
 	if options.score_arg is not None :
 		score_arg = options.score_arg
@@ -52,8 +54,10 @@ def main():
 
 		print(col_list)
 		df = df.loc[:,col_list]
-
-	writer_tab(df, output_file)
+	try :
+		writer_tab(df, output_file)
+	except:
+		print(' error with -o : correspond to the parsed dataset path ')
 
 #==================================================================================================================
 
