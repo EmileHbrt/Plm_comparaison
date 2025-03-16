@@ -11,8 +11,10 @@ def writer_tab(df, output):
 #==================================================================================================================
 
 def list_creater(str_arg):
+
 	col_list = [] 
 	name = ''
+
 	for elm in str_arg:
 		if elm == "," :
 			col_list.append(name)
@@ -20,12 +22,31 @@ def list_creater(str_arg):
 		else :
 			name += elm
 	col_list.append(name)
+
 	return col_list
+
+#==================================================================================================================
+
+def IsExist(col_list):
+
+	list_existing = ['SeqCluster','ClusterNumber','Prot_AC','score', 'RecName', 'InterPro_id', 'InterPro_describe', 'SFLD_id', 'SFLD_describe',
+               'PRINTS_id', 'PRINTS_describe', 'Pfam_id', 'Pfam_describe', 'CDD_id', 'CDD_describe',
+               'PROFILE_id', 'PROFILE_describe', 'NCBIFAM_id', 'NCBIFAM_describe', 'PROSITE_id', 
+               'PROSITE_describe', 'HAMAP_id', 'HAMAP_describe', 'SMART_id', 'SMART_describe',
+               'PIRSF_id', 'PIRSF_describe', 'PANTHER_id', 'PANTHER_describe', 'CATHGENE3D_id',
+               'CATHGENE3D_describe', 'SSF_id', 'SSF_describe', 'GO_C', 'GO_F', 'GO_P']
+	
+	for elm in col_list:
+		if elm not in list_existing:
+			return False
+		
+	return True
 
 #==================================================================================================================
 # 											main
 #==================================================================================================================
 def main():
+
 	usage = usage = "python Parser_tab.py -i <input_file> -o <output_file> -s <score_arg> -c <col_list> \n"
 	parser = OptionParser(usage)
 	parser.add_option("-i", "--input_file", dest="input_file", help="path for the dataset")
@@ -50,10 +71,13 @@ def main():
 		list_brute = options.col_choose
 		col_list = list_creater(list_brute)
 		
-		# mettre le is_existing() ~~ try/ expect 
+		if not IsExist(col_list):
+			print('error in colums names')
+			
+		else:
+			print(col_list)
+			df = df.loc[:,col_list]
 
-		print(col_list)
-		df = df.loc[:,col_list]
 	try :
 		writer_tab(df, output_file)
 	except:
