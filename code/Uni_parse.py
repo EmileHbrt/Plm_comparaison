@@ -35,9 +35,8 @@ def main():
             txt += ligne   
         elif arg_start == '//':   
             with open(file_name, 'w') as fichier:
-                print(file_name)
                 fichier.write(txt)
-        txt = ''    
+            txt = ''    
 
 #==================================================================================================================
 
