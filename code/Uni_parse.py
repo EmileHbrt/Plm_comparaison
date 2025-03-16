@@ -31,7 +31,7 @@ def main():
             file_name = output_file + '\\' + name + ".dat"
             txt += ligne
 
-        elif arg_start in ['ID', 'DE', 'OC', 'DR','SQ','..']:
+        elif arg_start in ['ID', 'DE', 'OC', 'DR','SQ','  ']:
             txt += ligne   
         elif arg_start == '//':   
             with open(file_name, 'w') as fichier:
