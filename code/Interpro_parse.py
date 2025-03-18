@@ -1,5 +1,6 @@
 import os
 import csv
+
 import pandas as pd
 import xml.etree.ElementTree as ET
 
@@ -28,9 +29,29 @@ def main():
     map_interpro = {} # {Interpro_id = ['', '', '', ...]
                       # db = ['', '', '', ...] 
                       # ... }
+
     
-    # version perso create_ec
     ec_number = {} # { Interpro_id = [ec_1, ec_2, ...], ...}
+                   # si aucun ec, l'interpro_id n'est pas dans le dic
+
+    context = ET.iterparse(xml, events=('start', 'end'))
+
+    interpro_id = None 
+
+    for event, elem in context:
+        if event == 'start' and elem.tag == 'interpro':
+            interpro_id = elem.attrib.get('id')
+
+        elif event == 'start' and elem.tag == 'db_xref' and elem.attrib.get('db') == 'EC':
+            if interpro_id not in ec_number:
+                ec_number[interpro_id] = []
+            ec_number[interpro_id].append(elem.attrib.get('dbkey'))
+
+
+    
+
+
+
 
 
 
