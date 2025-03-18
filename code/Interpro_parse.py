@@ -6,7 +6,6 @@ import xml.etree.ElementTree as ET
 
 from optparse import OptionParser
 
-
 def main():
     usage = "python Interpro_parse.py -i <input_file> -o <output_folder> \n"
     parser = OptionParser(usage)
@@ -22,37 +21,52 @@ def main():
     except:
         print(' error with -i : correspond to the path of the dataset ')
 
-    # version code perso create_db
-    all_db = {} # {db = [[id,name], ...], ...} avec le shortname pour interpro
+    all_db = {} # {db = [[id,name], ...], ...} que le shortname est utile !
 
-    # version perso create_map_db
     map_interpro = {} # {Interpro_id = ['', '', '', ...]
                       # db = ['', '', '', ...] 
                       # ... }
 
-    
     ec_number = {} # { Interpro_id = [ec_1, ec_2, ...], ...}
                    # si aucun ec, l'interpro_id n'est pas dans le dic
 
     context = ET.iterparse(xml, events=('start', 'end'))
 
     interpro_id = None 
+    shortname = None
+    name = None
+    res_tag = None
 
     for event, elem in context:
+    
         if event == 'start' and elem.tag == 'interpro':
             interpro_id = elem.attrib.get('id')
+            shortname = elem.attrib.get('short_name')
+    
+            if elem.tag not in all_db:
+                all_db[elem.tag] = []
+            all_db[elem.tag].append([interpro_id, shortname])
+        
+        elif event == 'start' and elem.tag == 'db_xref' and res_tag == 'member_list':
+            db = elem.attrib.get('db')
+            dbkey = elem.attrib.get('dbkey')
+            name = elem.attrib.get('name')
+
+            if db not in all_db:
+                all_db[db] = []
+            all_db[db].append([dbkey, name])
 
         elif event == 'start' and elem.tag == 'db_xref' and elem.attrib.get('db') == 'EC':
             if interpro_id not in ec_number:
                 ec_number[interpro_id] = []
             ec_number[interpro_id].append(elem.attrib.get('dbkey'))
-
+    
+        res_tag = elem.tag
 
     
 
 
-
-
+    
 
 
 #==================================================================================================================
