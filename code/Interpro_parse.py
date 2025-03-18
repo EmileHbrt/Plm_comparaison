@@ -10,13 +10,12 @@ def main():
     usage = "python Interpro_partse.py -i <input_file> -o <output_file> \n"
     parser = OptionParser(usage)
     parser.add_option("-i", "--input_file", dest="input_file", help="path for the Interpro dataset")
-    parser.add_option("-db", "--create_db", dest="create_db", help="create a csv that contains id + name (+ if possible shortname) by db in input_file")
-    parser.add_option("-map", "--map_db", dest="",help="creat a csv for each Interpro Id shows the bases that compose it")
-    parser.add_option("-ec", "ec", dest = "ec", help="creat a csv for each Interpro Id shows the EC_number that compose it")
+    parser.add_option("-d", "--create_db", dest="create_db", help="create a csv that contains id + name (+ if possible shortname) by db in input_file")
+    parser.add_option("-m", "--map_db", dest="map_db",help="creat a csv for each Interpro Id shows the bases that compose it")
+    parser.add_option("-e", "--ec", dest = "ec", help="creat a csv for each Interpro Id shows the EC_number that compose it")
 
     (option, args) = parser.parse_args()
     input_file = option.input_file
-    output_file = option.output_file
 
     try:
         fichier = open(input_file, "r", encoding='utf-8')
