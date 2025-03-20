@@ -47,7 +47,7 @@ def IsExist(col_list):
 #==================================================================================================================
 def main():
 
-	usage = usage = "python Parser_tab.py -i <input_file> -o <output_file> -s <score_arg> -c <col_list> \n"
+	usage = usage = "python Parser_tab.py -i <input_file> -o <output_file> -s <score_arg> -c <col_list> \n" 
 	parser = OptionParser(usage)
 	parser.add_option("-i", "--input_file", dest="input_file", help="path for the dataset")
 	parser.add_option("-o", "--output_file", dest="output_file", help="path for the file parsed")
