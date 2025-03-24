@@ -47,16 +47,16 @@ def IsExist(col_list):
 #==================================================================================================================
 def main():
 
-	usage = usage = "python Parser_tab.py -i <input_file> -o <output_file> -s <score_arg> -c <col_list> \n" 
+	usage = usage = "python Parser_tab.py -i <input_file> -o <output_dir> -s <score_arg> -c <col_list> \n" 
 	parser = OptionParser(usage)
 	parser.add_option("-i", "--input_file", dest="input_file", help="path for the dataset")
-	parser.add_option("-o", "--output_file", dest="output_file", help="path for the file parsed")
+	parser.add_option("-o", "--output_dir", dest="output_dir", help="path for the file parsed")
 	parser.add_option("-s", "--score_arg", dest="score_arg", help="desired score limit")
 	parser.add_option("-c", "--col_choose", dest="col_choose", help="list of colone for the output")
 
 	(options, args) = parser.parse_args()
 	input_file = options.input_file
-	output_file = options.output_file
+	output_dir = options.output_dir
 	
 	try:
 		df = pd.read_csv(input_file,low_memory=False)
@@ -79,7 +79,7 @@ def main():
 			df = df.loc[:,col_list]
 
 	try :
-		writer_tab(df, output_file)
+		writer_tab(df, output_dir)
 	except:
 		print(' error with -o : correspond to the parsed dataset path ')
 

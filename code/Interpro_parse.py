@@ -6,8 +6,14 @@ from optparse import OptionParser
 
 #==================================================================================================================
 
-def writter_db_id_name(dico, output):
-    for db, entries in dico.items():
+def writter_db_id_name(name_dict, output):
+    '''Create a csv - database_id_name
+        with the databe_id and the shortname
+        --- arg ---
+        name_dict is a dict like {key= db : value=[db_id, shortname]...}
+        output is the folder direction to save this csv
+        -----------'''
+    for db, entries in name_dict.items():
         csv_filename = os.path.join(output, f"{db}_id_name.csv")
         with open(csv_filename, mode='w', newline='', encoding='utf-8') as csv_file:
             writer = csv.writer(csv_file)
@@ -17,20 +23,33 @@ def writter_db_id_name(dico, output):
 
 #==================================================================================================================
 
-def writter_ec(dico, output):
-    # Create a CSV file for interpro_ec
+def writter_ec(dict_ec, output):
+    '''Create a csv - interpro_ec.csv 
+        for each interpro_id, the ec_number
+        --- arg ---
+        dict_ec is a dict like {key= interpro_id : value=[ec_number, ...], ...}
+        output is the folder direction to save this csv
+        -----------'''
     csv_filename = os.path.join(output, "interpro_ec.csv")
 
     with open(csv_filename, mode='w', newline='', encoding='utf-8') as csv_file:
       writer = csv.writer(csv_file)
       writer.writerow(['InterPro_ID', 'EC_Numbers'])  # Header row
 
-      for interpro_id, ec_numbers in dico.items():
+      for interpro_id, ec_numbers in dict_ec.items():
         writer.writerow([interpro_id, ";".join(ec_numbers)])
 
 #==================================================================================================================
 
 def writter_map_interpro(map_dict, name_dict, output):
+    '''Create a csv - interpro_map_id.csv
+        For each intepro_id, all matching database_id
+        --- arg ---
+        map_dict is a dict like {key=interpro_id : value=[database, database_id, ...], ...}
+        name_dict is a dict like {key= db : value=[db_id, shortname]...}
+        output is the folder direction to save this csv
+        -----------'''
+
     with open(output +"\interpro_map_id.csv", mode='w', newline='',encoding='utf-8') as csv_file:
         writer = csv.writer(csv_file)
         writer.writerow([key for key,val in name_dict.items()])
@@ -47,14 +66,14 @@ def writter_map_interpro(map_dict, name_dict, output):
 #==================================================================================================================
 
 def main():
-    usage = "python Interpro_parse.py -i <input_file> -o <output_folder> \n"
+    usage = "python Interpro_parse.py -i <input_file> -o <output_dir> \n"
     parser = OptionParser(usage)
     parser.add_option("-i", "--input_file", dest="input_file", help="path for the Interpro dataset")
-    parser.add_option("-o", "--output_file", dest="output_file", help="path for the file parsed")
+    parser.add_option("-o", "--output_dir", dest="output_dir", help="path for the folder where the csv will be saved")
 
     (options, args) = parser.parse_args()
     input_file = options.input_file
-    output_file = options.output_file
+    output_dir  = options.output_dir
 
     try:
         xml = open(input_file, "r", encoding='utf-8')
@@ -109,9 +128,9 @@ def main():
             res_tag = None
             bool_tag = False
 
-    writter_db_id_name(all_db, output_file)
-    writter_map_interpro(map_interpro, all_db, output_file)
-    writter_ec(ec_number, output_file)
+    writter_db_id_name(all_db, output_dir)
+    writter_map_interpro(map_interpro, all_db, output_dir)
+    writter_ec(ec_number, output_dir)
 
 #==================================================================================================================
 if __name__ == "__main__":

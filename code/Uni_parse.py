@@ -4,14 +4,14 @@ from optparse import OptionParser
 
 def main():
 
-    usage = usage = "python Uni_parse.py -i <input_file> -o <output_file> \n"
+    usage = usage = "python Uni_parse.py -i <input_file> -o <output_dir> \n"
     parser = OptionParser(usage)
     parser.add_option("-i", "--input_file", dest="input_file", help="path for the Uniprot dataset")
-    parser.add_option("-o", "--output_file", dest="output_file", help="path for the folder of results")
+    parser.add_option("-o", "--output_dir", dest="output_dir", help="path for the folder of results")
 
     (options, args) = parser.parse_args()
     input_file = options.input_file
-    output_file = options.output_file
+    output_dir = options.output_dir
 
     Uni_db = open(input_file, "r", encoding='utf-8')
     
@@ -28,7 +28,7 @@ def main():
                     break
                 else:
                     name += elm
-            file_name = output_file + '\\' + name + ".dat"
+            file_name = output_dir + '\\' + name + ".dat"
             txt += ligne
 
         elif arg_start in ['ID', 'DE', 'OC', 'DR','SQ','  ']:
