@@ -14,12 +14,12 @@ python Uni_parse.py -i <input_file> -o <output_dir>
 # Interpro_parse.py example
 
 Thie code is used to parse Interpro database
-It creates, for each database in Interpro file (.xml) 
+It creates, for each database in [[Interpro file](https://ftp.ebi.ac.uk/pub/databases/interpro/current_release/interpro.xml.gz)] (.xml) <input_file> 
 a csv with Id_protein and it shortname
 as well as a csv with interpro_id and all matching database_id
 Also a csv with all interpro_id and their EC_number
--`<input_file>` is the [[Interpro file](https://ftp.ebi.ac.uk/pub/databases/interpro/current_release/interpro.xml.gz)]
--`<outpu-_dir>` is the direction where the split of uniprot file are going to be saved
+
+-`<outpu_dir>` is the direction where the split of uniprot file are going to be saved
 
 ```python
 # Example usage of Interpro_parse.py
