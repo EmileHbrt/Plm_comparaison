@@ -1,5 +1,3 @@
-# Uni_parse Dorian & Emile
-
 from optparse import OptionParser
 
 def main():
