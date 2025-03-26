@@ -32,7 +32,7 @@ python Interpro_parse.py -i <input_file> -o <output_dir>
 This code is used to obtain an informative csv with the best prediction of Plmsearch for each unknowed CK in Cyanorak. 
 
 
-# Plm_parser.py example
+# Parser_tab.py example
 
 This code is used to parse the informative csv 
 
