@@ -38,7 +38,7 @@ This code is used to parse the informative csv
 
 - `<input_file>`: The path to the input file containing the data to be parsed.
 - `<output_file>`: The path where the output file will be saved.
-- `<score_arg>`: The argument specifying the score threshold or criteria for filtering.
+- `<score_arg>`: the minimum selection score for the output .
 - `<col_list>`: A comma-separated list of column names to include in the output file.
 
 ```python
