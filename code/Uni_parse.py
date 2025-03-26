@@ -34,8 +34,6 @@ def main():
             elif arg_start in ['ID', 'DE', 'OC', 'DR','SQ','  ']:
                 txt += ligne   
             elif arg_start == '//':   
-                if not os.path.exists(file_name):
-                    print( 'ça n existe pas')
                 with open(file_name, 'w') as fichier:
                     fichier.write(txt)
                 txt = ''    
