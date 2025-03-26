@@ -1,0 +1,2131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE interprodb SYSTEM "interpro.dtd">
+<interprodb>
+<release>
+  <dbinfo version="4" dbname="SFLD" entry_count="303" file_date="07-SEP-18"/>
+  <dbinfo version="42.0" dbname="PRINTS" entry_count="2106" file_date="14-JUN-12"/>
+  <dbinfo version="37.2" dbname="PFAM" entry_count="24076" file_date="06-FEB-25"/>
+  <dbinfo version="104.0" dbname="INTERPRO" entry_count="47677" file_date="06-FEB-25"/>
+  <dbinfo version="3.21" dbname="CDD" entry_count="19902" file_date="18-APR-24"/>
+  <dbinfo version="2023_05" dbname="PROFILE" entry_count="1379" file_date="08-NOV-23"/>
+  <dbinfo version="17.0" dbname="NCBIFAM" entry_count="31915" file_date="16-DEC-24"/>
+  <dbinfo version="2023_05" dbname="PROSITE" entry_count="1311" file_date="08-NOV-23"/>
+  <dbinfo version="2023_05" dbname="HAMAP" entry_count="2389" file_date="08-NOV-23"/>
+  <dbinfo version="9.0" dbname="SMART" entry_count="1322" file_date="14-FEB-20"/>
+  <dbinfo version="2025_01" dbname="reviewed" entry_count="572970" file_date="05-FEB-25"/>
+  <dbinfo version="2025_01" dbname="unreviewed" entry_count="252633201" file_date="05-FEB-25"/>
+  <dbinfo version="3.10" dbname="PIRSF" entry_count="3285" file_date="07-APR-20"/>
+  <dbinfo version="19.0" dbname="PANTHER" entry_count="143695" file_date="20-JUN-24"/>
+  <dbinfo version="4.3.0" dbname="CATHGENE3D" entry_count="6631" file_date="21-OCT-20"/>
+  <dbinfo version="1.75" dbname="SSF" entry_count="2019" file_date="08-NOV-10"/>
+  <dbinfo version="8.0" dbname="ANTIFAM" entry_count="278" file_date="23-SEP-24"/>
+  <dbinfo version="2025_01" dbname="UniProt" entry_count="253206171" file_date="05-FEB-25"/>
+</release>
+<interpro id="IPR000001" protein_count="20647" short_name="Kringle" type="Domain" is-llm="false" is-llm-reviewed="false">
+  <name>Kringle</name>
+  <abstract is-llm="false" is-llm-reviewed="false">
+    <p>
+      Kringles are autonomous structural domains, found throughout the blood clotting and fibrinolytic proteins. Kringle domains are believed to play a role in binding mediators (e.g., membranes, other proteins or phospholipids), and in the regulation of proteolytic activity [
+      <cite idref="PUB00002414"/>
+      , 
+      <cite idref="PUB00001541"/>
+      , 
+      <cite idref="PUB00003257"/>
+      ]. Kringle domains [
+      <cite idref="PUB00003400"/>
+      , 
+      <cite idref="PUB00000803"/>
+      , 
+      <cite idref="PUB00001620"/>
+      ] are characterised by a triple loop, 3-disulphide bridge structure, whose conformation is defined by a number of hydrogen bonds and small pieces of anti-parallel β-sheet. They are found in a varying number of copies in some plasma proteins including prothrombin and urokinase-type plasminogen activator, which are serine proteases belonging to MEROPS peptidase family S1A.
+    </p>
+  </abstract>
+  <pub_list>
+    <publication id="PUB00000803">
+      <author_list>Patthy L.</author_list>
+      <title>Evolution of the proteases of blood coagulation and fibrinolysis by assembly from modules.</title>
+      <db_xref db="PUBMED" dbkey="3891096"/>
+      <journal>Cell</journal>
+      <location volume="41" issue="3" pages="657-63"/>
+      <year>1985</year>
+    </publication>
+    <publication id="PUB00001541">
+      <author_list>Patthy L, Trexler M, Vali Z, Banyai L, Varadi A.</author_list>
+      <title>Kringles: modules specialized for protein binding. Homology of the gelatin-binding region of fibronectin with the kringle structures of proteases.</title>
+      <db_xref db="PUBMED" dbkey="6373375"/>
+      <journal>FEBS Lett.</journal>
+      <location volume="171" issue="1" pages="131-6"/>
+      <year>1984</year>
+    </publication>
+    <publication id="PUB00001620">
+      <author_list>Ikeo K, Takahashi K, Gojobori T.</author_list>
+      <title>Evolutionary origin of numerous kringles in human and simian apolipoprotein(a).</title>
+      <db_xref db="PUBMED" dbkey="1879523"/>
+      <journal>FEBS Lett.</journal>
+      <location volume="287" issue="1-2" pages="146-8"/>
+      <year>1991</year>
+    </publication>
+    <publication id="PUB00002414">
+      <author_list>McMullen BA, Fujikawa K.</author_list>
+      <title>Amino acid sequence of the heavy chain of human alpha-factor XIIa (activated Hageman factor).</title>
+      <db_xref db="PUBMED" dbkey="3886654"/>
+      <journal>J. Biol. Chem.</journal>
+      <location volume="260" issue="9" pages="5328-41"/>
+      <year>1985</year>
+    </publication>
+    <publication id="PUB00003257">
+      <author_list>Atkinson RA, Williams RJ.</author_list>
+      <title>Solution structure of the kringle 4 domain from human plasminogen by 1H nuclear magnetic resonance spectroscopy and distance geometry.</title>
+      <db_xref db="PUBMED" dbkey="2157850"/>
+      <journal>J. Mol. Biol.</journal>
+      <location volume="212" issue="3" pages="541-52"/>
+      <year>1990</year>
+    </publication>
+    <publication id="PUB00003400">
+      <author_list>Castellino FJ, Beals JM.</author_list>
+      <title>The genetic relationships between the kringle domains of human plasminogen, prothrombin, tissue plasminogen activator, urokinase, and coagulation factor XII.</title>
+      <db_xref db="PUBMED" dbkey="3131537"/>
+      <journal>J. Mol. Evol.</journal>
+      <location volume="26" issue="4" pages="358-69"/>
+      <year>1987</year>
+    </publication>
+  </pub_list>
+  <member_list>
+    <db_xref protein_count="19481" db="PFAM" dbkey="PF00051" name="Kringle"/>
+    <db_xref protein_count="20520" db="PROFILE" dbkey="PS50070" name="KRINGLE_2"/>
+    <db_xref protein_count="20019" db="SMART" dbkey="SM00130" name="KR"/>
+    <db_xref protein_count="16641" db="CDD" dbkey="cd00108" name="KR"/>
+  </member_list>
+  <external_doc_list>
+    <db_xref db="EC" dbkey="2.7.10.1"/>
+    <db_xref db="EC" dbkey="3.4.21.-"/>
+    <db_xref db="EC" dbkey="3.4.21.38"/>
+    <db_xref db="EC" dbkey="3.4.21.5"/>
+    <db_xref db="EC" dbkey="3.4.21.68"/>
+    <db_xref db="EC" dbkey="3.4.21.7"/>
+    <db_xref db="EC" dbkey="3.4.21.73"/>
+    <db_xref db="METACYC" dbkey="PWY-7884"/>
+    <db_xref db="PROSITEDOC" dbkey="PDOC00020"/>
+    <db_xref db="REACTOME" dbkey="R-BTA-6798695"/>
+    <db_xref db="REACTOME" dbkey="R-BTA-75205"/>
+    <db_xref db="REACTOME" dbkey="R-CEL-5140745"/>
+    <db_xref db="REACTOME" dbkey="R-CFA-114608"/>
+    <db_xref db="REACTOME" dbkey="R-CFA-1257604"/>
+    <db_xref db="REACTOME" dbkey="R-CFA-5673001"/>
+    <db_xref db="REACTOME" dbkey="R-CFA-6806942"/>
+    <db_xref db="REACTOME" dbkey="R-CFA-6807004"/>
+    <db_xref db="REACTOME" dbkey="R-CFA-6811558"/>
+    <db_xref db="REACTOME" dbkey="R-CFA-8851805"/>
+    <db_xref db="REACTOME" dbkey="R-CFA-8851907"/>
+    <db_xref db="REACTOME" dbkey="R-CFA-8865999"/>
+    <db_xref db="REACTOME" dbkey="R-CFA-8874081"/>
+    <db_xref db="REACTOME" dbkey="R-CFA-8875513"/>
+    <db_xref db="REACTOME" dbkey="R-CFA-8875555"/>
+    <db_xref db="REACTOME" dbkey="R-CFA-8875656"/>
+    <db_xref db="REACTOME" dbkey="R-CFA-8875791"/>
+    <db_xref db="REACTOME" dbkey="R-CFA-9734091"/>
+    <db_xref db="REACTOME" dbkey="R-DME-5140745"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-114608"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-1257604"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-1266695"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-140837"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-140875"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-1474228"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-1592389"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-159740"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-159763"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-159782"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-186797"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-201681"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-202733"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-2219530"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-375276"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-3772470"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-381426"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-4086400"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-416476"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-456926"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-5140745"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-5339717"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-5673001"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-6785807"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-6798695"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-6806942"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-6807004"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-6811558"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-75205"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-76009"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-8851805"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-8851907"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-8852405"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-8865999"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-8874081"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-8875513"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-8875555"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-8875656"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-8875791"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-8964041"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-9657688"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-9657689"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-9672391"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-9734091"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-977606"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-114608"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-1257604"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-140837"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-140875"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-1592389"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-159740"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-159763"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-159782"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-186797"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-202733"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-375276"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-3772470"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-416476"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-456926"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-5140745"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-5673001"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-6798695"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-6806942"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-6807004"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-6811558"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-75205"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-76009"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-8851805"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-8851907"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-8852405"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-8865999"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-8874081"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-8875513"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-8875555"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-8875656"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-8875791"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-9734091"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-977606"/>
+    <db_xref db="REACTOME" dbkey="R-RNO-114608"/>
+    <db_xref db="REACTOME" dbkey="R-RNO-1257604"/>
+    <db_xref db="REACTOME" dbkey="R-RNO-140837"/>
+    <db_xref db="REACTOME" dbkey="R-RNO-140875"/>
+    <db_xref db="REACTOME" dbkey="R-RNO-1592389"/>
+    <db_xref db="REACTOME" dbkey="R-RNO-159740"/>
+    <db_xref db="REACTOME" dbkey="R-RNO-159763"/>
+    <db_xref db="REACTOME" dbkey="R-RNO-159782"/>
+    <db_xref db="REACTOME" dbkey="R-RNO-186797"/>
+    <db_xref db="REACTOME" dbkey="R-RNO-202733"/>
+    <db_xref db="REACTOME" dbkey="R-RNO-375276"/>
+    <db_xref db="REACTOME" dbkey="R-RNO-3772470"/>
+    <db_xref db="REACTOME" dbkey="R-RNO-381426"/>
+    <db_xref db="REACTOME" dbkey="R-RNO-416476"/>
+    <db_xref db="REACTOME" dbkey="R-RNO-456926"/>
+    <db_xref db="REACTOME" dbkey="R-RNO-5673001"/>
+    <db_xref db="REACTOME" dbkey="R-RNO-6798695"/>
+    <db_xref db="REACTOME" dbkey="R-RNO-6806942"/>
+    <db_xref db="REACTOME" dbkey="R-RNO-6807004"/>
+    <db_xref db="REACTOME" dbkey="R-RNO-6811558"/>
+    <db_xref db="REACTOME" dbkey="R-RNO-75205"/>
+    <db_xref db="REACTOME" dbkey="R-RNO-76009"/>
+    <db_xref db="REACTOME" dbkey="R-RNO-8851805"/>
+    <db_xref db="REACTOME" dbkey="R-RNO-8851907"/>
+    <db_xref db="REACTOME" dbkey="R-RNO-8865999"/>
+    <db_xref db="REACTOME" dbkey="R-RNO-8874081"/>
+    <db_xref db="REACTOME" dbkey="R-RNO-8875513"/>
+    <db_xref db="REACTOME" dbkey="R-RNO-8875555"/>
+    <db_xref db="REACTOME" dbkey="R-RNO-8875656"/>
+    <db_xref db="REACTOME" dbkey="R-RNO-8875791"/>
+    <db_xref db="REACTOME" dbkey="R-RNO-9734091"/>
+    <db_xref db="REACTOME" dbkey="R-RNO-977606"/>
+    <db_xref db="REACTOME" dbkey="R-SSC-186797"/>
+    <db_xref db="REACTOME" dbkey="R-SSC-75205"/>
+  </external_doc_list>
+  <structure_db_links>
+    <db_xref db="PDB" dbkey="1a0h"/>
+    <db_xref db="PDB" dbkey="1b2i"/>
+    <db_xref db="PDB" dbkey="1bht"/>
+    <db_xref db="PDB" dbkey="1cea"/>
+    <db_xref db="PDB" dbkey="1ceb"/>
+    <db_xref db="PDB" dbkey="1gmn"/>
+    <db_xref db="PDB" dbkey="1gmo"/>
+    <db_xref db="PDB" dbkey="1gp9"/>
+    <db_xref db="PDB" dbkey="1hpj"/>
+    <db_xref db="PDB" dbkey="1hpk"/>
+    <db_xref db="PDB" dbkey="1i5k"/>
+    <db_xref db="PDB" dbkey="1i71"/>
+    <db_xref db="PDB" dbkey="1jfn"/>
+    <db_xref db="PDB" dbkey="1kdu"/>
+    <db_xref db="PDB" dbkey="1ki0"/>
+    <db_xref db="PDB" dbkey="1kiv"/>
+    <db_xref db="PDB" dbkey="1krn"/>
+    <db_xref db="PDB" dbkey="1nk1"/>
+    <db_xref db="PDB" dbkey="1nl1"/>
+    <db_xref db="PDB" dbkey="1nl2"/>
+    <db_xref db="PDB" dbkey="1pk2"/>
+    <db_xref db="PDB" dbkey="1pk4"/>
+    <db_xref db="PDB" dbkey="1pkr"/>
+    <db_xref db="PDB" dbkey="1pmk"/>
+    <db_xref db="PDB" dbkey="1pml"/>
+    <db_xref db="PDB" dbkey="1tpk"/>
+    <db_xref db="PDB" dbkey="1urk"/>
+    <db_xref db="PDB" dbkey="2doh"/>
+    <db_xref db="PDB" dbkey="2doi"/>
+    <db_xref db="PDB" dbkey="2fd6"/>
+    <db_xref db="PDB" dbkey="2feb"/>
+    <db_xref db="PDB" dbkey="2hpp"/>
+    <db_xref db="PDB" dbkey="2hpq"/>
+    <db_xref db="PDB" dbkey="2i9a"/>
+    <db_xref db="PDB" dbkey="2i9b"/>
+    <db_xref db="PDB" dbkey="2k4r"/>
+    <db_xref db="PDB" dbkey="2k51"/>
+    <db_xref db="PDB" dbkey="2kj4"/>
+    <db_xref db="PDB" dbkey="2knf"/>
+    <db_xref db="PDB" dbkey="2l0s"/>
+    <db_xref db="PDB" dbkey="2pf1"/>
+    <db_xref db="PDB" dbkey="2pf2"/>
+    <db_xref db="PDB" dbkey="2pk4"/>
+    <db_xref db="PDB" dbkey="2qj2"/>
+    <db_xref db="PDB" dbkey="2qj4"/>
+    <db_xref db="PDB" dbkey="2spt"/>
+    <db_xref db="PDB" dbkey="3bt1"/>
+    <db_xref db="PDB" dbkey="3bt2"/>
+    <db_xref db="PDB" dbkey="3e6p"/>
+    <db_xref db="PDB" dbkey="3hn4"/>
+    <db_xref db="PDB" dbkey="3k65"/>
+    <db_xref db="PDB" dbkey="3kiv"/>
+    <db_xref db="PDB" dbkey="3laq"/>
+    <db_xref db="PDB" dbkey="3mkp"/>
+    <db_xref db="PDB" dbkey="3nxp"/>
+    <db_xref db="PDB" dbkey="3sp8"/>
+    <db_xref db="PDB" dbkey="3u73"/>
+    <db_xref db="PDB" dbkey="4a5t"/>
+    <db_xref db="PDB" dbkey="4bv5"/>
+    <db_xref db="PDB" dbkey="4bv7"/>
+    <db_xref db="PDB" dbkey="4bvc"/>
+    <db_xref db="PDB" dbkey="4bvd"/>
+    <db_xref db="PDB" dbkey="4bvv"/>
+    <db_xref db="PDB" dbkey="4bvw"/>
+    <db_xref db="PDB" dbkey="4cik"/>
+    <db_xref db="PDB" dbkey="4d3c"/>
+    <db_xref db="PDB" dbkey="4dur"/>
+    <db_xref db="PDB" dbkey="4duu"/>
+    <db_xref db="PDB" dbkey="4hzh"/>
+    <db_xref db="PDB" dbkey="4iua"/>
+    <db_xref db="PDB" dbkey="4k24"/>
+    <db_xref db="PDB" dbkey="4kiv"/>
+    <db_xref db="PDB" dbkey="4nzq"/>
+    <db_xref db="PDB" dbkey="4o03"/>
+    <db_xref db="PDB" dbkey="5coe"/>
+    <db_xref db="PDB" dbkey="5cp9"/>
+    <db_xref db="PDB" dbkey="5cs1"/>
+    <db_xref db="PDB" dbkey="5cs3"/>
+    <db_xref db="PDB" dbkey="5cs5"/>
+    <db_xref db="PDB" dbkey="5cs9"/>
+    <db_xref db="PDB" dbkey="5csq"/>
+    <db_xref db="PDB" dbkey="5ct1"/>
+    <db_xref db="PDB" dbkey="5ct2"/>
+    <db_xref db="PDB" dbkey="5ct3"/>
+    <db_xref db="PDB" dbkey="5edk"/>
+    <db_xref db="PDB" dbkey="5edm"/>
+    <db_xref db="PDB" dbkey="5fws"/>
+    <db_xref db="PDB" dbkey="5fwt"/>
+    <db_xref db="PDB" dbkey="5fwu"/>
+    <db_xref db="PDB" dbkey="5fwv"/>
+    <db_xref db="PDB" dbkey="5fww"/>
+    <db_xref db="PDB" dbkey="5hpg"/>
+    <db_xref db="PDB" dbkey="5z55"/>
+    <db_xref db="PDB" dbkey="6ba5"/>
+    <db_xref db="PDB" dbkey="6ban"/>
+    <db_xref db="PDB" dbkey="6bjr"/>
+    <db_xref db="PDB" dbkey="6c2w"/>
+    <db_xref db="PDB" dbkey="6dcm"/>
+    <db_xref db="PDB" dbkey="6lz9"/>
+    <db_xref db="PDB" dbkey="6og4"/>
+    <db_xref db="PDB" dbkey="6oqj"/>
+    <db_xref db="PDB" dbkey="6oqk"/>
+    <db_xref db="PDB" dbkey="6osh"/>
+    <db_xref db="PDB" dbkey="6osn"/>
+    <db_xref db="PDB" dbkey="6osv"/>
+    <db_xref db="PDB" dbkey="6px5"/>
+    <db_xref db="PDB" dbkey="6rx7"/>
+    <db_xref db="PDB" dbkey="6snw"/>
+    <db_xref db="PDB" dbkey="6uz4"/>
+    <db_xref db="PDB" dbkey="6uz5"/>
+    <db_xref db="PDB" dbkey="7bzt"/>
+    <db_xref db="PDB" dbkey="7bzu"/>
+    <db_xref db="PDB" dbkey="7me4"/>
+    <db_xref db="PDB" dbkey="7mo7"/>
+    <db_xref db="PDB" dbkey="7mo8"/>
+    <db_xref db="PDB" dbkey="7mo9"/>
+    <db_xref db="PDB" dbkey="7moa"/>
+    <db_xref db="PDB" dbkey="7mob"/>
+    <db_xref db="PDB" dbkey="7ocl"/>
+    <db_xref db="PDB" dbkey="7ocm"/>
+    <db_xref db="PDB" dbkey="7tng"/>
+    <db_xref db="PDB" dbkey="7tpp"/>
+    <db_xref db="PDB" dbkey="8os5"/>
+    <db_xref db="PDB" dbkey="8tce"/>
+    <db_xref db="PDB" dbkey="8uf7"/>
+    <db_xref db="PDB" dbkey="8uq6"/>
+    <db_xref db="PDB" dbkey="8v8z"/>
+    <db_xref db="PDB" dbkey="8v9b"/>
+    <db_xref db="PDB" dbkey="9cln"/>
+    <db_xref db="PDB" dbkey="9cls"/>
+    <db_xref db="PDB" dbkey="9cmo"/>
+    <db_xref db="PDB" dbkey="9cth"/>
+    <db_xref db="PDB" dbkey="9fse"/>
+  </structure_db_links>
+  <taxonomy_distribution>
+    <taxon_data name="Bacteria" proteins_count="5"/>
+    <taxon_data name="Eukaryota" proteins_count="20635"/>
+    <taxon_data name="Mimiviridae sp. ChoanoV1" proteins_count="2"/>
+    <taxon_data name="viral metagenome" proteins_count="5"/>
+  </taxonomy_distribution>
+  <key_species>
+    <taxon_data name="Caenorhabditis elegans" proteins_count="3"/>
+    <taxon_data name="Danio rerio" proteins_count="24"/>
+    <taxon_data name="Drosophila melanogaster" proteins_count="3"/>
+    <taxon_data name="Homo sapiens" proteins_count="87"/>
+    <taxon_data name="Mus musculus" proteins_count="43"/>
+    <taxon_data name="Rattus norvegicus" proteins_count="60"/>
+  </key_species>
+</interpro>
+<interpro id="IPR000003" protein_count="7794" short_name="Retinoid-X_rcpt/HNF4" type="Family" is-llm="false" is-llm-reviewed="false">
+  <name>Retinoid X receptor/HNF4</name>
+  <abstract is-llm="false" is-llm-reviewed="false">
+    <p>
+      Steroid or nuclear hormone receptors (NRs) constitute an important superfamily of transcription regulators that are involved in widely diverse physiological functions, including control of embryonic development, cell differentiation and homeostasis. Members of the superfamily include the steroid hormone receptors and receptors for thyroid hormone, retinoids, 1,25-dihydroxy-vitamin D3 and a variety of other ligands [
+      <cite idref="PUB00015853"/>
+      ]. The proteins function as dimeric molecules in nuclei to regulate the transcription of target genes in a ligand-responsive manner [
+      <cite idref="PUB00004464"/>
+      , 
+      <cite idref="PUB00006168"/>
+      ]. In addition to C-terminal ligand-binding domains, these nuclear receptors contain a highly-conserved, N-terminal zinc-finger that mediates specific binding to target DNA sequences, termed ligand-responsive elements. In the absence of ligand, steroid hormone receptors are thought to be weakly associated with nuclear components; hormone binding greatly increases receptor affinity.
+    </p>
+    
+
+
+    <p>NRs are extremely important in medical research, a large number of them being implicated in diseases such as cancer, diabetes, hormone resistance syndromes, etc. While several NRs act as ligand-inducible transcription factors, many do not yet have a defined ligand and are accordingly termed 'orphan' receptors. During the last decade, more than 300 NRs have been described, many of which are orphans, which cannot easily be named due to current nomenclature confusions in the literature. However, a new system has recently been introduced in an attempt to rationalise the increasingly complex set of names used to describe superfamily members.</p>
+    
+
+    <p>The retinoic acid (retinoid X) receptor consists of 3 functional and structural domains: an N-terminal (modulatory) domain; a DNA binding domain that mediates specific binding to target DNA sequences (ligand-responsive elements); and a hormone binding domain. The N-terminal domain differs between retinoic acid isoforms; the small highly-conserved DNA-binding domain (~65 residues) occupies the central portion of the protein; and the ligand binding domain lies at the receptor C terminus.</p>
+    
+
+
+    <p>
+      This entry represents retinoid X receptors. It also represents hepatocyte nuclear factor 4 (HNF4), which is a nuclear receptor protein expressed in the liver and kidney, and functions as a key regulator of many metabolic pathways. HNF4 was originally classified as an orphan receptor. Linoleic acid has now been identified as the endogenous ligand for HNF4 in mammalian cells [
+      <cite idref="PUB00057400"/>
+      ].
+    </p>
+  </abstract>
+  <class_list>
+    <classification id="GO:0003677" class_type="GO">
+      <category>molecular_function</category>
+      <description>DNA binding</description>
+    </classification>
+    <classification id="GO:0003707" class_type="GO">
+      <category>molecular_function</category>
+      <description>nuclear steroid receptor activity</description>
+    </classification>
+    <classification id="GO:0008270" class_type="GO">
+      <category>molecular_function</category>
+      <description>zinc ion binding</description>
+    </classification>
+    <classification id="GO:0006355" class_type="GO">
+      <category>biological_process</category>
+      <description>regulation of DNA-templated transcription</description>
+    </classification>
+    <classification id="GO:0005634" class_type="GO">
+      <category>cellular_component</category>
+      <description>nucleus</description>
+    </classification>
+  </class_list>
+  <pub_list>
+    <publication id="PUB00004464">
+      <author_list>Nishikawa J, Kitaura M, Imagawa M, Nishihara T.</author_list>
+      <title>Vitamin D receptor contains multiple dimerization interfaces that are functionally different.</title>
+      <db_xref db="PUBMED" dbkey="7899080"/>
+      <journal>Nucleic Acids Res.</journal>
+      <location volume="23" issue="4" pages="606-11"/>
+      <year>1995</year>
+    </publication>
+    <publication id="PUB00006168">
+      <author_list>De Vos P, Schmitt J, Verhoeven G, Stunnenberg HG.</author_list>
+      <title>Human androgen receptor expressed in HeLa cells activates transcription in vitro.</title>
+      <db_xref db="PUBMED" dbkey="8165128"/>
+      <journal>Nucleic Acids Res.</journal>
+      <location volume="22" issue="7" pages="1161-6"/>
+      <year>1994</year>
+    </publication>
+    <publication id="PUB00015853">
+      <author_list>Schwabe JW, Teichmann SA.</author_list>
+      <title>Nuclear receptors: the evolution of diversity.</title>
+      <db_xref db="PUBMED" dbkey="14747695"/>
+      <journal>Sci. STKE</journal>
+      <location volume="2004" issue="217" pages="pe4"/>
+      <year>2004</year>
+    </publication>
+    <publication id="PUB00057400">
+      <author_list>Yuan X, Ta TC, Lin M, Evans JR, Dong Y, Bolotin E, Sherman MA, Forman BM, Sladek FM.</author_list>
+      <title>Identification of an endogenous ligand bound to a native orphan nuclear receptor.</title>
+      <db_xref db="PUBMED" dbkey="19440305"/>
+      <journal>PLoS ONE</journal>
+      <location volume="4" issue="5" pages="e5609"/>
+      <year>2009</year>
+    </publication>
+  </pub_list>
+  <parent_list>
+    <rel_ref ipr_ref="IPR001723"/>
+  </parent_list>
+  <member_list>
+    <db_xref protein_count="7794" db="PRINTS" dbkey="PR00545" name="RETINOIDXR"/>
+  </member_list>
+  <external_doc_list>
+    <db_xref db="REACTOME" dbkey="R-BTA-383280"/>
+    <db_xref db="REACTOME" dbkey="R-BTA-5362517"/>
+    <db_xref db="REACTOME" dbkey="R-CEL-383280"/>
+    <db_xref db="REACTOME" dbkey="R-DME-159418"/>
+    <db_xref db="REACTOME" dbkey="R-DME-200425"/>
+    <db_xref db="REACTOME" dbkey="R-DME-381340"/>
+    <db_xref db="REACTOME" dbkey="R-DME-383280"/>
+    <db_xref db="REACTOME" dbkey="R-DME-400206"/>
+    <db_xref db="REACTOME" dbkey="R-DME-5362517"/>
+    <db_xref db="REACTOME" dbkey="R-DME-9029569"/>
+    <db_xref db="REACTOME" dbkey="R-DME-9616222"/>
+    <db_xref db="REACTOME" dbkey="R-DME-9623433"/>
+    <db_xref db="REACTOME" dbkey="R-DME-9707564"/>
+    <db_xref db="REACTOME" dbkey="R-DME-9841922"/>
+    <db_xref db="REACTOME" dbkey="R-DRE-159418"/>
+    <db_xref db="REACTOME" dbkey="R-DRE-381340"/>
+    <db_xref db="REACTOME" dbkey="R-DRE-400206"/>
+    <db_xref db="REACTOME" dbkey="R-DRE-4090294"/>
+    <db_xref db="REACTOME" dbkey="R-DRE-5362517"/>
+    <db_xref db="REACTOME" dbkey="R-DRE-9616222"/>
+    <db_xref db="REACTOME" dbkey="R-DRE-9707564"/>
+    <db_xref db="REACTOME" dbkey="R-DRE-9841922"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-1368082"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-1368108"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-159418"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-192105"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-193368"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-193807"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-1989781"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-200425"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-211976"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-2151201"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-2426168"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-381340"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-383280"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-400206"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-400253"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-4090294"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-5362517"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-5617472"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-9029558"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-9029569"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-9031525"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-9031528"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-9616222"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-9623433"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-9632974"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-9707564"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-9707616"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-9839394"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-9841922"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-9844594"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-159418"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-192105"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-193368"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-193807"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-200425"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-211976"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-381340"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-383280"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-400206"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-4090294"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-5362517"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-9029569"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-9616222"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-9623433"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-9707564"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-9841922"/>
+    <db_xref db="REACTOME" dbkey="R-RNO-159418"/>
+    <db_xref db="REACTOME" dbkey="R-RNO-192105"/>
+    <db_xref db="REACTOME" dbkey="R-RNO-193368"/>
+    <db_xref db="REACTOME" dbkey="R-RNO-193807"/>
+    <db_xref db="REACTOME" dbkey="R-RNO-200425"/>
+    <db_xref db="REACTOME" dbkey="R-RNO-211976"/>
+    <db_xref db="REACTOME" dbkey="R-RNO-381340"/>
+    <db_xref db="REACTOME" dbkey="R-RNO-383280"/>
+    <db_xref db="REACTOME" dbkey="R-RNO-400206"/>
+    <db_xref db="REACTOME" dbkey="R-RNO-4090294"/>
+    <db_xref db="REACTOME" dbkey="R-RNO-5362517"/>
+    <db_xref db="REACTOME" dbkey="R-RNO-9029569"/>
+    <db_xref db="REACTOME" dbkey="R-RNO-9616222"/>
+    <db_xref db="REACTOME" dbkey="R-RNO-9623433"/>
+    <db_xref db="REACTOME" dbkey="R-RNO-9707564"/>
+    <db_xref db="REACTOME" dbkey="R-RNO-9841922"/>
+    <db_xref db="REACTOME" dbkey="R-SSC-383280"/>
+  </external_doc_list>
+  <structure_db_links>
+    <db_xref db="PDB" dbkey="1dkf"/>
+    <db_xref db="PDB" dbkey="1fby"/>
+    <db_xref db="PDB" dbkey="1fm6"/>
+    <db_xref db="PDB" dbkey="1fm9"/>
+    <db_xref db="PDB" dbkey="1g1u"/>
+    <db_xref db="PDB" dbkey="1g2n"/>
+    <db_xref db="PDB" dbkey="1g5y"/>
+    <db_xref db="PDB" dbkey="1h9u"/>
+    <db_xref db="PDB" dbkey="1hg4"/>
+    <db_xref db="PDB" dbkey="1k74"/>
+    <db_xref db="PDB" dbkey="1mv9"/>
+    <db_xref db="PDB" dbkey="1mvc"/>
+    <db_xref db="PDB" dbkey="1mzn"/>
+    <db_xref db="PDB" dbkey="1r1k"/>
+    <db_xref db="PDB" dbkey="1r20"/>
+    <db_xref db="PDB" dbkey="1rdt"/>
+    <db_xref db="PDB" dbkey="1uhl"/>
+    <db_xref db="PDB" dbkey="1xdk"/>
+    <db_xref db="PDB" dbkey="1xiu"/>
+    <db_xref db="PDB" dbkey="1xls"/>
+    <db_xref db="PDB" dbkey="1xv9"/>
+    <db_xref db="PDB" dbkey="1xvp"/>
+    <db_xref db="PDB" dbkey="1z5x"/>
+    <db_xref db="PDB" dbkey="2acl"/>
+    <db_xref db="PDB" dbkey="2gl8"/>
+    <db_xref db="PDB" dbkey="2nxx"/>
+    <db_xref db="PDB" dbkey="2p1t"/>
+    <db_xref db="PDB" dbkey="2p1u"/>
+    <db_xref db="PDB" dbkey="2p1v"/>
+    <db_xref db="PDB" dbkey="2q60"/>
+    <db_xref db="PDB" dbkey="2r40"/>
+    <db_xref db="PDB" dbkey="2zxz"/>
+    <db_xref db="PDB" dbkey="2zy0"/>
+    <db_xref db="PDB" dbkey="3a9e"/>
+    <db_xref db="PDB" dbkey="3dzu"/>
+    <db_xref db="PDB" dbkey="3dzy"/>
+    <db_xref db="PDB" dbkey="3e00"/>
+    <db_xref db="PDB" dbkey="3e94"/>
+    <db_xref db="PDB" dbkey="3eyb"/>
+    <db_xref db="PDB" dbkey="3fal"/>
+    <db_xref db="PDB" dbkey="3fc6"/>
+    <db_xref db="PDB" dbkey="3fug"/>
+    <db_xref db="PDB" dbkey="3h0a"/>
+    <db_xref db="PDB" dbkey="3ixp"/>
+    <db_xref db="PDB" dbkey="3kwy"/>
+    <db_xref db="PDB" dbkey="3nsp"/>
+    <db_xref db="PDB" dbkey="3nsq"/>
+    <db_xref db="PDB" dbkey="3oap"/>
+    <db_xref db="PDB" dbkey="3ozj"/>
+    <db_xref db="PDB" dbkey="3pcu"/>
+    <db_xref db="PDB" dbkey="3r29"/>
+    <db_xref db="PDB" dbkey="3r2a"/>
+    <db_xref db="PDB" dbkey="3r5m"/>
+    <db_xref db="PDB" dbkey="3uvv"/>
+    <db_xref db="PDB" dbkey="4iqr"/>
+    <db_xref db="PDB" dbkey="4j5w"/>
+    <db_xref db="PDB" dbkey="4j5x"/>
+    <db_xref db="PDB" dbkey="4k4j"/>
+    <db_xref db="PDB" dbkey="4k6i"/>
+    <db_xref db="PDB" dbkey="4m8e"/>
+    <db_xref db="PDB" dbkey="4m8h"/>
+    <db_xref db="PDB" dbkey="4n5g"/>
+    <db_xref db="PDB" dbkey="4n8r"/>
+    <db_xref db="PDB" dbkey="4nqa"/>
+    <db_xref db="PDB" dbkey="4oc7"/>
+    <db_xref db="PDB" dbkey="4ozr"/>
+    <db_xref db="PDB" dbkey="4ozt"/>
+    <db_xref db="PDB" dbkey="4poh"/>
+    <db_xref db="PDB" dbkey="4poj"/>
+    <db_xref db="PDB" dbkey="4pp3"/>
+    <db_xref db="PDB" dbkey="4pp5"/>
+    <db_xref db="PDB" dbkey="4rfw"/>
+    <db_xref db="PDB" dbkey="4rmc"/>
+    <db_xref db="PDB" dbkey="4rmd"/>
+    <db_xref db="PDB" dbkey="4rme"/>
+    <db_xref db="PDB" dbkey="4umm"/>
+    <db_xref db="PDB" dbkey="4zo1"/>
+    <db_xref db="PDB" dbkey="4zsh"/>
+    <db_xref db="PDB" dbkey="5ec9"/>
+    <db_xref db="PDB" dbkey="5hjp"/>
+    <db_xref db="PDB" dbkey="5i4v"/>
+    <db_xref db="PDB" dbkey="5ji0"/>
+    <db_xref db="PDB" dbkey="5kya"/>
+    <db_xref db="PDB" dbkey="5kyj"/>
+    <db_xref db="PDB" dbkey="5lyq"/>
+    <db_xref db="PDB" dbkey="5mj5"/>
+    <db_xref db="PDB" dbkey="5mk4"/>
+    <db_xref db="PDB" dbkey="5mkj"/>
+    <db_xref db="PDB" dbkey="5mku"/>
+    <db_xref db="PDB" dbkey="5mmw"/>
+    <db_xref db="PDB" dbkey="5tbp"/>
+    <db_xref db="PDB" dbkey="5uan"/>
+    <db_xref db="PDB" dbkey="5z12"/>
+    <db_xref db="PDB" dbkey="5zqu"/>
+    <db_xref db="PDB" dbkey="6a5y"/>
+    <db_xref db="PDB" dbkey="6a5z"/>
+    <db_xref db="PDB" dbkey="6a60"/>
+    <db_xref db="PDB" dbkey="6hn6"/>
+    <db_xref db="PDB" dbkey="6jno"/>
+    <db_xref db="PDB" dbkey="6jnr"/>
+    <db_xref db="PDB" dbkey="6l6k"/>
+    <db_xref db="PDB" dbkey="6lb4"/>
+    <db_xref db="PDB" dbkey="6lb5"/>
+    <db_xref db="PDB" dbkey="6lb6"/>
+    <db_xref db="PDB" dbkey="6sjm"/>
+    <db_xref db="PDB" dbkey="6sti"/>
+    <db_xref db="PDB" dbkey="7a77"/>
+    <db_xref db="PDB" dbkey="7a78"/>
+    <db_xref db="PDB" dbkey="7a79"/>
+    <db_xref db="PDB" dbkey="7aos"/>
+    <db_xref db="PDB" dbkey="7b88"/>
+    <db_xref db="PDB" dbkey="7b9o"/>
+    <db_xref db="PDB" dbkey="7bju"/>
+    <db_xref db="PDB" dbkey="7bjv"/>
+    <db_xref db="PDB" dbkey="7bk4"/>
+    <db_xref db="PDB" dbkey="7cfo"/>
+    <db_xref db="PDB" dbkey="7nke"/>
+    <db_xref db="PDB" dbkey="7pdq"/>
+    <db_xref db="PDB" dbkey="7pdt"/>
+    <db_xref db="PDB" dbkey="7qaa"/>
+    <db_xref db="PDB" dbkey="7uw2"/>
+    <db_xref db="PDB" dbkey="7uw4"/>
+    <db_xref db="PDB" dbkey="8pp0"/>
+  </structure_db_links>
+  <taxonomy_distribution>
+    <taxon_data name="Eukaryota" proteins_count="7794"/>
+  </taxonomy_distribution>
+  <key_species>
+    <taxon_data name="Caenorhabditis elegans" proteins_count="2"/>
+    <taxon_data name="Danio rerio" proteins_count="27"/>
+    <taxon_data name="Drosophila melanogaster" proteins_count="4"/>
+    <taxon_data name="Homo sapiens" proteins_count="22"/>
+    <taxon_data name="Mus musculus" proteins_count="20"/>
+    <taxon_data name="Rattus norvegicus" proteins_count="22"/>
+  </key_species>
+</interpro>
+<interpro id="IPR000006" protein_count="2387" short_name="Metalthion_vert" type="Family" is-llm="false" is-llm-reviewed="false">
+  <name>Metallothionein, vertebrate</name>
+  <abstract is-llm="false" is-llm-reviewed="false">
+    <p>
+      Metallothioneins (MT) are small proteins that bind heavy metals, such as zinc, copper, cadmium, nickel, etc. They have a high content of cysteine residues that bind the metal ions through clusters of thiolate bonds [
+      <cite idref="PUB00003570"/>
+      , 
+      <cite idref="PUB00001490"/>
+      ]. An empirical classification into three classes has been proposed by Fowler and coworkers [
+      <cite idref="PUB00005944"/>
+      ] and Kojima [
+      <cite idref="PUB00003571"/>
+      ]. Members of class I are defined to include polypeptides related in the positions of their cysteines to equine MT-1B, and include mammalian MTs as well as from crustaceans and molluscs. Class II groups MTs from a variety of species, including sea urchins,
+fungi, insects and cyanobacteria. Class III MTs are atypical polypeptides composed of gamma-glutamylcysteinyl units [
+      <cite idref="PUB00005944"/>
+      ].
+    </p>
+    
+
+
+    <p>
+      This original classification system has been found to be limited, in the sense that it does not allow clear differentiation of patterns of structural similarities, either between or within classes. Subsequently, a new classification was proposed on the basis of sequence similarity derived from phylogenetic relationships, which basically proposes an MT family for each main taxonomic group of organisms [
+      <cite idref="PUB00078698"/>
+      ].
+    </p>
+    
+
+    <p>The members of family 1 are recognised by the sequence pattern K-x(1,2)-C-C-x-C-C-P-x(2)-C located at the beginning of the third exon. The taxonomic range of the members extends to vertebrates. Known characteristics: 60 to 68 AAs; 20 Cys (21 in one case), 19 of them are totally conserved; the protein sequence is divided into two structural domains, containing 9 and 11 Cys all binding 3 and 4 bivalent metal ions, respectively.</p>
+  </abstract>
+  <class_list>
+    <classification id="GO:0046872" class_type="GO">
+      <category>molecular_function</category>
+      <description>metal ion binding</description>
+    </classification>
+  </class_list>
+  <pub_list>
+    <publication id="PUB00001490">
+      <author_list>Kagi JH, Kojima Y.</author_list>
+      <title>Chemistry and biochemistry of metallothionein.</title>
+      <db_xref db="PUBMED" dbkey="2959513"/>
+      <journal>Experientia Suppl.</journal>
+      <location volume="52" pages="25-61"/>
+      <year>1987</year>
+    </publication>
+    <publication id="PUB00003570">
+      <author_list>Kagi JH.</author_list>
+      <title>Overview of metallothionein.</title>
+      <db_xref db="PUBMED" dbkey="1779825"/>
+      <journal>Meth. Enzymol.</journal>
+      <location volume="205" pages="613-26"/>
+      <year>1991</year>
+    </publication>
+    <publication id="PUB00003571">
+      <author_list>Kojima Y.</author_list>
+      <title>Definitions and nomenclature of metallothioneins.</title>
+      <db_xref db="PUBMED" dbkey="1779826"/>
+      <journal>Meth. Enzymol.</journal>
+      <location volume="205" pages="8-10"/>
+      <year>1991</year>
+    </publication>
+    <publication id="PUB00005944">
+      <author_list>Fowler BA, Hildebrand CE, Kojima Y, Webb M.</author_list>
+      <title>Nomenclature of metallothionein.</title>
+      <db_xref db="PUBMED" dbkey="2959504"/>
+      <journal>Experientia Suppl.</journal>
+      <location volume="52" pages="19-22"/>
+      <year>1987</year>
+    </publication>
+    <publication id="PUB00078698">
+      <author_list>Capdevila M, Atrian S.</author_list>
+      <title>Metallothionein protein evolution: a miniassay.</title>
+      <db_xref db="PUBMED" dbkey="21633816"/>
+      <journal>J. Biol. Inorg. Chem.</journal>
+      <location volume="16" issue="7" pages="977-89"/>
+      <year>2011</year>
+    </publication>
+  </pub_list>
+  <member_list>
+    <db_xref protein_count="2379" db="PFAM" dbkey="PF00131" name="Metallothio"/>
+    <db_xref protein_count="1987" db="PRINTS" dbkey="PR00860" name="MTVERTEBRATE"/>
+    <db_xref protein_count="2199" db="PANTHER" dbkey="PTHR23299" name=""/>
+  </member_list>
+  <external_doc_list>
+    <db_xref db="PROSITEDOC" dbkey="PDOC00180"/>
+    <db_xref db="REACTOME" dbkey="R-BTA-5661231"/>
+    <db_xref db="REACTOME" dbkey="R-CFA-5661231"/>
+    <db_xref db="REACTOME" dbkey="R-DRE-5661231"/>
+    <db_xref db="REACTOME" dbkey="R-GGA-5661231"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-5661231"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-877300"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-5661231"/>
+    <db_xref db="REACTOME" dbkey="R-RNO-5661231"/>
+    <db_xref db="REACTOME" dbkey="R-SSC-5661231"/>
+  </external_doc_list>
+  <structure_db_links>
+    <db_xref db="PDB" dbkey="1dfs"/>
+    <db_xref db="PDB" dbkey="1dft"/>
+    <db_xref db="PDB" dbkey="1ji9"/>
+    <db_xref db="PDB" dbkey="1m0g"/>
+    <db_xref db="PDB" dbkey="1mhu"/>
+    <db_xref db="PDB" dbkey="1mrb"/>
+    <db_xref db="PDB" dbkey="1mrt"/>
+    <db_xref db="PDB" dbkey="2f5h"/>
+    <db_xref db="PDB" dbkey="2fj4"/>
+    <db_xref db="PDB" dbkey="2fj5"/>
+    <db_xref db="PDB" dbkey="2mhu"/>
+    <db_xref db="PDB" dbkey="2mrb"/>
+    <db_xref db="PDB" dbkey="2mrt"/>
+    <db_xref db="PDB" dbkey="4mt2"/>
+  </structure_db_links>
+  <taxonomy_distribution>
+    <taxon_data name="Vertebrata" proteins_count="2387"/>
+  </taxonomy_distribution>
+  <key_species>
+    <taxon_data name="Danio rerio" proteins_count="4"/>
+    <taxon_data name="Homo sapiens" proteins_count="35"/>
+    <taxon_data name="Mus musculus" proteins_count="13"/>
+    <taxon_data name="Rattus norvegicus" proteins_count="13"/>
+  </key_species>
+</interpro>
+<interpro id="IPR000007" protein_count="14001" short_name="Tubby_C" type="Domain" is-llm="false" is-llm-reviewed="false">
+  <name>Tubby, C-terminal</name>
+  <abstract is-llm="false" is-llm-reviewed="false">
+    <p>
+      Tubby, an autosomal recessive mutation, mapping to mouse chromosome 7, was recently found to be the result of a splicing defect in a novel gene with unknown function. This mutation maps to the tub gene [
+      <cite idref="PUB00000932"/>
+      , 
+      <cite idref="PUB00004232"/>
+      ]. The mouse tubby mutation is the cause of maturity-onset obesity, insulin resistance and sensory deficits. By contrast with the rapid juvenile-onset weight gain seen in diabetes (db) and obese (ob) mice, obesity in tubby mice develops gradually, and strongly resembles the late-onset obesity observed in the human population. Excessive deposition of adipose tissue culminates in a two-fold increase of body weight. Tubby mice also suffer retinal degeneration and neurosensory hearing loss. The tripartite character of the tubby phenotype is highly similar to human obesity syndromes, such as Alstrom and Bardet-Biedl. Although these phenotypes indicate a vital role for tubby proteins, no biochemical function has yet been ascribed to any family member [
+      <cite idref="PUB00007281"/>
+      ], although it has been suggested that the phenotypic features of tubby mice may be the result of cellular apoptosis triggered by expression of the mutated tub gene. TUB is the founding-member of the tubby-like proteins, the TULPs. TULPs are found in multicellular organisms from both the plant and animal kingdoms. Ablation of members of this protein family cause disease phenotypes that are indicative of their importance in nervous-system function and development [
+      <cite idref="PUB00014197"/>
+      ].
+    </p>
+    
+
+
+    <p>
+      Mammalian TUB is a hydrophilic protein of ~500 residues. The N-terminal (
+      <db_xref db="INTERPRO" dbkey="IPR005398"/>
+      ) portion of the protein is conserved neither in length nor sequence, but, in TUB, contains the nuclear localisation signal and may have transcriptional-activation activity. The C-terminal 250 residues are highly conserved. The C-terminal extremity contains a cysteine residue that might play an important role in the normal functioning of these proteins. The crystal structure of the C-terminal core domain from mouse tubby has been determined to 1.9A resolution. This domain is arranged as a 12-stranded, all anti-parallel, closed β-barrel that surrounds a central α helix, (which is at the extreme carboxyl terminus of the protein) that forms most of the hydrophobic core. Structural analyses suggest that TULPs constitute a unique family of bipartite transcription factors [
+      <cite idref="PUB00007281"/>
+      ].
+    </p>
+  </abstract>
+  <pub_list>
+    <publication id="PUB00000932">
+      <author_list>Kleyn PW, Fan W, Kovats SG, Lee JJ, Pulido JC, Wu Y, Berkemeier LR, Misumi DJ, Holmgren L, Charlat O, Woolf EA, Tayber O, Brody T, Shu P, Hawkins F, Kennedy B, Baldini L, Ebeling C, Alperin GD, Deeds J, Lakey ND, Culpepper J, Chen H, Glucksmann-Kuis MA, Carlson GA, Duyk GM, Moore KJ.</author_list>
+      <title>Identification and characterization of the mouse obesity gene tubby: a member of a novel gene family.</title>
+      <db_xref db="PUBMED" dbkey="8612280"/>
+      <journal>Cell</journal>
+      <location volume="85" issue="2" pages="281-90"/>
+      <year>1996</year>
+    </publication>
+    <publication id="PUB00004232">
+      <author_list>Noben-Trauth K, Naggert JK, North MA, Nishina PM.</author_list>
+      <title>A candidate gene for the mouse mutation tubby.</title>
+      <db_xref db="PUBMED" dbkey="8606774"/>
+      <journal>Nature</journal>
+      <location volume="380" issue="6574" pages="534-8"/>
+      <year>1996</year>
+    </publication>
+    <publication id="PUB00007281">
+      <author_list>Boggon TJ, Shan WS, Santagata S, Myers SC, Shapiro L.</author_list>
+      <title>Implication of tubby proteins as transcription factors by structure-based functional analysis.</title>
+      <db_xref db="PUBMED" dbkey="10591637"/>
+      <journal>Science</journal>
+      <location volume="286" issue="5447" pages="2119-25"/>
+      <year>1999</year>
+    </publication>
+    <publication id="PUB00014197">
+      <author_list>Carroll K, Gomez C, Shapiro L.</author_list>
+      <title>Tubby proteins: the plot thickens.</title>
+      <db_xref db="PUBMED" dbkey="14708010"/>
+      <journal>Nat. Rev. Mol. Cell Biol.</journal>
+      <location volume="5" issue="1" pages="55-63"/>
+      <year>2004</year>
+    </publication>
+  </pub_list>
+  <member_list>
+    <db_xref protein_count="14000" db="PFAM" dbkey="PF01167" name="Tub"/>
+    <db_xref protein_count="11633" db="PRINTS" dbkey="PR01573" name="SUPERTUBBY"/>
+  </member_list>
+  <external_doc_list>
+    <db_xref db="PROSITEDOC" dbkey="PDOC00923"/>
+    <db_xref db="REACTOME" dbkey="R-CEL-5610787"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-5610787"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-8951664"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-5610787"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-8951664"/>
+  </external_doc_list>
+  <structure_db_links>
+    <db_xref db="PDB" dbkey="1c8z"/>
+    <db_xref db="PDB" dbkey="1i7e"/>
+    <db_xref db="PDB" dbkey="1s31"/>
+    <db_xref db="PDB" dbkey="2fim"/>
+    <db_xref db="PDB" dbkey="3c5n"/>
+    <db_xref db="PDB" dbkey="8fh3"/>
+  </structure_db_links>
+  <taxonomy_distribution>
+    <taxon_data name="Chitinophagaceae bacterium" proteins_count="1"/>
+    <taxon_data name="Eukaryota" proteins_count="13993"/>
+    <taxon_data name="archaeon" proteins_count="5"/>
+    <taxon_data name="marine metagenome" proteins_count="2"/>
+  </taxonomy_distribution>
+  <key_species>
+    <taxon_data name="Arabidopsis thaliana" proteins_count="53"/>
+    <taxon_data name="Caenorhabditis elegans" proteins_count="3"/>
+    <taxon_data name="Danio rerio" proteins_count="20"/>
+    <taxon_data name="Drosophila melanogaster" proteins_count="5"/>
+    <taxon_data name="Homo sapiens" proteins_count="22"/>
+    <taxon_data name="Mus musculus" proteins_count="20"/>
+    <taxon_data name="Oryza sativa subsp. japonica" proteins_count="34"/>
+    <taxon_data name="Rattus norvegicus" proteins_count="19"/>
+    <taxon_data name="Zea mays" proteins_count="85"/>
+  </key_species>
+</interpro>
+<interpro id="IPR000008" protein_count="317966" short_name="C2_dom" type="Domain" is-llm="false" is-llm-reviewed="false">
+  <name>C2 domain</name>
+  <abstract is-llm="false" is-llm-reviewed="false">
+    <p>
+      The C2 domain is a Ca
+      <sup>2+</sup>
+      -dependent membrane-targeting module found in many cellular proteins involved in signal transduction or membrane trafficking. C2 domains are unique among membrane targeting domains in that they show wide range of lipid selectivity for the major components of cell membranes, including phosphatidylserine and phosphatidylcholine. This C2 domain is about 116 amino-acid residues and is located between the two copies of the C1 domain in Protein Kinase C and the protein kinase catalytic domain [
+      <cite idref="PUB00081923"/>
+      ]. Regions with significant homology [
+      <cite idref="PUB00002925"/>
+      ] to the C2-domain have been found in many proteins. The C2 domain is thought to be involved in calcium-dependent phospholipid binding [
+      <cite idref="PUB00002815"/>
+      ] and in membrane targetting processes such as subcellular localisation.
+    </p>
+    
+
+
+    <p>
+      The 3D structure of the C2 domain of synaptotagmin has been reported [
+      <cite idref="PUB00000918"/>
+      ], the domain forms an eight-stranded β-sandwich constructed around a conserved 4-stranded motif, designated a C2 key [
+      <cite idref="PUB00000918"/>
+      ]. Calcium binds in a cup-shaped depression formed by the N- and C-terminal loops of the C2-key motif. Structural analyses of several C2 domains have shown them to consist of similar ternary structures in which three Ca
+      <sup>2+</sup>
+      -binding loops are located at the end of an 8 stranded antiparallel β-sandwich.
+    </p>
+  </abstract>
+  <pub_list>
+    <publication id="PUB00000918">
+      <author_list>Sutton RB, Davletov BA, Berghuis AM, Sudhof TC, Sprang SR.</author_list>
+      <title>Structure of the first C2 domain of synaptotagmin I: a novel Ca2+/phospholipid-binding fold.</title>
+      <db_xref db="PUBMED" dbkey="7697723"/>
+      <journal>Cell</journal>
+      <location volume="80" issue="6" pages="929-38"/>
+      <year>1995</year>
+    </publication>
+    <publication id="PUB00002815">
+      <author_list>Davletov BA, Sudhof TC.</author_list>
+      <title>A single C2 domain from synaptotagmin I is sufficient for high affinity Ca2+/phospholipid binding.</title>
+      <db_xref db="PUBMED" dbkey="8253763"/>
+      <journal>J. Biol. Chem.</journal>
+      <location volume="268" issue="35" pages="26386-90"/>
+      <year>1993</year>
+    </publication>
+    <publication id="PUB00002925">
+      <author_list>Brose N, Hofmann K, Hata Y, Sudhof TC.</author_list>
+      <title>Mammalian homologues of Caenorhabditis elegans unc-13 gene define novel family of C2-domain proteins.</title>
+      <db_xref db="PUBMED" dbkey="7559667"/>
+      <journal>J. Biol. Chem.</journal>
+      <location volume="270" issue="42" pages="25273-80"/>
+      <year>1995</year>
+    </publication>
+    <publication id="PUB00081923">
+      <author_list>Farah CA, Sossin WS.</author_list>
+      <title>The role of C2 domains in PKC signaling.</title>
+      <db_xref db="PUBMED" dbkey="22453964"/>
+      <journal>Adv. Exp. Med. Biol.</journal>
+      <location volume="740" pages="663-83"/>
+      <year>2012</year>
+    </publication>
+  </pub_list>
+  <child_list>
+    <rel_ref ipr_ref="IPR014705"/>
+    <rel_ref ipr_ref="IPR028692"/>
+    <rel_ref ipr_ref="IPR030537"/>
+    <rel_ref ipr_ref="IPR033884"/>
+    <rel_ref ipr_ref="IPR037300"/>
+    <rel_ref ipr_ref="IPR037301"/>
+    <rel_ref ipr_ref="IPR037302"/>
+    <rel_ref ipr_ref="IPR037303"/>
+    <rel_ref ipr_ref="IPR037720"/>
+    <rel_ref ipr_ref="IPR037722"/>
+    <rel_ref ipr_ref="IPR037723"/>
+    <rel_ref ipr_ref="IPR037724"/>
+    <rel_ref ipr_ref="IPR037725"/>
+    <rel_ref ipr_ref="IPR037726"/>
+    <rel_ref ipr_ref="IPR037732"/>
+    <rel_ref ipr_ref="IPR037733"/>
+    <rel_ref ipr_ref="IPR037741"/>
+    <rel_ref ipr_ref="IPR037749"/>
+    <rel_ref ipr_ref="IPR037752"/>
+    <rel_ref ipr_ref="IPR037756"/>
+    <rel_ref ipr_ref="IPR037761"/>
+    <rel_ref ipr_ref="IPR037762"/>
+    <rel_ref ipr_ref="IPR037765"/>
+    <rel_ref ipr_ref="IPR037767"/>
+    <rel_ref ipr_ref="IPR037768"/>
+    <rel_ref ipr_ref="IPR037772"/>
+    <rel_ref ipr_ref="IPR037775"/>
+    <rel_ref ipr_ref="IPR037778"/>
+    <rel_ref ipr_ref="IPR037784"/>
+    <rel_ref ipr_ref="IPR037785"/>
+    <rel_ref ipr_ref="IPR037786"/>
+    <rel_ref ipr_ref="IPR037788"/>
+    <rel_ref ipr_ref="IPR037791"/>
+    <rel_ref ipr_ref="IPR037795"/>
+    <rel_ref ipr_ref="IPR041847"/>
+    <rel_ref ipr_ref="IPR043567"/>
+    <rel_ref ipr_ref="IPR044750"/>
+    <rel_ref ipr_ref="IPR047022"/>
+    <rel_ref ipr_ref="IPR047255"/>
+    <rel_ref ipr_ref="IPR047257"/>
+    <rel_ref ipr_ref="IPR047258"/>
+    <rel_ref ipr_ref="IPR047897"/>
+  </child_list>
+  <member_list>
+    <db_xref protein_count="291331" db="PFAM" dbkey="PF00168" name="C2"/>
+    <db_xref protein_count="49495" db="PRINTS" dbkey="PR00360" name="C2DOMAIN"/>
+    <db_xref protein_count="309309" db="PROFILE" dbkey="PS50004" name="C2"/>
+    <db_xref protein_count="277702" db="SMART" dbkey="SM00239" name="C2"/>
+  </member_list>
+  <external_doc_list>
+    <db_xref db="EC" dbkey="2.3.2.26"/>
+    <db_xref db="EC" dbkey="2.3.2.36"/>
+    <db_xref db="EC" dbkey="2.7.1.137"/>
+    <db_xref db="EC" dbkey="2.7.1.153"/>
+    <db_xref db="EC" dbkey="2.7.1.154"/>
+    <db_xref db="EC" dbkey="2.7.10.2"/>
+    <db_xref db="EC" dbkey="2.7.11.1"/>
+    <db_xref db="EC" dbkey="2.7.11.13"/>
+    <db_xref db="EC" dbkey="3.1.1.4"/>
+    <db_xref db="EC" dbkey="3.1.1.5"/>
+    <db_xref db="EC" dbkey="3.1.3.66"/>
+    <db_xref db="EC" dbkey="3.1.4.11"/>
+    <db_xref db="EC" dbkey="3.1.4.4"/>
+    <db_xref db="EC" dbkey="3.4.22.-"/>
+    <db_xref db="EC" dbkey="4.1.1.65"/>
+    <db_xref db="GP" dbkey="GenProp1511"/>
+    <db_xref db="GP" dbkey="GenProp1548"/>
+    <db_xref db="GP" dbkey="GenProp1754"/>
+    <db_xref db="GP" dbkey="GenProp1758"/>
+    <db_xref db="METACYC" dbkey="PWY-3561"/>
+    <db_xref db="METACYC" dbkey="PWY-5669"/>
+    <db_xref db="METACYC" dbkey="PWY-6351"/>
+    <db_xref db="METACYC" dbkey="PWY-6352"/>
+    <db_xref db="METACYC" dbkey="PWY-6367"/>
+    <db_xref db="METACYC" dbkey="PWY-6368"/>
+    <db_xref db="METACYC" dbkey="PWY-6803"/>
+    <db_xref db="METACYC" dbkey="PWY-7039"/>
+    <db_xref db="METACYC" dbkey="PWY-7409"/>
+    <db_xref db="METACYC" dbkey="PWY-7416"/>
+    <db_xref db="METACYC" dbkey="PWY-7417"/>
+    <db_xref db="METACYC" dbkey="PWY-7511"/>
+    <db_xref db="METACYC" dbkey="PWY-7783"/>
+    <db_xref db="METACYC" dbkey="PWY-8051"/>
+    <db_xref db="METACYC" dbkey="PWY-8052"/>
+    <db_xref db="METACYC" dbkey="PWY-8053"/>
+    <db_xref db="METACYC" dbkey="PWY-8355"/>
+    <db_xref db="METACYC" dbkey="PWY-8356"/>
+    <db_xref db="METACYC" dbkey="PWY-8357"/>
+    <db_xref db="METACYC" dbkey="PWY-8395"/>
+    <db_xref db="METACYC" dbkey="PWY-8396"/>
+    <db_xref db="METACYC" dbkey="PWY-8397"/>
+    <db_xref db="METACYC" dbkey="PWY-8398"/>
+    <db_xref db="METACYC" dbkey="PWY-8399"/>
+    <db_xref db="METACYC" dbkey="PWY-8400"/>
+    <db_xref db="METACYC" dbkey="PWY-8410"/>
+    <db_xref db="METACYC" dbkey="PWY-8411"/>
+    <db_xref db="METACYC" dbkey="PWY-8412"/>
+    <db_xref db="METACYC" dbkey="PWY-8413"/>
+    <db_xref db="PROSITEDOC" dbkey="PDOC00380"/>
+    <db_xref db="REACTOME" dbkey="R-BTA-111995"/>
+    <db_xref db="REACTOME" dbkey="R-BTA-112043"/>
+    <db_xref db="REACTOME" dbkey="R-BTA-114516"/>
+    <db_xref db="REACTOME" dbkey="R-BTA-1169091"/>
+    <db_xref db="REACTOME" dbkey="R-BTA-1482788"/>
+    <db_xref db="REACTOME" dbkey="R-BTA-1482798"/>
+    <db_xref db="REACTOME" dbkey="R-BTA-1482801"/>
+    <db_xref db="REACTOME" dbkey="R-BTA-1482839"/>
+    <db_xref db="REACTOME" dbkey="R-BTA-1482922"/>
+    <db_xref db="REACTOME" dbkey="R-BTA-1482925"/>
+    <db_xref db="REACTOME" dbkey="R-BTA-1483115"/>
+    <db_xref db="REACTOME" dbkey="R-BTA-1483166"/>
+    <db_xref db="REACTOME" dbkey="R-BTA-1483206"/>
+    <db_xref db="REACTOME" dbkey="R-BTA-181429"/>
+    <db_xref db="REACTOME" dbkey="R-BTA-181430"/>
+    <db_xref db="REACTOME" dbkey="R-BTA-1855204"/>
+    <db_xref db="REACTOME" dbkey="R-BTA-193648"/>
+    <db_xref db="REACTOME" dbkey="R-BTA-210500"/>
+    <db_xref db="REACTOME" dbkey="R-BTA-212676"/>
+    <db_xref db="REACTOME" dbkey="R-BTA-2142753"/>
+    <db_xref db="REACTOME" dbkey="R-BTA-264642"/>
+    <db_xref db="REACTOME" dbkey="R-BTA-399997"/>
+    <db_xref db="REACTOME" dbkey="R-BTA-4086398"/>
+    <db_xref db="REACTOME" dbkey="R-BTA-416476"/>
+    <db_xref db="REACTOME" dbkey="R-BTA-416482"/>
+    <db_xref db="REACTOME" dbkey="R-BTA-416993"/>
+    <db_xref db="REACTOME" dbkey="R-BTA-418217"/>
+    <db_xref db="REACTOME" dbkey="R-BTA-418592"/>
+    <db_xref db="REACTOME" dbkey="R-BTA-432142"/>
+    <db_xref db="REACTOME" dbkey="R-BTA-434316"/>
+    <db_xref db="REACTOME" dbkey="R-BTA-4419969"/>
+    <db_xref db="REACTOME" dbkey="R-BTA-500657"/>
+    <db_xref db="REACTOME" dbkey="R-BTA-5099900"/>
+    <db_xref db="REACTOME" dbkey="R-BTA-5218921"/>
+    <db_xref db="REACTOME" dbkey="R-BTA-5625740"/>
+    <db_xref db="REACTOME" dbkey="R-BTA-5625886"/>
+    <db_xref db="REACTOME" dbkey="R-BTA-5668599"/>
+    <db_xref db="REACTOME" dbkey="R-BTA-6798695"/>
+    <db_xref db="REACTOME" dbkey="R-BTA-6811436"/>
+    <db_xref db="REACTOME" dbkey="R-BTA-76005"/>
+    <db_xref db="REACTOME" dbkey="R-BTA-8856825"/>
+    <db_xref db="REACTOME" dbkey="R-BTA-8856828"/>
+    <db_xref db="REACTOME" dbkey="R-BTA-888590"/>
+    <db_xref db="REACTOME" dbkey="R-BTA-8980692"/>
+    <db_xref db="REACTOME" dbkey="R-BTA-9013106"/>
+    <db_xref db="REACTOME" dbkey="R-BTA-9013148"/>
+    <db_xref db="REACTOME" dbkey="R-BTA-9013149"/>
+    <db_xref db="REACTOME" dbkey="R-BTA-9013404"/>
+    <db_xref db="REACTOME" dbkey="R-BTA-9013423"/>
+    <db_xref db="REACTOME" dbkey="R-BTA-9020702"/>
+    <db_xref db="REACTOME" dbkey="R-CEL-111933"/>
+    <db_xref db="REACTOME" dbkey="R-CEL-112043"/>
+    <db_xref db="REACTOME" dbkey="R-CEL-114508"/>
+    <db_xref db="REACTOME" dbkey="R-CEL-114516"/>
+    <db_xref db="REACTOME" dbkey="R-CEL-1169091"/>
+    <db_xref db="REACTOME" dbkey="R-CEL-1253288"/>
+    <db_xref db="REACTOME" dbkey="R-CEL-1433559"/>
+    <db_xref db="REACTOME" dbkey="R-CEL-1489509"/>
+    <db_xref db="REACTOME" dbkey="R-CEL-181429"/>
+    <db_xref db="REACTOME" dbkey="R-CEL-181430"/>
+    <db_xref db="REACTOME" dbkey="R-CEL-1855204"/>
+    <db_xref db="REACTOME" dbkey="R-CEL-2029485"/>
+    <db_xref db="REACTOME" dbkey="R-CEL-210500"/>
+    <db_xref db="REACTOME" dbkey="R-CEL-212676"/>
+    <db_xref db="REACTOME" dbkey="R-CEL-2179392"/>
+    <db_xref db="REACTOME" dbkey="R-CEL-264642"/>
+    <db_xref db="REACTOME" dbkey="R-CEL-2672351"/>
+    <db_xref db="REACTOME" dbkey="R-CEL-3000170"/>
+    <db_xref db="REACTOME" dbkey="R-CEL-399997"/>
+    <db_xref db="REACTOME" dbkey="R-CEL-416476"/>
+    <db_xref db="REACTOME" dbkey="R-CEL-418594"/>
+    <db_xref db="REACTOME" dbkey="R-CEL-418597"/>
+    <db_xref db="REACTOME" dbkey="R-CEL-4419969"/>
+    <db_xref db="REACTOME" dbkey="R-CEL-5099900"/>
+    <db_xref db="REACTOME" dbkey="R-CEL-5218921"/>
+    <db_xref db="REACTOME" dbkey="R-CEL-6798695"/>
+    <db_xref db="REACTOME" dbkey="R-CEL-76005"/>
+    <db_xref db="REACTOME" dbkey="R-CEL-8856825"/>
+    <db_xref db="REACTOME" dbkey="R-CEL-8856828"/>
+    <db_xref db="REACTOME" dbkey="R-CEL-888590"/>
+    <db_xref db="REACTOME" dbkey="R-CEL-8948751"/>
+    <db_xref db="REACTOME" dbkey="R-CEL-9013148"/>
+    <db_xref db="REACTOME" dbkey="R-CEL-9013149"/>
+    <db_xref db="REACTOME" dbkey="R-CEL-9013404"/>
+    <db_xref db="REACTOME" dbkey="R-CEL-9013405"/>
+    <db_xref db="REACTOME" dbkey="R-CEL-9013406"/>
+    <db_xref db="REACTOME" dbkey="R-CEL-9013409"/>
+    <db_xref db="REACTOME" dbkey="R-CEL-9013420"/>
+    <db_xref db="REACTOME" dbkey="R-CEL-9013423"/>
+    <db_xref db="REACTOME" dbkey="R-CEL-9035034"/>
+    <db_xref db="REACTOME" dbkey="R-CEL-9668328"/>
+    <db_xref db="REACTOME" dbkey="R-CEL-983168"/>
+    <db_xref db="REACTOME" dbkey="R-DDI-112043"/>
+    <db_xref db="REACTOME" dbkey="R-DDI-114508"/>
+    <db_xref db="REACTOME" dbkey="R-DDI-114516"/>
+    <db_xref db="REACTOME" dbkey="R-DDI-114604"/>
+    <db_xref db="REACTOME" dbkey="R-DDI-1169091"/>
+    <db_xref db="REACTOME" dbkey="R-DDI-1169408"/>
+    <db_xref db="REACTOME" dbkey="R-DDI-1257604"/>
+    <db_xref db="REACTOME" dbkey="R-DDI-1358803"/>
+    <db_xref db="REACTOME" dbkey="R-DDI-1474151"/>
+    <db_xref db="REACTOME" dbkey="R-DDI-1483206"/>
+    <db_xref db="REACTOME" dbkey="R-DDI-1489509"/>
+    <db_xref db="REACTOME" dbkey="R-DDI-165158"/>
+    <db_xref db="REACTOME" dbkey="R-DDI-165159"/>
+    <db_xref db="REACTOME" dbkey="R-DDI-165181"/>
+    <db_xref db="REACTOME" dbkey="R-DDI-1855204"/>
+    <db_xref db="REACTOME" dbkey="R-DDI-198323"/>
+    <db_xref db="REACTOME" dbkey="R-DDI-198693"/>
+    <db_xref db="REACTOME" dbkey="R-DDI-199418"/>
+    <db_xref db="REACTOME" dbkey="R-DDI-202424"/>
+    <db_xref db="REACTOME" dbkey="R-DDI-202433"/>
+    <db_xref db="REACTOME" dbkey="R-DDI-2029485"/>
+    <db_xref db="REACTOME" dbkey="R-DDI-203615"/>
+    <db_xref db="REACTOME" dbkey="R-DDI-2179392"/>
+    <db_xref db="REACTOME" dbkey="R-DDI-2871837"/>
+    <db_xref db="REACTOME" dbkey="R-DDI-389357"/>
+    <db_xref db="REACTOME" dbkey="R-DDI-389513"/>
+    <db_xref db="REACTOME" dbkey="R-DDI-392451"/>
+    <db_xref db="REACTOME" dbkey="R-DDI-399997"/>
+    <db_xref db="REACTOME" dbkey="R-DDI-416476"/>
+    <db_xref db="REACTOME" dbkey="R-DDI-434316"/>
+    <db_xref db="REACTOME" dbkey="R-DDI-4419969"/>
+    <db_xref db="REACTOME" dbkey="R-DDI-450385"/>
+    <db_xref db="REACTOME" dbkey="R-DDI-5218920"/>
+    <db_xref db="REACTOME" dbkey="R-DDI-5218921"/>
+    <db_xref db="REACTOME" dbkey="R-DDI-5607764"/>
+    <db_xref db="REACTOME" dbkey="R-DDI-5625740"/>
+    <db_xref db="REACTOME" dbkey="R-DDI-5625886"/>
+    <db_xref db="REACTOME" dbkey="R-DDI-5628897"/>
+    <db_xref db="REACTOME" dbkey="R-DDI-5658442"/>
+    <db_xref db="REACTOME" dbkey="R-DDI-5673000"/>
+    <db_xref db="REACTOME" dbkey="R-DDI-5675221"/>
+    <db_xref db="REACTOME" dbkey="R-DDI-6798695"/>
+    <db_xref db="REACTOME" dbkey="R-DDI-6804757"/>
+    <db_xref db="REACTOME" dbkey="R-DDI-6804758"/>
+    <db_xref db="REACTOME" dbkey="R-DDI-6811558"/>
+    <db_xref db="REACTOME" dbkey="R-DDI-76005"/>
+    <db_xref db="REACTOME" dbkey="R-DDI-8876198"/>
+    <db_xref db="REACTOME" dbkey="R-DDI-8948751"/>
+    <db_xref db="REACTOME" dbkey="R-DDI-9009391"/>
+    <db_xref db="REACTOME" dbkey="R-DDI-9013148"/>
+    <db_xref db="REACTOME" dbkey="R-DDI-9013149"/>
+    <db_xref db="REACTOME" dbkey="R-DDI-9013406"/>
+    <db_xref db="REACTOME" dbkey="R-DDI-9013423"/>
+    <db_xref db="REACTOME" dbkey="R-DDI-9013424"/>
+    <db_xref db="REACTOME" dbkey="R-DDI-9031628"/>
+    <db_xref db="REACTOME" dbkey="R-DDI-9634635"/>
+    <db_xref db="REACTOME" dbkey="R-DDI-983695"/>
+    <db_xref db="REACTOME" dbkey="R-DDI-9841251"/>
+    <db_xref db="REACTOME" dbkey="R-DDI-9856530"/>
+    <db_xref db="REACTOME" dbkey="R-DME-111933"/>
+    <db_xref db="REACTOME" dbkey="R-DME-112043"/>
+    <db_xref db="REACTOME" dbkey="R-DME-114508"/>
+    <db_xref db="REACTOME" dbkey="R-DME-114516"/>
+    <db_xref db="REACTOME" dbkey="R-DME-1169091"/>
+    <db_xref db="REACTOME" dbkey="R-DME-1169408"/>
+    <db_xref db="REACTOME" dbkey="R-DME-1250196"/>
+    <db_xref db="REACTOME" dbkey="R-DME-1253288"/>
+    <db_xref db="REACTOME" dbkey="R-DME-1433559"/>
+    <db_xref db="REACTOME" dbkey="R-DME-1489509"/>
+    <db_xref db="REACTOME" dbkey="R-DME-181429"/>
+    <db_xref db="REACTOME" dbkey="R-DME-181430"/>
+    <db_xref db="REACTOME" dbkey="R-DME-1855204"/>
+    <db_xref db="REACTOME" dbkey="R-DME-201451"/>
+    <db_xref db="REACTOME" dbkey="R-DME-2028269"/>
+    <db_xref db="REACTOME" dbkey="R-DME-2029485"/>
+    <db_xref db="REACTOME" dbkey="R-DME-210500"/>
+    <db_xref db="REACTOME" dbkey="R-DME-2122948"/>
+    <db_xref db="REACTOME" dbkey="R-DME-212676"/>
+    <db_xref db="REACTOME" dbkey="R-DME-2173788"/>
+    <db_xref db="REACTOME" dbkey="R-DME-2173791"/>
+    <db_xref db="REACTOME" dbkey="R-DME-2173795"/>
+    <db_xref db="REACTOME" dbkey="R-DME-2179392"/>
+    <db_xref db="REACTOME" dbkey="R-DME-264642"/>
+    <db_xref db="REACTOME" dbkey="R-DME-3000170"/>
+    <db_xref db="REACTOME" dbkey="R-DME-399997"/>
+    <db_xref db="REACTOME" dbkey="R-DME-4086398"/>
+    <db_xref db="REACTOME" dbkey="R-DME-416476"/>
+    <db_xref db="REACTOME" dbkey="R-DME-416993"/>
+    <db_xref db="REACTOME" dbkey="R-DME-418217"/>
+    <db_xref db="REACTOME" dbkey="R-DME-434316"/>
+    <db_xref db="REACTOME" dbkey="R-DME-4419969"/>
+    <db_xref db="REACTOME" dbkey="R-DME-450520"/>
+    <db_xref db="REACTOME" dbkey="R-DME-4608870"/>
+    <db_xref db="REACTOME" dbkey="R-DME-4641257"/>
+    <db_xref db="REACTOME" dbkey="R-DME-500657"/>
+    <db_xref db="REACTOME" dbkey="R-DME-5218921"/>
+    <db_xref db="REACTOME" dbkey="R-DME-5625740"/>
+    <db_xref db="REACTOME" dbkey="R-DME-5625886"/>
+    <db_xref db="REACTOME" dbkey="R-DME-5632684"/>
+    <db_xref db="REACTOME" dbkey="R-DME-5658442"/>
+    <db_xref db="REACTOME" dbkey="R-DME-5689880"/>
+    <db_xref db="REACTOME" dbkey="R-DME-76005"/>
+    <db_xref db="REACTOME" dbkey="R-DME-8856825"/>
+    <db_xref db="REACTOME" dbkey="R-DME-8856828"/>
+    <db_xref db="REACTOME" dbkey="R-DME-888590"/>
+    <db_xref db="REACTOME" dbkey="R-DME-8939236"/>
+    <db_xref db="REACTOME" dbkey="R-DME-8941858"/>
+    <db_xref db="REACTOME" dbkey="R-DME-8948747"/>
+    <db_xref db="REACTOME" dbkey="R-DME-8948751"/>
+    <db_xref db="REACTOME" dbkey="R-DME-8980692"/>
+    <db_xref db="REACTOME" dbkey="R-DME-9013026"/>
+    <db_xref db="REACTOME" dbkey="R-DME-9013148"/>
+    <db_xref db="REACTOME" dbkey="R-DME-9013149"/>
+    <db_xref db="REACTOME" dbkey="R-DME-9013404"/>
+    <db_xref db="REACTOME" dbkey="R-DME-9013406"/>
+    <db_xref db="REACTOME" dbkey="R-DME-9013409"/>
+    <db_xref db="REACTOME" dbkey="R-DME-9013420"/>
+    <db_xref db="REACTOME" dbkey="R-DME-9013423"/>
+    <db_xref db="REACTOME" dbkey="R-DME-9035034"/>
+    <db_xref db="REACTOME" dbkey="R-DME-9668328"/>
+    <db_xref db="REACTOME" dbkey="R-DME-983168"/>
+    <db_xref db="REACTOME" dbkey="R-DME-9856530"/>
+    <db_xref db="REACTOME" dbkey="R-DRE-111995"/>
+    <db_xref db="REACTOME" dbkey="R-DRE-114516"/>
+    <db_xref db="REACTOME" dbkey="R-DRE-1169091"/>
+    <db_xref db="REACTOME" dbkey="R-DRE-1482788"/>
+    <db_xref db="REACTOME" dbkey="R-DRE-1482798"/>
+    <db_xref db="REACTOME" dbkey="R-DRE-1482801"/>
+    <db_xref db="REACTOME" dbkey="R-DRE-1482839"/>
+    <db_xref db="REACTOME" dbkey="R-DRE-1482922"/>
+    <db_xref db="REACTOME" dbkey="R-DRE-1482925"/>
+    <db_xref db="REACTOME" dbkey="R-DRE-1483115"/>
+    <db_xref db="REACTOME" dbkey="R-DRE-1483166"/>
+    <db_xref db="REACTOME" dbkey="R-DRE-1855204"/>
+    <db_xref db="REACTOME" dbkey="R-DRE-201451"/>
+    <db_xref db="REACTOME" dbkey="R-DRE-2142753"/>
+    <db_xref db="REACTOME" dbkey="R-DRE-2173788"/>
+    <db_xref db="REACTOME" dbkey="R-DRE-418592"/>
+    <db_xref db="REACTOME" dbkey="R-DRE-432142"/>
+    <db_xref db="REACTOME" dbkey="R-DRE-4419969"/>
+    <db_xref db="REACTOME" dbkey="R-DRE-4608870"/>
+    <db_xref db="REACTOME" dbkey="R-DRE-4641257"/>
+    <db_xref db="REACTOME" dbkey="R-DRE-5218921"/>
+    <db_xref db="REACTOME" dbkey="R-DRE-5625740"/>
+    <db_xref db="REACTOME" dbkey="R-DRE-5668599"/>
+    <db_xref db="REACTOME" dbkey="R-DRE-5689880"/>
+    <db_xref db="REACTOME" dbkey="R-DRE-6798695"/>
+    <db_xref db="REACTOME" dbkey="R-DRE-6811436"/>
+    <db_xref db="REACTOME" dbkey="R-DRE-76005"/>
+    <db_xref db="REACTOME" dbkey="R-DRE-8941858"/>
+    <db_xref db="REACTOME" dbkey="R-DRE-8980692"/>
+    <db_xref db="REACTOME" dbkey="R-DRE-983168"/>
+    <db_xref db="REACTOME" dbkey="R-DRE-9856530"/>
+    <db_xref db="REACTOME" dbkey="R-GGA-111995"/>
+    <db_xref db="REACTOME" dbkey="R-GGA-1482788"/>
+    <db_xref db="REACTOME" dbkey="R-GGA-1482798"/>
+    <db_xref db="REACTOME" dbkey="R-GGA-1482801"/>
+    <db_xref db="REACTOME" dbkey="R-GGA-1482839"/>
+    <db_xref db="REACTOME" dbkey="R-GGA-1482922"/>
+    <db_xref db="REACTOME" dbkey="R-GGA-1482925"/>
+    <db_xref db="REACTOME" dbkey="R-GGA-1483115"/>
+    <db_xref db="REACTOME" dbkey="R-GGA-1483166"/>
+    <db_xref db="REACTOME" dbkey="R-GGA-181430"/>
+    <db_xref db="REACTOME" dbkey="R-GGA-1855204"/>
+    <db_xref db="REACTOME" dbkey="R-GGA-2142753"/>
+    <db_xref db="REACTOME" dbkey="R-GGA-264642"/>
+    <db_xref db="REACTOME" dbkey="R-GGA-418592"/>
+    <db_xref db="REACTOME" dbkey="R-GGA-432142"/>
+    <db_xref db="REACTOME" dbkey="R-GGA-6811436"/>
+    <db_xref db="REACTOME" dbkey="R-GGA-8856825"/>
+    <db_xref db="REACTOME" dbkey="R-GGA-8856828"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-111465"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-111933"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-111995"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-112043"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-114508"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-114516"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-114604"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-114608"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-1169091"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-1169408"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-1236382"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-1250196"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-1251932"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-1253288"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-1433557"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-1433559"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-1445148"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-1474228"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-1482788"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-1482798"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-1482801"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-1482839"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-1482922"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-1482925"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-1483115"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-1483166"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-1483206"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-1489509"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-162588"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-1632852"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-166016"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-1660499"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-1660514"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-1660516"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-1660517"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-167021"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-168638"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-181429"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-181430"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-1839117"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-1855183"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-1855204"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-186763"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-193648"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-201451"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-201556"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-202424"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-202433"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-2028269"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-2029485"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-210500"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-210990"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-2122948"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-212676"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-212718"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-2142753"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-2173788"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-2173791"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-2173795"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-2179392"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-2424491"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-2514859"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-264642"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-2672351"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-2871796"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-2871809"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-2871837"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-3000170"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-373752"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-381038"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-3928662"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-399997"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-4086398"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-416476"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-416482"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-416993"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-418217"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-418592"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-418594"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-418597"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-418890"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-422356"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-432040"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-432142"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-432722"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-434316"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-4419969"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-445355"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-450520"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-4608870"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-4641257"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-4641258"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-500657"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-5099900"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-5218921"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-5250958"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-5250989"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-5607764"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-5610780"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-5610787"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-5620912"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-5621480"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-5625740"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-5625886"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-5632684"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-5637810"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-5654219"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-5654221"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-5654227"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-5654228"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-5655253"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-5655291"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-5655302"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-5655332"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-5658442"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-5668599"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-5675482"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-5689880"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-6794361"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-6798695"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-6811436"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-76005"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-877300"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-8849471"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-8853659"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-8854214"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-8856825"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-8856828"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-888590"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-8936459"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-8939236"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-8939246"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-8939902"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-8941858"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-8948751"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-8980692"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-9010642"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-9013026"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-9013106"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-9013148"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-9013149"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-9013404"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-9013405"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-9013406"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-9013408"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-9013409"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-9013420"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-9013423"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-9013507"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-9013508"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-9020702"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-9026527"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-9027277"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-9034793"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-9035034"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-936440"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-9609523"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-9648002"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-9662360"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-9664323"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-9664565"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-9665348"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-9665686"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-9668328"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-9679191"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-9679504"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-9680350"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-9692916"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-9694676"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-9696264"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-9696273"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-9717207"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-9725370"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-9725371"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-9754560"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-9755511"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-9768919"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-9824585"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-983168"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-983695"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-9845576"/>
+    <db_xref db="REACTOME" dbkey="R-HSA-9856530"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-111465"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-111933"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-111995"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-112043"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-114508"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-114516"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-114604"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-114608"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-1169091"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-1169408"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-1250196"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-1253288"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-1433557"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-1433559"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-1474228"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-1482788"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-1482798"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-1482801"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-1482839"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-1482922"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-1482925"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-1483115"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-1483166"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-1483206"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-1489509"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-1632852"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-166016"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-1660499"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-1660514"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-1660516"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-1660517"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-168638"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-181429"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-181430"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-1855183"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-1855204"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-186763"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-193648"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-201451"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-201556"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-202424"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-202433"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-2028269"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-2029485"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-210500"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-210990"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-2122948"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-212676"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-212718"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-2142753"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-2173788"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-2173791"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-2173795"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-2179392"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-2424491"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-264642"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-2672351"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-2871796"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-2871809"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-2871837"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-3000170"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-373752"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-3928662"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-399997"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-4086398"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-416476"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-416482"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-416993"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-418217"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-418592"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-432040"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-432142"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-432722"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-434316"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-4419969"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-450520"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-4608870"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-4641257"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-4641258"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-500657"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-5099900"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-5218921"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-5607764"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-5610780"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-5610787"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-5620912"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-5621480"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-5625740"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-5625886"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-5632684"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-5654219"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-5654221"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-5654227"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-5654228"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-5658442"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-5668599"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-5675482"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-5689880"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-6798695"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-6811436"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-76005"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-877300"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-8853659"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-8854214"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-8856825"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-8856828"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-888590"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-8939236"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-8941858"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-8948747"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-8948751"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-8980692"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-9013026"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-9013106"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-9013148"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-9013149"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-9013404"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-9013405"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-9013406"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-9013408"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-9013409"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-9013420"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-9013423"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-9013507"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-9020702"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-9026527"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-9034793"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-9035034"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-9648002"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-9668328"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-9824585"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-983168"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-983695"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-9845576"/>
+    <db_xref db="REACTOME" dbkey="R-MMU-9856530"/>
+    <db_xref db="REACTOME" dbkey="R-RNO-111465"/>
+    <db_xref db="REACTOME" dbkey="R-RNO-111933"/>
+    <db_xref db="REACTOME" dbkey="R-RNO-111995"/>
+    <db_xref db="REACTOME" dbkey="R-RNO-112043"/>
+    <db_xref db="REACTOME" dbkey="R-RNO-114508"/>
+    <db_xref db="REACTOME" dbkey="R-RNO-114516"/>
+    <db_xref db="REACTOME" dbkey="R-RNO-114604"/>
+    <db_xref db="REACTOME" dbkey="R-RNO-114608"/>
+    <db_xref db="REACTOME" dbkey="R-RNO-1169091"/>
+    <db_xref db="REACTOME" dbkey="R-RNO-1169408"/>
+    <db_xref db="REACTOME" dbkey="R-RNO-1250196"/>
+    <db_xref db="REACTOME" dbkey="R-RNO-1253288"/>
+    <db_xref db="REACTOME" dbkey="R-RNO-1433557"/>
+    <db_xref db="REACTOME" dbkey="R-RNO-1433559"/>
+    <db_xref db="REACTOME" dbkey="R-RNO-1474228"/>
+    <db_xref db="REACTOME" dbkey="R-RNO-1482788"/>
+    <db_xref db="REACTOME" dbkey="R-RNO-1482798"/>
+    <db_xref db="REACTOME" dbkey="R-RNO-1482801"/>
+    <db_xref db="REACTOME" dbkey="R-RNO-1482839"/>
+    <db_xref db="REACTOME" dbkey="R-RNO-1482922"/>
+    <db_xref db="REACTOME" dbkey="R-RNO-1482925"/>
+    <db_xref db="REACTOME" dbkey="R-RNO-1483115"/>
+    <db_xref db="REACTOME" dbkey="R-RNO-1483166"/>
+    <db_xref db="REACTOME" dbkey="R-RNO-1483206"/>
+    <db_xref db="REACTOME" dbkey="R-RNO-1489509"/>
+    <db_xref db="REACTOME" dbkey="R-RNO-166016"/>
+    <db_xref db="REACTOME" dbkey="R-RNO-1660499"/>
+    <db_xref db="REACTOME" dbkey="R-RNO-1660514"/>
+    <db_xref db="REACTOME" dbkey="R-RNO-1660516"/>
+    <db_xref db="REACTOME" dbkey="R-RNO-181429"/>
+    <db_xref db="REACTOME" dbkey="R-RNO-181430"/>
+    <db_xref db="REACTOME" dbkey="R-RNO-1855183"/>
+    <db_xref db="REACTOME" dbkey="R-RNO-1855204"/>
+    <db_xref db="REACTOME" dbkey="R-RNO-186763"/>
+    <db_xref db="REACTOME" dbkey="R-RNO-193648"/>
+    <db_xref db="REACTOME" dbkey="R-RNO-201556"/>
+    <db_xref db="REACTOME" dbkey="R-RNO-202424"/>
+    <db_xref db="REACTOME" dbkey="R-RNO-202433"/>
+    <db_xref db="REACTOME" dbkey="R-RNO-2029485"/>
+    <db_xref db="REACTOME" dbkey="R-RNO-210500"/>
+    <db_xref db="REACTOME" dbkey="R-RNO-210990"/>
+    <db_xref db="REACTOME" dbkey="R-RNO-212676"/>
+    <db_xref db="REACTOME" dbkey="R-RNO-212718"/>
+    <db_xref db="REACTOME" dbkey="R-RNO-2142753"/>
+    <db_xref db="REACTOME" dbkey="R-RNO-2179392"/>
+    <db_xref db="REACTOME" dbkey="R-RNO-2424491"/>
+    <db_xref db="REACTOME" dbkey="R-RNO-264642"/>
+    <db_xref db="REACTOME" dbkey="R-RNO-2871796"/>
+    <db_xref db="REACTOME" dbkey="R-RNO-2871809"/>
+    <db_xref db="REACTOME" dbkey="R-RNO-2871837"/>
+    <db_xref db="REACTOME" dbkey="R-RNO-3000170"/>
+    <db_xref db="REACTOME" dbkey="R-RNO-373752"/>
+    <db_xref db="REACTOME" dbkey="R-RNO-3928662"/>
+    <db_xref db="REACTOME" dbkey="R-RNO-399997"/>
+    <db_xref db="REACTOME" dbkey="R-RNO-416476"/>
+    <db_xref db="REACTOME" dbkey="R-RNO-416482"/>
+    <db_xref db="REACTOME" dbkey="R-RNO-416993"/>
+    <db_xref db="REACTOME" dbkey="R-RNO-418592"/>
+    <db_xref db="REACTOME" dbkey="R-RNO-432142"/>
+    <db_xref db="REACTOME" dbkey="R-RNO-434316"/>
+    <db_xref db="REACTOME" dbkey="R-RNO-4419969"/>
+    <db_xref db="REACTOME" dbkey="R-RNO-450520"/>
+    <db_xref db="REACTOME" dbkey="R-RNO-5099900"/>
+    <db_xref db="REACTOME" dbkey="R-RNO-5218921"/>
+    <db_xref db="REACTOME" dbkey="R-RNO-5607764"/>
+    <db_xref db="REACTOME" dbkey="R-RNO-5621480"/>
+    <db_xref db="REACTOME" dbkey="R-RNO-5625740"/>
+    <db_xref db="REACTOME" dbkey="R-RNO-5625886"/>
+    <db_xref db="REACTOME" dbkey="R-RNO-5654219"/>
+    <db_xref db="REACTOME" dbkey="R-RNO-5654221"/>
+    <db_xref db="REACTOME" dbkey="R-RNO-5654227"/>
+    <db_xref db="REACTOME" dbkey="R-RNO-5654228"/>
+    <db_xref db="REACTOME" dbkey="R-RNO-5658442"/>
+    <db_xref db="REACTOME" dbkey="R-RNO-5668599"/>
+    <db_xref db="REACTOME" dbkey="R-RNO-6798695"/>
+    <db_xref db="REACTOME" dbkey="R-RNO-6811436"/>
+    <db_xref db="REACTOME" dbkey="R-RNO-76005"/>
+    <db_xref db="REACTOME" dbkey="R-RNO-877300"/>
+    <db_xref db="REACTOME" dbkey="R-RNO-8849471"/>
+    <db_xref db="REACTOME" dbkey="R-RNO-8853659"/>
+    <db_xref db="REACTOME" dbkey="R-RNO-8856825"/>
+    <db_xref db="REACTOME" dbkey="R-RNO-8856828"/>
+    <db_xref db="REACTOME" dbkey="R-RNO-888590"/>
+    <db_xref db="REACTOME" dbkey="R-RNO-8948747"/>
+    <db_xref db="REACTOME" dbkey="R-RNO-8948751"/>
+    <db_xref db="REACTOME" dbkey="R-RNO-8980692"/>
+    <db_xref db="REACTOME" dbkey="R-RNO-9013026"/>
+    <db_xref db="REACTOME" dbkey="R-RNO-9013148"/>
+    <db_xref db="REACTOME" dbkey="R-RNO-9013149"/>
+    <db_xref db="REACTOME" dbkey="R-RNO-9013404"/>
+    <db_xref db="REACTOME" dbkey="R-RNO-9013405"/>
+    <db_xref db="REACTOME" dbkey="R-RNO-9013406"/>
+    <db_xref db="REACTOME" dbkey="R-RNO-9013408"/>
+    <db_xref db="REACTOME" dbkey="R-RNO-9013409"/>
+    <db_xref db="REACTOME" dbkey="R-RNO-9020702"/>
+    <db_xref db="REACTOME" dbkey="R-RNO-9026527"/>
+    <db_xref db="REACTOME" dbkey="R-RNO-9034793"/>
+    <db_xref db="REACTOME" dbkey="R-RNO-9035034"/>
+    <db_xref db="REACTOME" dbkey="R-RNO-9648002"/>
+    <db_xref db="REACTOME" dbkey="R-RNO-9668328"/>
+    <db_xref db="REACTOME" dbkey="R-RNO-983168"/>
+    <db_xref db="REACTOME" dbkey="R-RNO-983695"/>
+    <db_xref db="REACTOME" dbkey="R-RNO-9845576"/>
+    <db_xref db="REACTOME" dbkey="R-RNO-9856530"/>
+    <db_xref db="REACTOME" dbkey="R-SCE-112043"/>
+    <db_xref db="REACTOME" dbkey="R-SCE-114508"/>
+    <db_xref db="REACTOME" dbkey="R-SCE-114516"/>
+    <db_xref db="REACTOME" dbkey="R-SCE-114604"/>
+    <db_xref db="REACTOME" dbkey="R-SCE-1169091"/>
+    <db_xref db="REACTOME" dbkey="R-SCE-1257604"/>
+    <db_xref db="REACTOME" dbkey="R-SCE-1474151"/>
+    <db_xref db="REACTOME" dbkey="R-SCE-1489509"/>
+    <db_xref db="REACTOME" dbkey="R-SCE-165158"/>
+    <db_xref db="REACTOME" dbkey="R-SCE-1855204"/>
+    <db_xref db="REACTOME" dbkey="R-SCE-198693"/>
+    <db_xref db="REACTOME" dbkey="R-SCE-202424"/>
+    <db_xref db="REACTOME" dbkey="R-SCE-202433"/>
+    <db_xref db="REACTOME" dbkey="R-SCE-2029485"/>
+    <db_xref db="REACTOME" dbkey="R-SCE-203615"/>
+    <db_xref db="REACTOME" dbkey="R-SCE-2179392"/>
+    <db_xref db="REACTOME" dbkey="R-SCE-2871837"/>
+    <db_xref db="REACTOME" dbkey="R-SCE-389357"/>
+    <db_xref db="REACTOME" dbkey="R-SCE-389513"/>
+    <db_xref db="REACTOME" dbkey="R-SCE-392451"/>
+    <db_xref db="REACTOME" dbkey="R-SCE-399997"/>
+    <db_xref db="REACTOME" dbkey="R-SCE-416476"/>
+    <db_xref db="REACTOME" dbkey="R-SCE-434316"/>
+    <db_xref db="REACTOME" dbkey="R-SCE-4419969"/>
+    <db_xref db="REACTOME" dbkey="R-SCE-450385"/>
+    <db_xref db="REACTOME" dbkey="R-SCE-5218920"/>
+    <db_xref db="REACTOME" dbkey="R-SCE-5218921"/>
+    <db_xref db="REACTOME" dbkey="R-SCE-5607764"/>
+    <db_xref db="REACTOME" dbkey="R-SCE-5625740"/>
+    <db_xref db="REACTOME" dbkey="R-SCE-5625886"/>
+    <db_xref db="REACTOME" dbkey="R-SCE-5668599"/>
+    <db_xref db="REACTOME" dbkey="R-SCE-6798695"/>
+    <db_xref db="REACTOME" dbkey="R-SCE-6804757"/>
+    <db_xref db="REACTOME" dbkey="R-SCE-6811558"/>
+    <db_xref db="REACTOME" dbkey="R-SCE-76005"/>
+    <db_xref db="REACTOME" dbkey="R-SCE-8948751"/>
+    <db_xref db="REACTOME" dbkey="R-SCE-8980692"/>
+    <db_xref db="REACTOME" dbkey="R-SCE-9009391"/>
+    <db_xref db="REACTOME" dbkey="R-SCE-9013026"/>
+    <db_xref db="REACTOME" dbkey="R-SCE-9013106"/>
+    <db_xref db="REACTOME" dbkey="R-SCE-9013406"/>
+    <db_xref db="REACTOME" dbkey="R-SCE-9013420"/>
+    <db_xref db="REACTOME" dbkey="R-SCE-9031628"/>
+    <db_xref db="REACTOME" dbkey="R-SCE-9634635"/>
+    <db_xref db="REACTOME" dbkey="R-SCE-9696273"/>
+    <db_xref db="REACTOME" dbkey="R-SCE-983168"/>
+    <db_xref db="REACTOME" dbkey="R-SCE-983695"/>
+    <db_xref db="REACTOME" dbkey="R-SCE-9841251"/>
+    <db_xref db="REACTOME" dbkey="R-SCE-9856530"/>
+    <db_xref db="REACTOME" dbkey="R-SPO-112043"/>
+    <db_xref db="REACTOME" dbkey="R-SPO-114508"/>
+    <db_xref db="REACTOME" dbkey="R-SPO-114516"/>
+    <db_xref db="REACTOME" dbkey="R-SPO-114604"/>
+    <db_xref db="REACTOME" dbkey="R-SPO-1169091"/>
+    <db_xref db="REACTOME" dbkey="R-SPO-1257604"/>
+    <db_xref db="REACTOME" dbkey="R-SPO-1358803"/>
+    <db_xref db="REACTOME" dbkey="R-SPO-1474151"/>
+    <db_xref db="REACTOME" dbkey="R-SPO-1489509"/>
+    <db_xref db="REACTOME" dbkey="R-SPO-165158"/>
+    <db_xref db="REACTOME" dbkey="R-SPO-165181"/>
+    <db_xref db="REACTOME" dbkey="R-SPO-1855204"/>
+    <db_xref db="REACTOME" dbkey="R-SPO-198323"/>
+    <db_xref db="REACTOME" dbkey="R-SPO-198693"/>
+    <db_xref db="REACTOME" dbkey="R-SPO-202424"/>
+    <db_xref db="REACTOME" dbkey="R-SPO-202433"/>
+    <db_xref db="REACTOME" dbkey="R-SPO-2029485"/>
+    <db_xref db="REACTOME" dbkey="R-SPO-203615"/>
+    <db_xref db="REACTOME" dbkey="R-SPO-2179392"/>
+    <db_xref db="REACTOME" dbkey="R-SPO-2871837"/>
+    <db_xref db="REACTOME" dbkey="R-SPO-389357"/>
+    <db_xref db="REACTOME" dbkey="R-SPO-389513"/>
+    <db_xref db="REACTOME" dbkey="R-SPO-392451"/>
+    <db_xref db="REACTOME" dbkey="R-SPO-399997"/>
+    <db_xref db="REACTOME" dbkey="R-SPO-416476"/>
+    <db_xref db="REACTOME" dbkey="R-SPO-434316"/>
+    <db_xref db="REACTOME" dbkey="R-SPO-4419969"/>
+    <db_xref db="REACTOME" dbkey="R-SPO-450385"/>
+    <db_xref db="REACTOME" dbkey="R-SPO-5218920"/>
+    <db_xref db="REACTOME" dbkey="R-SPO-5218921"/>
+    <db_xref db="REACTOME" dbkey="R-SPO-5607764"/>
+    <db_xref db="REACTOME" dbkey="R-SPO-5625740"/>
+    <db_xref db="REACTOME" dbkey="R-SPO-5625886"/>
+    <db_xref db="REACTOME" dbkey="R-SPO-5628897"/>
+    <db_xref db="REACTOME" dbkey="R-SPO-5668599"/>
+    <db_xref db="REACTOME" dbkey="R-SPO-6798695"/>
+    <db_xref db="REACTOME" dbkey="R-SPO-6804757"/>
+    <db_xref db="REACTOME" dbkey="R-SPO-6804758"/>
+    <db_xref db="REACTOME" dbkey="R-SPO-6811558"/>
+    <db_xref db="REACTOME" dbkey="R-SPO-76005"/>
+    <db_xref db="REACTOME" dbkey="R-SPO-8948747"/>
+    <db_xref db="REACTOME" dbkey="R-SPO-8948751"/>
+    <db_xref db="REACTOME" dbkey="R-SPO-8980692"/>
+    <db_xref db="REACTOME" dbkey="R-SPO-9009391"/>
+    <db_xref db="REACTOME" dbkey="R-SPO-9013026"/>
+    <db_xref db="REACTOME" dbkey="R-SPO-9013106"/>
+    <db_xref db="REACTOME" dbkey="R-SPO-9013406"/>
+    <db_xref db="REACTOME" dbkey="R-SPO-9013420"/>
+    <db_xref db="REACTOME" dbkey="R-SPO-9031628"/>
+    <db_xref db="REACTOME" dbkey="R-SPO-9634635"/>
+    <db_xref db="REACTOME" dbkey="R-SPO-983168"/>
+    <db_xref db="REACTOME" dbkey="R-SPO-983695"/>
+    <db_xref db="REACTOME" dbkey="R-SPO-9841251"/>
+    <db_xref db="REACTOME" dbkey="R-SPO-9856530"/>
+    <db_xref db="REACTOME" dbkey="R-SSC-1855204"/>
+    <db_xref db="REACTOME" dbkey="R-XTR-111995"/>
+    <db_xref db="REACTOME" dbkey="R-XTR-114516"/>
+    <db_xref db="REACTOME" dbkey="R-XTR-1169091"/>
+    <db_xref db="REACTOME" dbkey="R-XTR-1482788"/>
+    <db_xref db="REACTOME" dbkey="R-XTR-1482798"/>
+    <db_xref db="REACTOME" dbkey="R-XTR-1482801"/>
+    <db_xref db="REACTOME" dbkey="R-XTR-1482839"/>
+    <db_xref db="REACTOME" dbkey="R-XTR-1482922"/>
+    <db_xref db="REACTOME" dbkey="R-XTR-1482925"/>
+    <db_xref db="REACTOME" dbkey="R-XTR-1483115"/>
+    <db_xref db="REACTOME" dbkey="R-XTR-1483166"/>
+    <db_xref db="REACTOME" dbkey="R-XTR-2028269"/>
+    <db_xref db="REACTOME" dbkey="R-XTR-2142753"/>
+    <db_xref db="REACTOME" dbkey="R-XTR-418592"/>
+    <db_xref db="REACTOME" dbkey="R-XTR-432142"/>
+    <db_xref db="REACTOME" dbkey="R-XTR-4419969"/>
+    <db_xref db="REACTOME" dbkey="R-XTR-5099900"/>
+    <db_xref db="REACTOME" dbkey="R-XTR-5218921"/>
+    <db_xref db="REACTOME" dbkey="R-XTR-5620912"/>
+    <db_xref db="REACTOME" dbkey="R-XTR-5668599"/>
+    <db_xref db="REACTOME" dbkey="R-XTR-6798695"/>
+    <db_xref db="REACTOME" dbkey="R-XTR-6811436"/>
+    <db_xref db="REACTOME" dbkey="R-XTR-76005"/>
+    <db_xref db="REACTOME" dbkey="R-XTR-9020702"/>
+  </external_doc_list>
+  <structure_db_links>
+    <db_xref db="PDB" dbkey="1a25"/>
+    <db_xref db="PDB" dbkey="1bci"/>
+    <db_xref db="PDB" dbkey="1bdy"/>
+    <db_xref db="PDB" dbkey="1byn"/>
+    <db_xref db="PDB" dbkey="1cjy"/>
+    <db_xref db="PDB" dbkey="1djg"/>
+    <db_xref db="PDB" dbkey="1djh"/>
+    <db_xref db="PDB" dbkey="1dji"/>
+    <db_xref db="PDB" dbkey="1djw"/>
+    <db_xref db="PDB" dbkey="1djx"/>
+    <db_xref db="PDB" dbkey="1djy"/>
+    <db_xref db="PDB" dbkey="1djz"/>
+    <db_xref db="PDB" dbkey="1dqv"/>
+    <db_xref db="PDB" dbkey="1dsy"/>
+    <db_xref db="PDB" dbkey="1gmi"/>
+    <db_xref db="PDB" dbkey="1k5w"/>
+    <db_xref db="PDB" dbkey="1qas"/>
+    <db_xref db="PDB" dbkey="1qat"/>
+    <db_xref db="PDB" dbkey="1rh8"/>
+    <db_xref db="PDB" dbkey="1rlw"/>
+    <db_xref db="PDB" dbkey="1rsy"/>
+    <db_xref db="PDB" dbkey="1tjm"/>
+    <db_xref db="PDB" dbkey="1tjx"/>
+    <db_xref db="PDB" dbkey="1ugk"/>
+    <db_xref db="PDB" dbkey="1uov"/>
+    <db_xref db="PDB" dbkey="1uow"/>
+    <db_xref db="PDB" dbkey="1v27"/>
+    <db_xref db="PDB" dbkey="1w15"/>
+    <db_xref db="PDB" dbkey="1w16"/>
+    <db_xref db="PDB" dbkey="1wfj"/>
+    <db_xref db="PDB" dbkey="1wfm"/>
+    <db_xref db="PDB" dbkey="1yrk"/>
+    <db_xref db="PDB" dbkey="2b3r"/>
+    <db_xref db="PDB" dbkey="2bwq"/>
+    <db_xref db="PDB" dbkey="2chd"/>
+    <db_xref db="PDB" dbkey="2cjs"/>
+    <db_xref db="PDB" dbkey="2cjt"/>
+    <db_xref db="PDB" dbkey="2cm5"/>
+    <db_xref db="PDB" dbkey="2cm6"/>
+    <db_xref db="PDB" dbkey="2d8k"/>
+    <db_xref db="PDB" dbkey="2dmg"/>
+    <db_xref db="PDB" dbkey="2dmh"/>
+    <db_xref db="PDB" dbkey="2enj"/>
+    <db_xref db="PDB" dbkey="2enp"/>
+    <db_xref db="PDB" dbkey="2ep6"/>
+    <db_xref db="PDB" dbkey="2fju"/>
+    <db_xref db="PDB" dbkey="2fk9"/>
+    <db_xref db="PDB" dbkey="2isd"/>
+    <db_xref db="PDB" dbkey="2jqz"/>
+    <db_xref db="PDB" dbkey="2k3h"/>
+    <db_xref db="PDB" dbkey="2k45"/>
+    <db_xref db="PDB" dbkey="2k4a"/>
+    <db_xref db="PDB" dbkey="2k8m"/>
+    <db_xref db="PDB" dbkey="2ki6"/>
+    <db_xref db="PDB" dbkey="2lha"/>
+    <db_xref db="PDB" dbkey="2n1t"/>
+    <db_xref db="PDB" dbkey="2nce"/>
+    <db_xref db="PDB" dbkey="2nq3"/>
+    <db_xref db="PDB" dbkey="2nsq"/>
+    <db_xref db="PDB" dbkey="2q3x"/>
+    <db_xref db="PDB" dbkey="2r83"/>
+    <db_xref db="PDB" dbkey="2uzp"/>
+    <db_xref db="PDB" dbkey="2yoa"/>
+    <db_xref db="PDB" dbkey="2yrb"/>
+    <db_xref db="PDB" dbkey="2z0u"/>
+    <db_xref db="PDB" dbkey="2zkm"/>
+    <db_xref db="PDB" dbkey="3b7y"/>
+    <db_xref db="PDB" dbkey="3bxj"/>
+    <db_xref db="PDB" dbkey="3f00"/>
+    <db_xref db="PDB" dbkey="3f01"/>
+    <db_xref db="PDB" dbkey="3f04"/>
+    <db_xref db="PDB" dbkey="3f05"/>
+    <db_xref db="PDB" dbkey="3fbk"/>
+    <db_xref db="PDB" dbkey="3fdw"/>
+    <db_xref db="PDB" dbkey="3gpe"/>
+    <db_xref db="PDB" dbkey="3hn8"/>
+    <db_xref db="PDB" dbkey="3jzy"/>
+    <db_xref db="PDB" dbkey="3l9b"/>
+    <db_xref db="PDB" dbkey="3m7f"/>
+    <db_xref db="PDB" dbkey="3n5a"/>
+    <db_xref db="PDB" dbkey="3nsj"/>
+    <db_xref db="PDB" dbkey="3pfq"/>
+    <db_xref db="PDB" dbkey="3pyc"/>
+    <db_xref db="PDB" dbkey="3qr0"/>
+    <db_xref db="PDB" dbkey="3qr1"/>
+    <db_xref db="PDB" dbkey="3rdj"/>
+    <db_xref db="PDB" dbkey="3rpb"/>
+    <db_xref db="PDB" dbkey="3twy"/>
+    <db_xref db="PDB" dbkey="3w56"/>
+    <db_xref db="PDB" dbkey="3w57"/>
+    <db_xref db="PDB" dbkey="4dnl"/>
+    <db_xref db="PDB" dbkey="4gnk"/>
+    <db_xref db="PDB" dbkey="4icw"/>
+    <db_xref db="PDB" dbkey="4icx"/>
+    <db_xref db="PDB" dbkey="4ihb"/>
+    <db_xref db="PDB" dbkey="4iqh"/>
+    <db_xref db="PDB" dbkey="4l1l"/>
+    <db_xref db="PDB" dbkey="4lcv"/>
+    <db_xref db="PDB" dbkey="4ldc"/>
+    <db_xref db="PDB" dbkey="4lt7"/>
+    <db_xref db="PDB" dbkey="4mjj"/>
+    <db_xref db="PDB" dbkey="4np9"/>
+    <db_xref db="PDB" dbkey="4npj"/>
+    <db_xref db="PDB" dbkey="4npk"/>
+    <db_xref db="PDB" dbkey="4ns0"/>
+    <db_xref db="PDB" dbkey="4p42"/>
+    <db_xref db="PDB" dbkey="4qj3"/>
+    <db_xref db="PDB" dbkey="4qj4"/>
+    <db_xref db="PDB" dbkey="4qj5"/>
+    <db_xref db="PDB" dbkey="4rj9"/>
+    <db_xref db="PDB" dbkey="4ts6"/>
+    <db_xref db="PDB" dbkey="4v11"/>
+    <db_xref db="PDB" dbkey="4v29"/>
+    <db_xref db="PDB" dbkey="4wee"/>
+    <db_xref db="PDB" dbkey="4y1s"/>
+    <db_xref db="PDB" dbkey="4y1t"/>
+    <db_xref db="PDB" dbkey="5a4x"/>
+    <db_xref db="PDB" dbkey="5a50"/>
+    <db_xref db="PDB" dbkey="5a51"/>
+    <db_xref db="PDB" dbkey="5a52"/>
+    <db_xref db="PDB" dbkey="5ccg"/>
+    <db_xref db="PDB" dbkey="5cch"/>
+    <db_xref db="PDB" dbkey="5cci"/>
+    <db_xref db="PDB" dbkey="5ccj"/>
+    <db_xref db="PDB" dbkey="5h4y"/>
+    <db_xref db="PDB" dbkey="5h4z"/>
+    <db_xref db="PDB" dbkey="5ixc"/>
+    <db_xref db="PDB" dbkey="5iz5"/>
+    <db_xref db="PDB" dbkey="5izr"/>
+    <db_xref db="PDB" dbkey="5kj7"/>
+    <db_xref db="PDB" dbkey="5kj8"/>
+    <db_xref db="PDB" dbkey="5lo8"/>
+    <db_xref db="PDB" dbkey="5lob"/>
+    <db_xref db="PDB" dbkey="5low"/>
+    <db_xref db="PDB" dbkey="5t0r"/>
+    <db_xref db="PDB" dbkey="5t0s"/>
+    <db_xref db="PDB" dbkey="5ue8"/>
+    <db_xref db="PDB" dbkey="5ug6"/>
+    <db_xref db="PDB" dbkey="5ug7"/>
+    <db_xref db="PDB" dbkey="5vfe"/>
+    <db_xref db="PDB" dbkey="5vff"/>
+    <db_xref db="PDB" dbkey="5vfg"/>
+    <db_xref db="PDB" dbkey="5w4s"/>
+    <db_xref db="PDB" dbkey="5w5c"/>
+    <db_xref db="PDB" dbkey="5w5d"/>
+    <db_xref db="PDB" dbkey="5yq3"/>
+    <db_xref db="PDB" dbkey="6anj"/>
+    <db_xref db="PDB" dbkey="6ank"/>
+    <db_xref db="PDB" dbkey="6bty"/>
+    <db_xref db="PDB" dbkey="6btz"/>
+    <db_xref db="PDB" dbkey="6bu0"/>
+    <db_xref db="PDB" dbkey="6cxw"/>
+    <db_xref db="PDB" dbkey="6eel"/>
+    <db_xref db="PDB" dbkey="6ei6"/>
+    <db_xref db="PDB" dbkey="6ewl"/>
+    <db_xref db="PDB" dbkey="6ewp"/>
+    <db_xref db="PDB" dbkey="6fb4"/>
+    <db_xref db="PDB" dbkey="6fd0"/>
+    <db_xref db="PDB" dbkey="6fjc"/>
+    <db_xref db="PDB" dbkey="6fjd"/>
+    <db_xref db="PDB" dbkey="6flj"/>
+    <db_xref db="PDB" dbkey="6flk"/>
+    <db_xref db="PDB" dbkey="6iej"/>
+    <db_xref db="PDB" dbkey="6kxk"/>
+    <db_xref db="PDB" dbkey="6kxt"/>
+    <db_xref db="PDB" dbkey="6kxu"/>
+    <db_xref db="PDB" dbkey="6kz8"/>
+    <db_xref db="PDB" dbkey="6kz9"/>
+    <db_xref db="PDB" dbkey="6lcy"/>
+    <db_xref db="PDB" dbkey="6mti"/>
+    <db_xref db="PDB" dbkey="6nyc"/>
+    <db_xref db="PDB" dbkey="6nyt"/>
+    <db_xref db="PDB" dbkey="6pbc"/>
+    <db_xref db="PDB" dbkey="6pmp"/>
+    <db_xref db="PDB" dbkey="6tz3"/>
+    <db_xref db="PDB" dbkey="6u41"/>
+    <db_xref db="PDB" dbkey="6u4u"/>
+    <db_xref db="PDB" dbkey="6u4w"/>
+    <db_xref db="PDB" dbkey="6uwa"/>
+    <db_xref db="PDB" dbkey="7a1r"/>
+    <db_xref db="PDB" dbkey="7as6"/>
+    <db_xref db="PDB" dbkey="7atp"/>
+    <db_xref db="PDB" dbkey="7bl1"/>
+    <db_xref db="PDB" dbkey="7jof"/>
+    <db_xref db="PDB" dbkey="7k6b"/>
+    <db_xref db="PDB" dbkey="7krb"/>
+    <db_xref db="PDB" dbkey="7pag"/>
+    <db_xref db="PDB" dbkey="7sq2"/>
+    <db_xref db="PDB" dbkey="7t7c"/>
+    <db_xref db="PDB" dbkey="7t7r"/>
+    <db_xref db="PDB" dbkey="7t7v"/>
+    <db_xref db="PDB" dbkey="7t7x"/>
+    <db_xref db="PDB" dbkey="7t81"/>
+    <db_xref db="PDB" dbkey="7t8t"/>
+    <db_xref db="PDB" dbkey="7tua"/>
+    <db_xref db="PDB" dbkey="7tx9"/>
+    <db_xref db="PDB" dbkey="7u4q"/>
+    <db_xref db="PDB" dbkey="7vs3"/>
+    <db_xref db="PDB" dbkey="7z3j"/>
+    <db_xref db="PDB" dbkey="8c5h"/>
+    <db_xref db="PDB" dbkey="8emv"/>
+    <db_xref db="PDB" dbkey="8emw"/>
+    <db_xref db="PDB" dbkey="8emx"/>
+    <db_xref db="PDB" dbkey="8faf"/>
+    <db_xref db="PDB" dbkey="8fam"/>
+    <db_xref db="PDB" dbkey="8t7c"/>
+    <db_xref db="PDB" dbkey="8uqn"/>
+    <db_xref db="PDB" dbkey="8uqo"/>
+    <db_xref db="PDB" dbkey="9b8k"/>
+    <db_xref db="PDB" dbkey="9b8l"/>
+    <db_xref db="PDB" dbkey="9bcz"/>
+    <db_xref db="PDB" dbkey="9bkw"/>
+    <db_xref db="PDB" dbkey="9bky"/>
+  </structure_db_links>
+  <taxonomy_distribution>
+    <taxon_data name="Archaea" proteins_count="31"/>
+    <taxon_data name="Bacteria" proteins_count="221"/>
+    <taxon_data name="Eukaryota" proteins_count="317702"/>
+    <taxon_data name="Viruses" proteins_count="2"/>
+    <taxon_data name="unclassified sequences" proteins_count="10"/>
+  </taxonomy_distribution>
+  <key_species>
+    <taxon_data name="Arabidopsis thaliana" proteins_count="446"/>
+    <taxon_data name="Caenorhabditis elegans" proteins_count="125"/>
+    <taxon_data name="Danio rerio" proteins_count="539"/>
+    <taxon_data name="Drosophila melanogaster" proteins_count="201"/>
+    <taxon_data name="Homo sapiens" proteins_count="644"/>
+    <taxon_data name="Mus musculus" proteins_count="494"/>
+    <taxon_data name="Neurospora crassa (strain ATCC 24698 / 74-OR23-1A / CBS 708.71 / DSM 1257 / FGSC 987)" proteins_count="14"/>
+    <taxon_data name="Oryza sativa subsp. japonica" proteins_count="257"/>
+    <taxon_data name="Rattus norvegicus" proteins_count="650"/>
+    <taxon_data name="Saccharomyces cerevisiae (strain ATCC 204508 / S288c)" proteins_count="11"/>
+    <taxon_data name="Schizosaccharomyces pombe (strain 972 / ATCC 24843)" proteins_count="14"/>
+    <taxon_data name="Zea mays" proteins_count="527"/>
+  </key_species>
