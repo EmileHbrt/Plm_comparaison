@@ -12,31 +12,32 @@ def main():
     input_file = options.input_file
     output_dir = options.output_dir
 
-    Uni_db = open(input_file, "r", encoding='utf-8')
-    
-    txt = ''
-    file_name = ''
+    with open(input_file, "r", encoding='utf-8') as Uni_db :
+        
+        txt = ''
+        file_name = ''
 
-    for ligne in Uni_db:
-        arg_start = ligne[0:2]
+        for ligne in Uni_db:
+            arg_start = ligne[0:2]
 
-        if arg_start == 'AC':
-            name = ""
-            for elm in ligne[5:]:
-                if elm == ';':
-                    break
-                else:
-                    name += elm
-            file_name = os.path.join(output_dir, f"{name}.dat")
-            #file_name = output_dir + '\\' + name + ".dat"
-            txt += ligne
+            if arg_start == 'AC':
+                name = ""
+                for elm in ligne[5:]:
+                    if elm == ';':
+                        break
+                    else:
+                        name += elm
+                file_name = os.path.join(output_dir, f"{name}.dat")
+                txt += ligne
 
-        elif arg_start in ['ID', 'DE', 'OC', 'DR','SQ','  ']:
-            txt += ligne   
-        elif arg_start == '//':   
-            with open(file_name, 'w') as fichier:
-                fichier.write(txt)
-            txt = ''    
+            elif arg_start in ['ID', 'DE', 'OC', 'DR','SQ','  ']:
+                txt += ligne   
+            elif arg_start == '//':   
+                if not os.path.exists(file_name):
+                    os.makedirs(file_name)
+                with open(file_name, 'w') as fichier:
+                    fichier.write(txt)
+                txt = ''    
 
 #==================================================================================================================
 
