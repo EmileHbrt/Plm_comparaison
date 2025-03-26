@@ -1,4 +1,5 @@
 from optparse import OptionParser
+import os
 
 def main():
 
@@ -26,7 +27,8 @@ def main():
                     break
                 else:
                     name += elm
-            file_name = output_dir + '\\' + name + ".dat"
+            file_name = os.path.join(output_dir, f"{name}.dat")
+            #file_name = output_dir + '\\' + name + ".dat"
             txt += ligne
 
         elif arg_start in ['ID', 'DE', 'OC', 'DR','SQ','  ']:
