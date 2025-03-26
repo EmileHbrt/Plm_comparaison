@@ -2129,3 +2129,10 @@ fungi, insects and cyanobacteria. Class III MTs are atypical polypeptides compos
     <taxon_data name="Schizosaccharomyces pombe (strain 972 / ATCC 24843)" proteins_count="14"/>
     <taxon_data name="Zea mays" proteins_count="527"/>
   </key_species>
+</interpro>
+<deleted_entries>
+  <del_ref id="IPR000001"/>
+  <del_ref id="IPR000003"/>
+  <del_ref id="IPR000006"/>
+</deleted_entries>
+</interprodb>
