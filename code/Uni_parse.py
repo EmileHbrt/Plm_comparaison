@@ -27,6 +27,7 @@ def main():
                         break
                     else:
                         name += elm
+                file_name = os.path.abspath(output_dir)
                 file_name = os.path.join(output_dir, f"{name}.dat")
                 txt += ligne
 
