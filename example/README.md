@@ -1,6 +1,6 @@
 # Uni_parse.py example 
 
-This code is used to split Uniprot database to get one file (.dat) per protein with the informations of the protein
+This code is used to split Uniprot database to get one file (.dat) per protein with the informations of the protein.
 
 - `<input_file>`: The path of the Uniprot file. Example: [[Uniprot file](https://ftp.ebi.ac.uk/pub/databases/uniprot/current_release/knowledgebase/complete/uniprot_sprot.dat.gz)].
 - `<output_dir>`: The directory where the split Uniprot files will be saved.
@@ -15,8 +15,8 @@ python Uni_parse.py -i <input_file> -o <output_dir>
 
 Thie code is used to parse Interpro database.
 It creates, for each database in [[Interpro file](https://ftp.ebi.ac.uk/pub/databases/interpro/current_release/interpro.xml.gz)] (.xml) <input_file> 
-a csv with Id_protein and it shortname
-as well as a csv with interpro_id and all matching database_id
+,a csv with Id_protein and it shortname
+,as well as a csv with interpro_id and all matching database_id.
 Also a csv with all interpro_id and their EC_number
 
 -`<outpu_dir>` is the direction where the split of uniprot file are going to be saved
@@ -29,7 +29,7 @@ python Interpro_parse.py -i <input_file> -o <output_dir>
 
 # Informative_csv example 
 
-this code is used to obtain an informative csv with the best prediction of Plmsearch for each unknowed CK in Cyanorak 
+This code is used to obtain an informative csv with the best prediction of Plmsearch for each unknowed CK in Cyanorak. 
 
 
 # Plm_compare.py example
