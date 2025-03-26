@@ -34,7 +34,7 @@ def main():
                 txt += ligne   
             elif arg_start == '//':   
                 if not os.path.exists(file_name):
-                    os.makedirs(file_name)
+                    print( 'ça n existe pas')
                 with open(file_name, 'w') as fichier:
                     fichier.write(txt)
                 txt = ''    
