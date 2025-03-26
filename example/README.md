@@ -9,9 +9,10 @@ The 'Input' file contains :
 ## Output folder
 
 The 'Output' file contains : 
- - 'File_example_results' is a folder containing the results obtained using Interpro_parse.py on the example_interpro.xml file.
+ - 'File_Interpro_example' is a folder containing the results obtained using Interpro_parse.py on the example_interpro.xml file.
  - 'parsed_example_tab.csv' is a csv file obtained by parsing comparison_tab.csv from data(see next).
-
+ - 'File_Uniprot_example' is a folder containing the results obtained using Uni_parse.py on the example_uniprot.txt file. 
+ 
 ## How to use
 
 ###  Interpro.py
@@ -19,7 +20,7 @@ The 'Output' file contains :
 ```python
 python code\Interpro_parse.py -i example\Input\example_interpro.xml -o example\Output\File_Interpro_example
 ```
-You can know see the results in Example\Output\File_example_results !
+You can know see the results in Example\Output\File_Interpro_example !
 
 ### Parser_tab.py 
 
@@ -31,5 +32,6 @@ You can now see a csv in the folder, with the four columns indicated and only sc
 ### Uni_parse.py 
 
 ```pyhton
-pyhton code\Uni_parse.py -i example\Input\example_uniprot.txt -o example\Output\example\Output\File_Uniprot_example
+python code\Uni_parse.py -i example\Input\example_uniprot.txt -o example\Output\File_Uniprot_example
 ```
+You can know see the results in example\Output\File_Uniprot_example !

@@ -1,0 +1,20 @@
+ID   001R_FRG3G              Reviewed;         256 AA.
+AC   Q6GZX4;
+DE   RecName: Full=Putative transcription factor 001R;
+OC   Viruses; Varidnaviria; Bamfordvirae; Nucleocytoviricota; Megaviricetes;
+OC   Pimascovirales; Iridoviridae; Alphairidovirinae; Ranavirus; Frog virus 3.
+DR   EMBL; AY548484; AAT09660.1; -; Genomic_DNA.
+DR   RefSeq; YP_031579.1; NC_005946.1.
+DR   SwissPalm; Q6GZX4; -.
+DR   GeneID; 2947773; -.
+DR   KEGG; vg:2947773; -.
+DR   Proteomes; UP000008770; Segment.
+DR   GO; GO:0046782; P:regulation of viral transcription; IEA:InterPro.
+DR   InterPro; IPR007031; Poxvirus_VLTF3.
+DR   Pfam; PF04947; Pox_VLTF3; 1.
+SQ   SEQUENCE   256 AA;  29735 MW;  B4840739BF7D4121 CRC64;
+     MAFSAEDVLK EYDRRRRMEA LLLSLYYPND RKLLDYKEWS PPRVQVECPK APVEWNNPPS
+     EKGLIVGHFS GIKYKGEKAQ ASEVDVNKMC CWVSKFKDAM RRYQGIQTCK IPGKVLSDLD
+     AKIKAYNLTV EGVEGFVRYS RVTKQHVAAF LKELRHSKQY ENVNLIHYIL TDKRVDIQHL
+     EKDLVKDFKA LVESAHRMRQ GHMINVKYIL YQLLKKHGHG PDGPDILTVK TGSKGVLYDD
+     SFRKIYTDLG WKFTPL
