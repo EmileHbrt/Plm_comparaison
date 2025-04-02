@@ -35,3 +35,9 @@ You can now see a csv in the folder, with the four columns indicated and only sc
 python code\Uni_parse.py -i example\Input\example_uniprot.txt -o example\Output\File_Uniprot_example
 ```
 You can know see the results in example\Output\File_Uniprot_example !
+
+### Combine_tab.py
+
+```python
+python code\Combine_tab.py -i data\comparaison_tab.csv,data\Interpros.filtered.csv,data\Pfam.filtered.csv -c ClusterNumber
+```
