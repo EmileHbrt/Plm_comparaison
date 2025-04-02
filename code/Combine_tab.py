@@ -86,7 +86,7 @@ def main():
     for i, tab in enumerate(tab_list):
         if shared_col not in tab.columns:
             print(tab.columns)
-            raise KeyError(f"La colonne '{shared_col}' est absente du fichier {i+1}. Vérifiez vos données.")
+            raise KeyError(f"Column'{shared_col}' is missing in the file {i+1}.")
 
 
     result = merge_tab(tab_list, shared_col) 
