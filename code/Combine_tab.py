@@ -85,6 +85,7 @@ def main():
 
     for i, tab in enumerate(tab_list):
         if shared_col not in tab.columns:
+            print(tab.columns)
             raise KeyError(f"La colonne '{shared_col}' est absente du fichier {i+1}. Vérifiez vos données.")
 
 
