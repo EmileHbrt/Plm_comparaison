@@ -45,3 +45,16 @@ This code is used to parse the informative csv
 # Example usage of Parser_tab.py
 python Parser_tab.py -i <input_file> -o <output_dir> -s <score_arg> -c <col_list>
 ```
+
+# Combine_tab.py example
+
+This code is used to combine several tables based on a common column.
+
+- `<list_input_file>`: A comma-separated list of all the dataset paths you want to collect.
+- `<output_file>`: The path where the output file will be saved.
+- `<combine_col>`: Name of the column on which we want to group the various datasets.
+
+```python
+# Example usage of Combine_tab.py
+python Combine_tab.py -i <list_input_file> -o <output_file> -c <combine_col>
+```
