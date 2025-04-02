@@ -83,6 +83,11 @@ def main():
     if len(tab_list) <= 1:
         raise ValueError("problem with list_input_file is empty or of len 1")
 
+    for i, tab in enumerate(tab_list):
+        if shared_col not in tab.columns:
+            raise KeyError(f"La colonne '{shared_col}' est absente du fichier {i+1}. Vérifiez vos données.")
+
+
     result = merge_tab(tab_list, shared_col) 
 
     try :
