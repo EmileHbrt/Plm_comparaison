@@ -7,7 +7,7 @@ from optparse import OptionParser
 #==================================================================================================================
 def writter_tab(dict, output):
     '''Create tab.csv '''
-    with open(output + '/tab.csv', mode='a', newline='', encoding='utf-8') as file:
+    with open(output + '/comparaison_tab.csv', mode='a', newline='', encoding='utf-8') as file:
         writer = csv.DictWriter(file, fieldnames=dict.keys())
         if file.tell() == 0:  # Write header only if the file is empty
             writer.writeheader()
@@ -78,7 +78,7 @@ def main():
         dico['Score'] = score
 
         try: 
-            protein_file = open(input_dir + AC + "_protein.dat")
+            protein_file = open(input_dir + '\\'+ AC + "_protein.dat")
         except:
             print('error with -i : a protein file is missing :' , AC + "_protein.dat in the folder where the Uniport database have been splited")
             continue
