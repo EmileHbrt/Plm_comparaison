@@ -39,5 +39,5 @@ You can know see the results in example\Output\File_Uniprot_example !
 ### Combine_tab.py
 
 ```python
-python code\Combine_tab.py -i data\comparaison_tab.csv,data\Interpros.filtered.csv,data\Pfam.filtered.csv\Output\combine_example_tab.csv -o data -c ClusterNumber
+python code\Combine_tab.py -i data\comparaison_tab.csv,data\Interpros.filtered.csv,data\Pfam.filtered.csv -o data\Output\combine_example_tab.csv -c ClusterNumber
 ```
