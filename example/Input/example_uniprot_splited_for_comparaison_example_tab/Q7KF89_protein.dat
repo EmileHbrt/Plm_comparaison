@@ -1,0 +1,21 @@
+ID   RS32_SPOFR              Reviewed;          25 AA.
+AC   Q7KF89;
+DE   RecName: Full=Small ribosomal subunit protein eS32 {ECO:0000305|Ref.2};
+DE   AltName: Full=60S ribosomal protein L41;
+DE   AltName: Full=Large ribosomal subunit protein eL41 {ECO:0000305};
+OC   Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta; Pterygota;
+OC   Neoptera; Endopterygota; Lepidoptera; Glossata; Ditrysia; Noctuoidea;
+OC   Noctuidae; Amphipyrinae; Spodoptera.
+DR   EMBL; AF400204; AAK92176.1; -; mRNA.
+DR   AlphaFoldDB; Q7KF89; -.
+DR   SMR; Q7KF89; -.
+DR   Proteomes; UP000829999; Unplaced.
+DR   GO; GO:1990904; C:ribonucleoprotein complex; IEA:UniProtKB-KW.
+DR   GO; GO:0005840; C:ribosome; IEA:UniProtKB-KW.
+DR   GO; GO:0003735; F:structural constituent of ribosome; IEA:InterPro.
+DR   GO; GO:0006412; P:translation; IEA:InterPro.
+DR   InterPro; IPR007836; Ribosomal_eS32.
+DR   Pfam; PF05162; Ribosomal_L41; 1.
+SQ   SEQUENCE   25 AA;  3399 MW;  9AD629DD9ECC039E CRC64;
+     MRAKWRKKRM RRLKRKRRKM RARSK
+//

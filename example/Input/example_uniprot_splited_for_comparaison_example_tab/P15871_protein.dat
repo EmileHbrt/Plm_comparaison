@@ -1,0 +1,23 @@
+ID   H11_WHEAT               Reviewed;          25 AA.
+AC   P15871;
+DE   RecName: Full=Histone H1.1;
+DE   Flags: Fragment;
+OC   Eukaryota; Viridiplantae; Streptophyta; Embryophyta; Tracheophyta;
+OC   Spermatophyta; Magnoliopsida; Liliopsida; Poales; Poaceae; BOP clade;
+OC   Pooideae; Triticodae; Triticeae; Triticinae; Triticum.
+DR   PIR; A23605; A23605.
+DR   AlphaFoldDB; P15871; -.
+DR   SMR; P15871; -.
+DR   Proteomes; UP000019116; Unplaced.
+DR   GO; GO:0000786; C:nucleosome; IEA:InterPro.
+DR   GO; GO:0005634; C:nucleus; IEA:UniProtKB-SubCell.
+DR   GO; GO:0003677; F:DNA binding; IEA:UniProtKB-KW.
+DR   GO; GO:0006334; P:nucleosome assembly; IEA:InterPro.
+DR   Gene3D; 1.10.10.10; Winged helix-like DNA-binding domain superfamily/Winged helix DNA-binding domain; 1.
+DR   InterPro; IPR005818; Histone_H1/H5_H15.
+DR   InterPro; IPR036388; WH-like_DNA-bd_sf.
+DR   Pfam; PF00538; Linker_histone; 1.
+DR   PROSITE; PS51504; H15; 1.
+SQ   SEQUENCE   25 AA;  2709 MW;  3AAB07B52DA1E149 CRC64;
+     MVSEAIAALK EREGSSEFAI GKKKE
+//

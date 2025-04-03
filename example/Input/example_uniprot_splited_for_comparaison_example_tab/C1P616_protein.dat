@@ -1,0 +1,25 @@
+ID   IBSD_ECOLI              Reviewed;          19 AA.
+AC   C1P616;
+DE   RecName: Full=Small toxic protein IbsD;
+OC   Bacteria; Pseudomonadota; Gammaproteobacteria; Enterobacterales;
+OC   Enterobacteriaceae; Escherichia.
+DR   EMBL; U00096; ACO60008.1; -; Genomic_DNA.
+DR   EMBL; AP009048; -; NOT_ANNOTATED_CDS; Genomic_DNA.
+DR   RefSeq; WP_001387081.1; NZ_STEB01000001.1.
+DR   RefSeq; YP_002791256.1; NC_000913.3.
+DR   AlphaFoldDB; C1P616; -.
+DR   EnsemblBacteria; ACO60008; ACO60008; b4664.
+DR   GeneID; 7751628; -.
+DR   GeneID; 93778943; -.
+DR   KEGG; eco:b4664; -.
+DR   InParanoid; C1P616; -.
+DR   BioCyc; EcoCyc:MONOMER0-2856; -.
+DR   PRO; PR:C1P616; -.
+DR   Proteomes; UP000000318; Chromosome.
+DR   Proteomes; UP000000625; Chromosome.
+DR   GO; GO:0016020; C:membrane; IEA:UniProtKB-SubCell.
+DR   InterPro; IPR025881; Toxin_Ibs.
+DR   Pfam; PF13956; Ibs_toxin; 1.
+SQ   SEQUENCE   19 AA;  2151 MW;  7937D62BC3D5A8F7 CRC64;
+     MMKLVIILIV LLLVSFAAY
+//

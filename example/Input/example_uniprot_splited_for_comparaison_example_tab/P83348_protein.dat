@@ -1,0 +1,16 @@
+ID   TRYP_APIMS              Reviewed;          21 AA.
+AC   P83348;
+DE   RecName: Full=Trypsin;
+DE            EC=3.4.21.4;
+DE   Flags: Fragment;
+OC   Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta; Pterygota;
+OC   Neoptera; Endopterygota; Hymenoptera; Apocrita; Aculeata; Apoidea;
+OC   Anthophila; Apidae; Apis.
+DR   AlphaFoldDB; P83348; -.
+DR   GO; GO:0005576; C:extracellular region; IEA:UniProtKB-SubCell.
+DR   GO; GO:0004252; F:serine-type endopeptidase activity; IEA:UniProtKB-EC.
+DR   GO; GO:0007586; P:digestion; IEA:UniProtKB-KW.
+DR   GO; GO:0006508; P:proteolysis; IEA:UniProtKB-KW.
+SQ   SEQUENCE   21 AA;  2184 MW;  87F243272932C284 CRC64;
+     IVGGTAADIS QFPHQLSLQT T
+//
