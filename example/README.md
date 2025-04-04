@@ -44,5 +44,5 @@ python code\Create_tab.py -p "example\Input\example_PLMSearch_bestFirstHits.out"
 ### Combine_tab.py
 
 ```python
-python code\Combine_tab.py -i data\comparaison_tab.csv,data\Interpros.filtered.csv,data\Pfam.filtered.csv -d "example\Input\example_uniprot_splited_for_comparaison_example_tab" -o  "example\Output"
+python code\Combine_tab.py -i data\comparaison_tab.csv,data\Interpros.filtered.csv,data\Pfam.filtered.csv -o data\combine_example_tab.csv -c SeqCluster
 ```
