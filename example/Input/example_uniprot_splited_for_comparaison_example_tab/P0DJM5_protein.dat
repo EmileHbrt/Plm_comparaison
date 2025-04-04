@@ -1,0 +1,20 @@
+ID   PA2AC_CROVV             Reviewed;          23 AA.
+AC   P0DJM5;
+DE   RecName: Full=Acidic phospholipase A2 Cvv-E6c;
+DE            Short=svPLA2;
+DE            EC=3.1.1.4;
+DE   AltName: Full=Phosphatidylcholine 2-acylhydrolase;
+DE   Flags: Fragment;
+OC   Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+OC   Lepidosauria; Squamata; Bifurcata; Unidentata; Episquamata; Toxicofera;
+OC   Serpentes; Colubroidea; Viperidae; Crotalinae; Crotalus.
+DR   AlphaFoldDB; P0DJM5; -.
+DR   GO; GO:0005576; C:extracellular region; IEA:UniProtKB-SubCell.
+DR   GO; GO:0047498; F:calcium-dependent phospholipase A2 activity; IEA:RHEA.
+DR   GO; GO:0047499; F:calcium-independent phospholipase A2 activity; IEA:RHEA.
+DR   GO; GO:0046872; F:metal ion binding; IEA:UniProtKB-KW.
+DR   GO; GO:0090729; F:toxin activity; IEA:UniProtKB-KW.
+DR   GO; GO:0016042; P:lipid catabolic process; IEA:UniProtKB-KW.
+SQ   SEQUENCE   23 AA;  2581 MW;  5E5D04DF9E607D8A CRC64;
+     NLVQFELLIM KVAKRSGLLS YSA
+//

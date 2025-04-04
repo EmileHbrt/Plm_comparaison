@@ -1,0 +1,14 @@
+ID   LPHI_KLEPN              Reviewed;          16 AA.
+AC   Q48439;
+DE   RecName: Full=his operon leader peptide;
+DE   AltName: Full=his operon attenuator peptide;
+OC   Bacteria; Pseudomonadota; Gammaproteobacteria; Enterobacterales;
+OC   Enterobacteriaceae; Klebsiella/Raoultella group; Klebsiella.
+DR   EMBL; K01997; AAA25072.1; -; Genomic_DNA.
+DR   AlphaFoldDB; Q48439; -.
+DR   GO; GO:0000105; P:L-histidine biosynthetic process; IEA:UniProtKB-KW.
+DR   InterPro; IPR012565; His_leader.
+DR   Pfam; PF08047; His_leader; 1.
+SQ   SEQUENCE   16 AA;  2002 MW;  CF29907BF6296248 CRC64;
+     MNSVQFKNHH HHHHPD
+//

@@ -1,0 +1,21 @@
+ID   YK145_YEAST             Reviewed;          30 AA.
+AC   P0C5P3;
+DE   RecName: Full=Uncharacterized protein YKL145W-A;
+OC   Eukaryota; Fungi; Dikarya; Ascomycota; Saccharomycotina; Saccharomycetes;
+OC   Saccharomycetales; Saccharomycetaceae; Saccharomyces.
+DR   EMBL; Z28145; -; NOT_ANNOTATED_CDS; Genomic_DNA.
+DR   EMBL; BK006944; -; NOT_ANNOTATED_CDS; Genomic_DNA.
+DR   AlphaFoldDB; P0C5P3; -.
+DR   STRING; 4932.YKL145W-A; -.
+DR   PaxDb; 4932-YKL145W-A; -.
+DR   EnsemblFungi; YKL145W-A_mRNA; YKL145W-A; YKL145W-A.
+DR   AGR; SGD:S000028841; -.
+DR   SGD; S000028841; YKL145W-A.
+DR   HOGENOM; CLU_3406604_0_0_1; -.
+DR   InParanoid; P0C5P3; -.
+DR   PRO; PR:P0C5P3; -.
+DR   Proteomes; UP000002311; Chromosome XI.
+DR   GO; GO:0016020; C:membrane; IEA:UniProtKB-SubCell.
+SQ   SEQUENCE   30 AA;  3344 MW;  4D6B0C8BC33578AA CRC64;
+     MGHLVLVRHY VLVLLLIELM QLLLGSLGLS
+//

@@ -1,0 +1,15 @@
+ID   BNCA_BENHI              Reviewed;          27 AA.
+AC   P83960;
+DE   RecName: Full=Alpha-benincasin;
+DE   Flags: Fragment;
+OC   Eukaryota; Viridiplantae; Streptophyta; Embryophyta; Tracheophyta;
+OC   Spermatophyta; Magnoliopsida; eudicotyledons; Gunneridae; Pentapetalae;
+OC   rosids; fabids; Cucurbitales; Cucurbitaceae; Benincaseae; Benincasa.
+DR   AlphaFoldDB; P83960; -.
+DR   GO; GO:0050832; P:defense response to fungus; IDA:UniProtKB.
+DR   GO; GO:0031640; P:killing of cells of another organism; IEA:UniProtKB-KW.
+DR   GO; GO:0017148; P:negative regulation of translation; IDA:UniProtKB.
+DR   GO; GO:0006805; P:xenobiotic metabolic process; IDA:UniProtKB.
+SQ   SEQUENCE   27 AA;  3743 MW;  FEC2041F751F5E24 CRC64;
+     RDWERREFER RQNELRREQE QRREELL
+//

@@ -1,0 +1,13 @@
+ID   YSAE_ECOLI              Reviewed;          23 AA.
+AC   P0DSH1; A0A7H2C799;
+DE   RecName: Full=Protein YsaE {ECO:0000303|PubMed:30837344};
+OC   Bacteria; Pseudomonadota; Gammaproteobacteria; Enterobacterales;
+OC   Enterobacteriaceae; Escherichia.
+DR   EMBL; U00096; QNV50546.1; -; Genomic_DNA.
+DR   AlphaFoldDB; P0DSH1; -.
+DR   InParanoid; P0DSH1; -.
+DR   BioCyc; EcoCyc:MONOMER0-4505; -.
+DR   Proteomes; UP000000625; Chromosome.
+SQ   SEQUENCE   23 AA;  2605 MW;  13D37D5D07745EBD CRC64;
+     MRNAVSKAGI ISRRRLLLFQ FAG
+//
