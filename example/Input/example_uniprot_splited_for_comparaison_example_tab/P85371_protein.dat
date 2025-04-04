@@ -1,0 +1,10 @@
+ID   IMP14_NAUMA             Reviewed;          16 AA.
+AC   P85371;
+DE   RecName: Full=Uncharacterized protein IMPP14 {ECO:0000303|PubMed:19472248};
+DE   Flags: Fragment;
+OC   Eukaryota; Metazoa; Spiralia; Lophotrochozoa; Mollusca; Cephalopoda;
+OC   Nautiloidea; Nautilida; Nautilidae; Nautilus.
+DR   AlphaFoldDB; P85371; -.
+SQ   SEQUENCE   16 AA;  1474 MW;  0178827BE02A9E5B CRC64;
+     VTAKAVAAAE AASSAR
+//

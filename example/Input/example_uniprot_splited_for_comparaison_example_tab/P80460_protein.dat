@@ -1,0 +1,17 @@
+ID   PSBU_SYNY4              Reviewed;          16 AA.
+AC   P80460;
+DE   RecName: Full=Photosystem II extrinsic protein U {ECO:0000305};
+DE            Short=PSII-U;
+DE            Short=PsbU;
+DE   AltName: Full=Photosystem II 12 kDa extrinsic protein {ECO:0000305};
+DE            Short=PS II complex 12 kDa extrinsic protein;
+DE   Flags: Fragment;
+OC   Bacteria; Bacillati; Cyanobacteriota; Cyanophyceae; Synechococcales;
+OC   Merismopediaceae; Synechocystis.
+DR   AlphaFoldDB; P80460; -.
+DR   GO; GO:0009523; C:photosystem II; IEA:UniProtKB-KW.
+DR   GO; GO:0031676; C:plasma membrane-derived thylakoid membrane; IEA:UniProtKB-SubCell.
+DR   GO; GO:0015979; P:photosynthesis; IEA:UniProtKB-KW.
+SQ   SEQUENCE   16 AA;  1780 MW;  61D1896F14E81984 CRC64;
+     MLNAVDAKLT TDFGQR
+//

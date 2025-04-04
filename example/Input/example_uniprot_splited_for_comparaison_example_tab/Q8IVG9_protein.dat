@@ -1,0 +1,83 @@
+ID   HUNIN_HUMAN             Reviewed;          24 AA.
+AC   Q8IVG9;
+DE   RecName: Full=Humanin {ECO:0000303|PubMed:11371646};
+DE   AltName: Full=Humanin mitochondrial {ECO:0000303|PubMed:19477263};
+DE            Short=HNM {ECO:0000303|PubMed:19477263};
+OC   Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi; Mammalia;
+OC   Eutheria; Euarchontoglires; Primates; Haplorrhini; Catarrhini; Hominidae;
+OC   Homo.
+DR   EMBL; AY029066; AAK50430.1; -; mRNA.
+DR   EMBL; BE899497; -; NOT_ANNOTATED_CDS; mRNA.
+DR   PDB; 1Y32; NMR; -; A=1-24.
+DR   PDB; 2GD3; NMR; -; A=1-24.
+DR   PDB; 5GIW; NMR; -; X=1-24.
+DR   PDB; 7WVX; EM; 2.80 A; L=1-24.
+DR   PDBsum; 1Y32; -.
+DR   PDBsum; 2GD3; -.
+DR   PDBsum; 5GIW; -.
+DR   PDBsum; 7WVX; -.
+DR   AlphaFoldDB; Q8IVG9; -.
+DR   BMRB; Q8IVG9; -.
+DR   EMDB; EMD-32861; -.
+DR   SMR; Q8IVG9; -.
+DR   IntAct; Q8IVG9; 3.
+DR   MINT; Q8IVG9; -.
+DR   iPTMnet; Q8IVG9; -.
+DR   PhosphoSitePlus; Q8IVG9; -.
+DR   BioMuta; HGNC:7471; -.
+DR   AGR; HGNC:7471; -.
+DR   GeneCards; MT-RNR2; -.
+DR   HGNC; HGNC:7471; MT-RNR2.
+DR   MalaCards; MT-RNR2; -.
+DR   MIM; 561010; gene.
+DR   neXtProt; NX_Q8IVG9; -.
+DR   InParanoid; Q8IVG9; -.
+DR   PhylomeDB; Q8IVG9; -.
+DR   PathwayCommons; Q8IVG9; -.
+DR   Reactome; R-HSA-416476; G alpha (q) signalling events.
+DR   Reactome; R-HSA-418594; G alpha (i) signalling events.
+DR   Reactome; R-HSA-444473; Formyl peptide receptors bind formyl peptides and many other ligands.
+DR   SignaLink; Q8IVG9; -.
+DR   ChiTaRS; MT-RNR2; human.
+DR   EvolutionaryTrace; Q8IVG9; -.
+DR   Pharos; Q8IVG9; Tdark.
+DR   PRO; PR:Q8IVG9; -.
+DR   Proteomes; UP000005640; Mitochondrion MT.
+DR   GO; GO:0005737; C:cytoplasm; IDA:UniProtKB.
+DR   GO; GO:0005576; C:extracellular region; IDA:UniProtKB.
+DR   GO; GO:0005615; C:extracellular space; IDA:UniProtKB.
+DR   GO; GO:0005739; C:mitochondrion; IDA:UniProtKB.
+DR   GO; GO:0005634; C:nucleus; IDA:UniProtKB.
+DR   GO; GO:0048471; C:perinuclear region of cytoplasm; IDA:UniProtKB.
+DR   GO; GO:0036126; C:sperm flagellum; IDA:UniProtKB.
+DR   GO; GO:0097225; C:sperm midpiece; IDA:UniProtKB.
+DR   GO; GO:0001664; F:G protein-coupled receptor binding; IPI:UniProtKB.
+DR   GO; GO:0042802; F:identical protein binding; IPI:UniProtKB.
+DR   GO; GO:0048019; F:receptor antagonist activity; IDA:UniProtKB.
+DR   GO; GO:0005102; F:signaling receptor binding; TAS:UniProtKB.
+DR   GO; GO:0006915; P:apoptotic process; IEA:UniProtKB-KW.
+DR   GO; GO:0007267; P:cell-cell signaling; IDA:UniProtKB.
+DR   GO; GO:1904646; P:cellular response to amyloid-beta; IDA:UniProtKB.
+DR   GO; GO:0006879; P:intracellular iron ion homeostasis; NAS:UniProtKB.
+DR   GO; GO:0030595; P:leukocyte chemotaxis; IDA:UniProtKB.
+DR   GO; GO:0007005; P:mitochondrion organization; IDA:UniProtKB.
+DR   GO; GO:1905907; P:negative regulation of amyloid fibril formation; IDA:UniProtKB.
+DR   GO; GO:0043066; P:negative regulation of apoptotic process; IDA:UniProtKB.
+DR   GO; GO:1900118; P:negative regulation of execution phase of apoptosis; IBA:GO_Central.
+DR   GO; GO:0050728; P:negative regulation of inflammatory response; IDA:UniProtKB.
+DR   GO; GO:0032692; P:negative regulation of interleukin-1 production; IDA:UniProtKB.
+DR   GO; GO:0032701; P:negative regulation of interleukin-18 production; IDA:UniProtKB.
+DR   GO; GO:0150079; P:negative regulation of neuroinflammatory response; IDA:UniProtKB.
+DR   GO; GO:0043524; P:negative regulation of neuron apoptotic process; IDA:UniProtKB.
+DR   GO; GO:1900226; P:negative regulation of NLRP3 inflammasome complex assembly; IDA:UniProtKB.
+DR   GO; GO:1902883; P:negative regulation of response to oxidative stress; IDA:UniProtKB.
+DR   GO; GO:0097435; P:supramolecular fiber organization; IDA:UniProtKB.
+DR   CDD; cd20245; humanin; 1.
+DR   DisProt; DP02267; -.
+DR   InterPro; IPR028139; Humanin.
+DR   PANTHER; PTHR33895; HUMANIN-LIKE 4; 1.
+DR   PANTHER; PTHR33895:SF15; HUMANIN-RELATED; 1.
+DR   Pfam; PF15040; Humanin; 1.
+SQ   SEQUENCE   24 AA;  2687 MW;  08B9A778EC13B971 CRC64;
+     MAPRGFSCLL LLTSEIDLPV KRRA
+//

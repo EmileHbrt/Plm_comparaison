@@ -1,0 +1,20 @@
+ID   Y4551_YERPS             Reviewed;         107 AA.
+AC   P37133; Q663L5;
+DE   RecName: Full=Uncharacterized protein pYV0051;
+OC   Bacteria; Pseudomonadota; Gammaproteobacteria; Enterobacterales;
+OC   Yersiniaceae; Yersinia.
+DR   EMBL; BX936399; CAF25394.1; -; Genomic_DNA.
+DR   EMBL; L06215; AAA72323.1; -; Genomic_DNA.
+DR   AlphaFoldDB; P37133; -.
+DR   SMR; P37133; -.
+DR   KEGG; yps:pYV0051; -.
+DR   Proteomes; UP000001011; Plasmid pYV.
+DR   InterPro; IPR032874; DDE_dom.
+DR   InterPro; IPR052183; IS_Transposase.
+DR   PANTHER; PTHR35528; BLL1675 PROTEIN; 1.
+DR   PANTHER; PTHR35528:SF3; BLL1675 PROTEIN; 1.
+DR   Pfam; PF13610; DDE_Tnp_IS240; 1.
+SQ   SEQUENCE   107 AA;  12717 MW;  A1933556FD6AB897 CRC64;
+     MKRYQFTDAD SSWQLDEIYI RVNGKWFYLY RAINKHGTTL DFYFSPKRNK NTAYPFIKRV
+     LKTYSVERQP KILNTDKHSS YGYAITRLMK EGKDTRCCKA AASQIPE
+//

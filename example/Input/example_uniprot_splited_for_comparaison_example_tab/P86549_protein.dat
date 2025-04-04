@@ -1,0 +1,15 @@
+ID   ISOTI_SPIOL             Reviewed;          20 AA.
+AC   P86549;
+DE   RecName: Full=Kunitz-type serine protease inhibitor SOTI;
+DE   AltName: Full=Trypsin inhibitor {ECO:0000303|PubMed:19232057};
+DE            Short=SOTI {ECO:0000303|PubMed:19232057};
+DE   Flags: Fragments;
+OC   Eukaryota; Viridiplantae; Streptophyta; Embryophyta; Tracheophyta;
+OC   Spermatophyta; Magnoliopsida; eudicotyledons; Gunneridae; Pentapetalae;
+OC   Caryophyllales; Chenopodiaceae; Chenopodioideae; Anserineae; Spinacia.
+DR   AlphaFoldDB; P86549; -.
+DR   Proteomes; UP001155700; Unplaced.
+DR   GO; GO:0004867; F:serine-type endopeptidase inhibitor activity; IDA:UniProtKB.
+SQ   SEQUENCE   20 AA;  2045 MW;  38D90651D94C361E CRC64;
+     TVAACNSPKV GLDSDAELVR
+//

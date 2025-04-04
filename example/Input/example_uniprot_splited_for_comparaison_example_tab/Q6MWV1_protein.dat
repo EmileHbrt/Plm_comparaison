@@ -1,0 +1,28 @@
+ID   PG60_MYCTU              Reviewed;         104 AA.
+AC   Q6MWV1; V5QRY0;
+DE   RecName: Full=PE-PGRS family protein PE_PGRS60 {ECO:0000305};
+OC   Bacteria; Bacillati; Actinomycetota; Actinomycetes; Mycobacteriales;
+OC   Mycobacteriaceae; Mycobacterium; Mycobacterium tuberculosis complex.
+DR   EMBL; AL123456; CCP46475.1; -; Genomic_DNA.
+DR   RefSeq; WP_003901689.1; NC_000962.3.
+DR   RefSeq; YP_178001.1; NC_000962.3.
+DR   AlphaFoldDB; Q6MWV1; -.
+DR   SMR; Q6MWV1; -.
+DR   STRING; 83332.Rv3652; -.
+DR   PaxDb; 83332-Rv3652; -.
+DR   GeneID; 886260; -.
+DR   KEGG; mtu:Rv3652; -.
+DR   KEGG; mtv:RVBD_3652; -.
+DR   PATRIC; fig|83332.293.peg.4073; -.
+DR   TubercuList; Rv3652; -.
+DR   HOGENOM; CLU_000167_16_11_11; -.
+DR   InParanoid; Q6MWV1; -.
+DR   Proteomes; UP000001584; Chromosome.
+DR   Gene3D; 1.10.287.850; HP0062-like domain; 1.
+DR   InterPro; IPR000084; PE-PGRS_N.
+DR   Pfam; PF00934; PE; 1.
+DR   SUPFAM; SSF140459; PE/PPE dimer-like; 1.
+SQ   SEQUENCE   104 AA;  10636 MW;  54F22A9F7FA30ECA CRC64;
+     MSYVIAAPEA LVAAATDLAT LGSTIGAANA AAAGSTTALL TAGADEVSAA IAAYSECTAR
+     PIRHSVRGRR RSMSGSCRPW PQVGAPMRPP RPPASRRCRA RSIC
+//

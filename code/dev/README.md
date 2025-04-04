@@ -1,6 +1,3 @@
-<<<<<<< dlrx_br
-### Read me of folder code
-=======
 # Uni_parse.py example 
 
 This code is used to split Uniprot database to get one file (.dat) per protein with the informations of the protein.
@@ -30,17 +27,9 @@ Also a csv with all interpro_id and their EC_number.
 python Interpro_parse.py -i <input_file> -o <output_dir> 
 ```
 
-# Create_tab example 
+# Informative_csv example 
 
-This code is used to obtain an informative csv with the best prediction of Plmsearch for each unknowed CK.
-- `<bestHit_file>`: The path to the input file containing the data of bestHit of Plmsearch.
-- `<input_dir>`: The path of the folder where the Uniprot file have been splited (NB : use Uni_parse)
-- `<output_dir>`: The path where the output file will be saved.
-
-```python
-# Example usage of Create_tab.py
-python Create_tab.py -p <bestHit_file> -d <input_dir> -o <output_dir> 
-```
+This code is used to obtain an informative csv with the best prediction of Plmsearch for each unknowed CK in Cyanorak. 
 
 
 # Parser_tab.py example
@@ -69,4 +58,3 @@ This code is used to combine several tables based on a common column.
 # Example usage of Combine_tab.py
 python Combine_tab.py -i <list_input_file> -o <output_file> -c <combine_col>
 ```
->>>>>>> master

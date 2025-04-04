@@ -1,0 +1,17 @@
+ID   HBD_CLOPA               Reviewed;          16 AA.
+AC   P81343;
+DE   RecName: Full=3-hydroxybutyryl-CoA dehydrogenase;
+DE            EC=1.1.1.157;
+DE   AltName: Full=Beta-hydroxybutyryl-CoA dehydrogenase;
+DE            Short=BHBD;
+DE   AltName: Full=CP 26;
+DE   Flags: Fragment;
+OC   Bacteria; Bacillati; Bacillota; Clostridia; Eubacteriales; Clostridiaceae;
+OC   Clostridium.
+DR   AlphaFoldDB; P81343; -.
+DR   UniPathway; UPA00863; -.
+DR   GO; GO:0008691; F:3-hydroxybutyryl-CoA dehydrogenase activity; IEA:UniProtKB-EC.
+DR   GO; GO:0019605; P:butyrate metabolic process; IEA:UniProtKB-UniPathway.
+SQ   SEQUENCE   16 AA;  1570 MW;  E3AD430D5C575785 CRC64;
+     MKKVHVLGAG TMGAGI
+//

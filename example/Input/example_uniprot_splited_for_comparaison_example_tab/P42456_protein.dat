@@ -1,0 +1,17 @@
+ID   LPL_CORGL               Reviewed;          22 AA.
+AC   P42456;
+DE   RecName: Full=leu leader peptide;
+DE   AltName: Full=leuA operon attenuator peptide;
+OC   Bacteria; Bacillati; Actinomycetota; Actinomycetes; Mycobacteriales;
+OC   Corynebacteriaceae; Corynebacterium.
+DR   EMBL; X70959; CAA50295.1; ALT_TERM; Genomic_DNA.
+DR   EMBL; BA000036; -; NOT_ANNOTATED_CDS; Genomic_DNA.
+DR   EMBL; BX927148; -; NOT_ANNOTATED_CDS; Genomic_DNA.
+DR   PIR; I40725; I40725.
+DR   AlphaFoldDB; P42456; -.
+DR   Proteomes; UP000000582; Chromosome.
+DR   Proteomes; UP000001009; Chromosome.
+DR   GO; GO:0009098; P:L-leucine biosynthetic process; IEA:UniProtKB-KW.
+SQ   SEQUENCE   22 AA;  2535 MW;  BB6E3DA8604AD7F8 CRC64;
+     MLHHMTSRAN LLLLRRGGSQ RS
+//
