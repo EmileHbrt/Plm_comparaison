@@ -36,8 +36,13 @@ python code\Uni_parse.py -i example\Input\example_uniprot.txt -o example\Output\
 ```
 You can know see the results in example\Output\File_Uniprot_example !
 
+### Create_tab.py
+```pyhton
+python code\Create_tab.py -p "example\Input\example_PLMSearch_bestFirstHits.out" -o example\Output\File_Uniprot_example
+```
+
 ### Combine_tab.py
 
 ```python
-python code\Combine_tab.py -i data\comparaison_tab.csv,data\Interpros.filtered.csv,data\Pfam.filtered.csv -c ClusterNumber
+python code\Combine_tab.py -i data\comparaison_tab.csv,data\Interpros.filtered.csv,data\Pfam.filtered.csv -d "example\Input\example_uniprot_splited_for_comparaison_example_tab" -o  "example\Output"
 ```
