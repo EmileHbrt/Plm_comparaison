@@ -52,7 +52,7 @@ def IsExist(col_list : list):
                'PROFILE_id', 'PROFILE_describe', 'NCBIFAM_id', 'NCBIFAM_describe', 'PROSITE_id', 
                'PROSITE_describe', 'HAMAP_id', 'HAMAP_describe', 'SMART_id', 'SMART_describe',
                'PIRSF_id', 'PIRSF_describe', 'PANTHER_id', 'PANTHER_describe', 'CATHGENE3D_id',
-               'CATHGENE3D_describe', 'SSF_id', 'SSF_describe', 'GO_C', 'GO_F', 'GO_P']
+               'CATHGENE3D_describe', 'SSF_id', 'SSF_describe', 'GO_C', 'GO_F', 'GO_P','Interpro_result','Pfam_result']
 	
 	for elm in col_list:
 		if elm not in list_existing:
@@ -83,7 +83,7 @@ def main():
 
 	if options.score_arg is not None :
 		score_arg = options.score_arg
-		df = df.loc[df['score']>= float(score_arg) ,:]
+		df = df.loc[float(df['score']) >= float(score_arg) ,:]
 	
 	if options.col_choose is not None :
 		list_brute = options.col_choose
