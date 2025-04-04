@@ -15,7 +15,7 @@ The 'Output' file contains :
  
 ## How to use
 
-###  Interpro.py
+###  Interpro_parse.py
 
 ```python
 python code\dev\Interpro_parse.py -i example\Input\example_interpro.xml -o example\Output\File_Interpro_example
@@ -46,3 +46,5 @@ python code\dev\Create_tab.py -p "example\Input\example_PLMSearch_bestFirstHits.
 ```python
 python code\dev\Combine_tab.py -i data\comparaison_tab.csv,data\Interpros.filtered.csv,data\Pfam.filtered.csv -o example\Output\combine_example_tab.csv -c SeqCluster
 ```
+
+NB: some programs directly use the name of the file that will be created in the output path (such as Combine_tab.py or Parser_tab.py), others simply require the path where a new file will be created (such as Interpro_parse.py or Create_tab.py)
