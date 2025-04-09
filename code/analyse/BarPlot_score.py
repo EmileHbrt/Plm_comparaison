@@ -1,0 +1,74 @@
+# BarPlot_score Dorian & Emile
+
+import pandas as pd
+import matplotlib.pyplot as plt
+from optparse import OptionParser
+
+#==================================================================================================================
+def counting_method(tab,col_score_name,min_score):
+    """
+      Retrun a list of with 1 element for each score interval (of 0.1) which correspond to the number of CK annoted for at least this score interval  
+      
+    args :
+    "tab" : a panda dataset with at least one score column and in which each row correspond to a CK
+    "col_score_name" : the name of the score columm in str
+    "min_score" : the minimal score to be entered in the plot (a multiple a 0.1)
+    """
+
+    y_abs = [0 for i in range(int((1 - min_score)*10)+1)]
+    list_score = tab[col_score_name]
+    for i in range(len(list_score)):
+        score = list_score[i]
+        if (score != ' ') and (score != '') :
+            idx = int( ( float(score) - min_score )* 10 +1 ) 
+            for add in range(idx):
+                y_abs[add] += 1
+    return y_abs
+
+#==================================================================================================================
+
+def plot_save(output,y_abs):
+    """
+    Create and save the plot in jpeg format to the output file
+
+    args : 
+    "output" : Path for the bar plot in jpeg format
+    "y_abs" : a list of number of annotation by score
+    """
+    
+    x_abs = [1 - (i*0.1) for i in range(len(y_abs))]
+    x_abs = x_abs[::-1]
+
+    plt.bar(x_abs,y_abs)
+    plt.ylabel('Number of annotated CK')
+    plt.xlabel('Score')
+    plt.title('Bar plot of the number of annotated CK as a function of score ')
+    plt.savefig(output,format = "jpeg")
+#==================================================================================================================
+def main():
+    usage = usage = "python Combine_tab.py -i <input_file> -o <output_file>  -s <score_column> -m <minimal_score> \n" 
+    parser = OptionParser(usage)
+    parser.add_option("-i", "--input_file", dest="input_file", help="The path to the results table of a method in csv format, with at least a score column and a row for each CK ")
+    parser.add_option("-o", "--output_file", dest="output_file", help="Path for the bar plot in jpeg format")
+    parser.add_option("-c", "--score_column", dest="score_column", help="Name of the score column")
+    parser.add_option("-m", "--minimal_score", dest="minimal_score", help="The minimum score to be entered in the plot (a multiple a 0.1) ")
+
+    (options, args) = parser.parse_args()
+    input_list = options.list_input_file
+    output_file = options.output_file 
+    col_score_name = options.score_column
+    min_score = options.minimal_score
+
+
+
+    df = pd.read_csv(input_list)
+    y_abs = counting_method(df,col_score_name,min_score)
+
+
+
+
+
+
+#==================================================================================================================
+if __name__ == "__main__":
+	main()
