@@ -69,9 +69,9 @@ def main():
 
     nb_barplot = compter_barplot(output_file)
     if nb_barplot == 0 :
-        output_file +=  "Barplot.jpeg"
+        output_file +=  "\Barplot.jpeg"
     else :
-        output_file += f"Barplot_{ nb_barplot + 1 }.jpeg"
+        output_file += f"\Barplot_{ nb_barplot + 1 }.jpeg"
 
     df = pd.read_csv(input_list)
     y_abs = counting_method(df,col_score_name,min_score)
