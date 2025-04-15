@@ -47,6 +47,8 @@ def plot_save(output,y_abs):
     x_abs = [1 - (i*0.1) for i in range(len(y_abs))]
     x_abs = x_abs[::-1]
 
+    print('x_abs',x_abs, 'y_abs',y_abs)
+
     plt.bar(x_abs,y_abs)
     plt.ylabel('Number of annotated CK')
     plt.xlabel('Score')
