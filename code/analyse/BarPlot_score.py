@@ -54,7 +54,7 @@ def main():
     parser.add_option("-m", "--minimal_score", dest="minimal_score", help="The minimum score to be entered in the plot (a multiple a 0.1) ")
 
     (options, args) = parser.parse_args()
-    input_list = options.list_input_file
+    input_list = options.input_file
     output_file = options.output_file 
     col_score_name = options.score_column
     min_score = options.minimal_score
