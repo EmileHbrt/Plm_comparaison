@@ -75,7 +75,7 @@ def main():
     else :
         output_file += f"\Barplot_{ nb_barplot + 1 }.jpeg"
 
-    df = pd.read_csv(input_list)
+    df = pd.read_csv(input_list,low_memory=False)
     y_abs = counting_method(df,col_score_name,min_score)
     plot_save(output_file,y_abs)
 
