@@ -20,7 +20,7 @@ def counting_method(tab,col_score_name,min_score):
     for i in range(len(list_score)):
         score = list_score[i]
         if (score != ' ') and (score != '') :
-            idx = int( ( float(score) - min_score )* 10 +1 ) 
+            idx = int( ( float(score) - float(min_score) )* 10 +1 ) 
             for add in range(idx):
                 y_abs[add] += 1
     return y_abs
