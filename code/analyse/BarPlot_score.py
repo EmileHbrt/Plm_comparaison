@@ -63,6 +63,7 @@ def main():
 
     df = pd.read_csv(input_list)
     y_abs = counting_method(df,col_score_name,min_score)
+    plot_save(output_file,y_abs)
 
 
 
