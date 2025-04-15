@@ -30,7 +30,7 @@ def counting_method(tab,col_score_name,min_score):
 
 def compter_barplot(chemin):
     fichiers = os.listdir(chemin)
-    compteur = fichiers.count("BarPlot")  
+    compteur = sum(1 for fichier in fichiers if "Barplot" in fichier)  
     return compteur
 
 #==================================================================================================================
@@ -46,8 +46,6 @@ def plot_save(output,y_abs):
     
     x_abs = [str(1 - (i*0.1)) for i in range(len(y_abs))]
     x_abs = x_abs[::-1]
-
-    print('x_abs',x_abs, 'y_abs',y_abs)
 
     plt.bar(x_abs,y_abs)
     plt.ylabel('Number of annotated CK')
