@@ -30,8 +30,7 @@ def counting_method(tab,col_score_name,min_score):
 
 def compter_barplot(chemin):
     fichiers = os.listdir(chemin)
-    compteur = sum(1 for fichier in fichiers if "Barplot" in fichier)  
-    print(compteur)
+    compteur = sum(1 for fichier in fichiers if "Barplot" in fichier) 
     return compteur
 
 #==================================================================================================================
