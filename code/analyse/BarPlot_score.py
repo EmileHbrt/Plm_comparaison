@@ -46,7 +46,7 @@ def plot_save(output,y_abs):
     plt.savefig(output,format = "jpeg")
 #==================================================================================================================
 def main():
-    usage = usage = "python Combine_tab.py -i <input_file> -o <output_file>  -s <score_column> -m <minimal_score> \n" 
+    usage = usage = "python BarPlot_score.py -i <input_file> -o <output_file>  -c <score_column> -m <minimal_score> \n" 
     parser = OptionParser(usage)
     parser.add_option("-i", "--input_file", dest="input_file", help="The path to the results table of a method in csv format, with at least a score column and a row for each CK ")
     parser.add_option("-o", "--output_file", dest="output_file", help="Path for the bar plot in jpeg format")
