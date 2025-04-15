@@ -15,7 +15,7 @@ def counting_method(tab,col_score_name,min_score):
     "min_score" : the minimal score to be entered in the plot (a multiple a 0.1)
     """
 
-    y_abs = [0 for i in range(int((1 - min_score)*10)+1)]
+    y_abs = [0 for i in range(int((1 - float(min_score))*10)+1)]
     list_score = tab[col_score_name]
     for i in range(len(list_score)):
         score = list_score[i]
