@@ -44,7 +44,7 @@ def plot_save(output,y_abs):
     "y_abs" : a list of number of annotation by score
     """
     
-    x_abs = [1 - (i*0.1) for i in range(len(y_abs))]
+    x_abs = [str(1 - (i*0.1)) for i in range(len(y_abs))]
     x_abs = x_abs[::-1]
 
     print('x_abs',x_abs, 'y_abs',y_abs)
@@ -54,7 +54,9 @@ def plot_save(output,y_abs):
     plt.xlabel('Score')
     plt.title('Bar plot of the number of annotated CK as a function of score ')
     plt.savefig(output,format = "jpeg")
+
 #==================================================================================================================
+
 def main():
     usage = usage = "python BarPlot_score.py -i <input_file> -o <output_file>  -c <score_column> -m <minimal_score> \n" 
     parser = OptionParser(usage)
@@ -78,11 +80,6 @@ def main():
     df = pd.read_csv(input_list)
     y_abs = counting_method(df,col_score_name,min_score)
     plot_save(output_file,y_abs)
-
-
-
-
-
 
 #==================================================================================================================
 if __name__ == "__main__":
