@@ -86,8 +86,3 @@ def main():
 if __name__ == "__main__":
 	main()
      
-
-
-
-# Appel de la fonction
-compter_barplot(chemin_dossier)
