@@ -1,5 +1,6 @@
 # BarPlot_score Dorian & Emile
 
+import os
 import pandas as pd
 import matplotlib.pyplot as plt
 from optparse import OptionParser
@@ -24,6 +25,13 @@ def counting_method(tab,col_score_name,min_score):
             for add in range(idx):
                 y_abs[add] += 1
     return y_abs
+
+#==================================================================================================================
+
+def compter_barplot(chemin):
+    fichiers = os.listdir(chemin)
+    compteur = fichiers.count("BarPlot")  
+    return compteur
 
 #==================================================================================================================
 
@@ -59,7 +67,11 @@ def main():
     col_score_name = options.score_column
     min_score = options.minimal_score
 
-
+    nb_barplot = compter_barplot(output_file)
+    if nb_barplot == 0 :
+        output_file +=  "Barplot.jpeg"
+    else :
+        output_file += f"Barplot_{ nb_barplot + 1 }.jpeg"
 
     df = pd.read_csv(input_list)
     y_abs = counting_method(df,col_score_name,min_score)
@@ -73,3 +85,9 @@ def main():
 #==================================================================================================================
 if __name__ == "__main__":
 	main()
+     
+
+
+
+# Appel de la fonction
+compter_barplot(chemin_dossier)
