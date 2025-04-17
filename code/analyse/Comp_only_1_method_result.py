@@ -54,14 +54,15 @@ def id_score_finder(df, min_score, test_col_name, ref_col_name, col_score_name):
     list_score_tab = df[col_score_name]
 
     for i in range(len(df)):
-        if ((list_ref[i] == ' ') or (list_ref[i] == '')) and (float(list_score_tab[i]) >= float(min_score)):
-            id_temp_list = list_creator( list_test[i] )
-            for x in range(len(id_temp_list)) :
-                if id_temp_list[x] not in dict_id :
-                    dict_id[id_temp_list[x]] = 1 
-                    list_score.append(list_score_tab[i])
-                else :
-                    dict_id[id_temp_list[x]] += 1
+        if ((list_ref[i] == ' ') or (list_ref[i] == '')) :
+            if (float(list_score_tab[i]) >= float(min_score)):
+                id_temp_list = list_creator( list_test[i] )
+                for x in range(len(id_temp_list)) :
+                    if id_temp_list[x] not in dict_id :
+                        dict_id[id_temp_list[x]] = 1 
+                        list_score.append(list_score_tab[i])
+                    else :
+                        dict_id[id_temp_list[x]] += 1
     return (dict_id,list_score)
                  
 #==================================================================================================================
