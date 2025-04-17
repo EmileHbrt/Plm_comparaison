@@ -59,7 +59,7 @@ def id_score_finder(df, min_score, test_col_name, ref_col_name, col_score_name):
             for x in range(len(id_temp_list)) :
                 if id_temp_list[x] not in dict_id :
                     dict_id[id_temp_list[x]] = 1 
-                    list_score.append(list_score[i])
+                    list_score.append(list_score_tab[i])
                 else :
                     dict_id[id_temp_list[x]] += 1
     return (dict_id,list_score)
