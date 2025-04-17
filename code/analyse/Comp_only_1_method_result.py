@@ -54,7 +54,7 @@ def id_score_finder(df, min_score, test_col_name, ref_col_name, col_score_name):
     list_score_tab = df[col_score_name]
 
     for i in range(len(df)):
-        if ((list_ref[i] == ' ') or (list_ref[i] == '')) :
+        if ((list_ref[i] == ' ') or (list_ref[i] == '')) and ((list_test[i] != ' ') or (list_test[i] != '')) :
             if (float(list_score_tab[i]) >= float(min_score)):
                 id_temp_list = list_creator( list_test[i] )
                 for x in range(len(id_temp_list)) :
