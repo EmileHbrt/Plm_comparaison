@@ -55,3 +55,8 @@ python code\dev\Combine_tab.py -i data\comparaison_tab.csv,data\Interpros.filter
 ```python
 python code\analyse\BarPlot_score.py -i example\Output\combine_example_tab.csv -o example\Output -c score -m 0.5 -a Prot_AC
 ```
+
+### venn_diagram.py
+```
+python code\analyse\venn_diagram.py -i example\Output\combine_example_tab.csv -o example\Output\Venn_analysis -c 'SeqCluster,ClusterNumber,InterPro_id,Interpro_result' -n 'CK_00000001'
+```
