@@ -33,7 +33,7 @@ You can now see a csv in the folder, with the four columns indicated and only sc
 
 ### Uni_parse.py 
 
-```pyhton
+```pyton
 python code\dev\Uni_parse.py -i example\Input\example_uniprot.txt -o example\Output\File_Uniprot_example
 ```
 You can know see the results in example\Output\File_Uniprot_example !
@@ -54,4 +54,9 @@ python code\dev\Combine_tab.py -i data\comparaison_tab.csv,data\Interpros.filter
 ### BarPlot_score.py
 ```python
 python code\analyse\BarPlot_score.py -i example\Output\combine_example_tab.csv -o example\Output -c score -m 0.5 -a Prot_AC
+```
+
+### venn_diagram.py
+```python
+python code\analyse\venn_diagram.py -i example\Output\combine_example_tab.csv -o example\Output\Venn_analysis -c 'SeqCluster,ClusterNumber,InterPro_id,Interpro_result' -n 'CK_00000001'
 ```
