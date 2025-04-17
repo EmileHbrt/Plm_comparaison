@@ -1,5 +1,7 @@
 # Example of programme use 
 
+NB: some programs directly use the name of the file that will be created in the output path (such as Combine_tab.py or Parser_tab.py), others simply require the path where a new file will be created (such as Interpro_parse.py , BarPlot_score.py or Create_tab.py)
+
 ## Input folder
 
 The 'Input' file contains :
@@ -13,7 +15,7 @@ The 'Output' file contains :
  - 'parsed_example_tab.csv' is a csv file obtained by parsing comparison_tab.csv from data(see next).
  - 'File_Uniprot_example' is a folder containing the results obtained using Uni_parse.py on the example_uniprot.txt file. 
  
-## How to use
+## How to use Dev codes
 
 ###  Interpro_parse.py
 
@@ -47,4 +49,9 @@ python code\dev\Create_tab.py -p "example\Input\example_PLMSearch_bestFirstHits.
 python code\dev\Combine_tab.py -i data\comparaison_tab.csv,data\Interpros.filtered.csv,data\Pfam.filtered.csv -o example\Output\combine_example_tab.csv -c SeqCluster
 ```
 
-NB: some programs directly use the name of the file that will be created in the output path (such as Combine_tab.py or Parser_tab.py), others simply require the path where a new file will be created (such as Interpro_parse.py or Create_tab.py)
+## How to use Analyse codes
+
+### BarPlot_score.py
+```python
+python code\analyse\BarPlot_score.py -i example\Output\combine_example_tab.csv -o example\Output -c score -m 0.5 -a InterPro_id
+```

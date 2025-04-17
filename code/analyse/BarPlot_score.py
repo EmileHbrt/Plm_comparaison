@@ -83,33 +83,35 @@ def plot_save(output,y_abs):
 #==================================================================================================================
 
 def main():
-    usage = usage = "python BarPlot_score.py -i <input_file> -o <output_file>  -c <score_column> -m <minimal_score> -a <annotation_col> \n" 
+    usage = usage = "python BarPlot_score.py -i <input_file> -o <output_dir>  -c <score_column> -m <minimal_score> -a <annotation_col> \n" 
     parser = OptionParser(usage)
     parser.add_option("-i", "--input_file", dest="input_file", help="The path to the results table of a method in csv format, with at least a score column and a row for each CK ")
-    parser.add_option("-o", "--output_file", dest="output_file", help="Path for the bar plot in jpeg format")
+    parser.add_option("-o", "--output_dir", dest="output_dir", help="Path for the bar plot in jpeg format")
     parser.add_option("-c", "--score_column", dest="score_column", help="Name of the score column")
     parser.add_option("-m", "--minimal_score", dest="minimal_score", help="The minimum score to be entered in the plot (a multiple a 0.1) ")
     parser.add_option("-a", "--annotation_col", dest="annotation_col", help="The name of the column containing the annotations, if the argument is not given, all rows will be considered as annotated")
 
     (options, args) = parser.parse_args()
     input_list = options.input_file
-    output_file = options.output_file 
+    output_dir = options.output_dir 
     col_score_name = options.score_column
     min_score = options.minimal_score
     annotation_col = options.annotation_col
 
-    nb_barplot = compter_barplot(output_file)
+    nb_barplot = compter_barplot(output_dir)
     if nb_barplot == 0 :
-        output_file +=  "\Barplot.jpeg"
+        output_dir +=  "\Barplot.jpeg"
     else :
-        output_file += f"\Barplot_{ nb_barplot + 1 }.jpeg"
+        output_dir += f"\Barplot_{ nb_barplot + 1 }.jpeg"
 
     df = pd.read_csv(input_list,low_memory=False)
+    if min_score is None :
+        min_score = 0.5
     if annotation_col is None:
         y_abs = counting_method_None(df,col_score_name,min_score)
     else :
         y_abs = counting_method_Arg(df,col_score_name,min_score,annotation_col)
-    plot_save(output_file,y_abs)
+    plot_save(output_dir,y_abs)
 
 #==================================================================================================================
 if __name__ == "__main__":
