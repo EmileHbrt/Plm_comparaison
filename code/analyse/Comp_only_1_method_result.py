@@ -73,7 +73,7 @@ def compter_comp_plot(chemin):
 
 #==================================================================================================================
 def main():
-    usage = usage = "python Comp_only_1_method_result.py -i <input_file> -o <output_dir>  -c <score_column> -m <minimal_score> -t <test_col_name> -r <ref_col_name>\n" 
+    usage = usage = "python Comp_only_1_method_result.py -i <input_file> -o <output_dir>  -c <score_column> -m <minimal_score> -t <test_col_name> -r <ref_col_name> \n" 
     parser = OptionParser(usage)
     parser.add_option("-i", "--input_file", dest="input_file", help="The path to the results table of a method in csv format, with at least a score column and a row for each CK ")
     parser.add_option("-o", "--output_dir", dest="output_dir", help="Path for the bar plot in jpeg format")
