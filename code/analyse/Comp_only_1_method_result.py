@@ -76,6 +76,7 @@ def id_score_finder(df, min_score, test_col_name, ref_col_name, col_score_name):
         ref_value = row[ref_col_name]
         test_value = row[test_col_name]
         score_value = row[col_score_name]
+        print(f"ref_value :{ref_value},test_value : {test_value}, score_value : {score_value}")
         
         if ref_value in [' ', ''] and test_value not in [' ', '']:
             if float(score_value) >= float(min_score):
