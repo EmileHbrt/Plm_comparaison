@@ -107,6 +107,8 @@ def main():
     df = pd.read_csv(input_list,low_memory=False)
     if min_score is None :
         min_score = 0.5
+    if col_score_name is None:
+        col_score_name = 'score'
     if annotation_col is None:
         y_abs = counting_method_None(df,col_score_name,min_score)
     else :
