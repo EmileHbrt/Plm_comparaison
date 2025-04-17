@@ -46,7 +46,7 @@ python code\dev\Create_tab.py -p "example\Input\example_PLMSearch_bestFirstHits.
 ### Combine_tab.py
 
 ```python
-python code\dev\Combine_tab.py -i data\comparaison_tab.csv,data\Interpros.filtered.csv,data\Pfam.filtered.csv -o example\Output\combine_example_tab.csv -c SeqCluster
+python code\dev\Combine_tab.py -i data\comparaison_tab.csv,data\Interpros.filtered.csv,data\Pfam.filtered.csv,data\GoTerms_filtered_for_cyanorak.csv -o example\Output\combine_example_tab.csv -c SeqCluster
 ```
 
 ## How to use Analyse codes
