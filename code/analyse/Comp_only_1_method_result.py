@@ -46,24 +46,34 @@ def plot_creator(dict_id,output):
 
 def id_score_finder(df, min_score, test_col_name, ref_col_name, col_score_name):
     """
+
+    Args:
+        df: 
+        min_score: 
+        test_col_name: 
+        ref_col_name: 
+        col_score_name: 
     """
     dict_id = {}
     list_score = []
-    list_ref = df[ref_col_name]
-    list_test = df[test_col_name]
-    list_score_tab = df[col_score_name]
+    
+    for idx, row in df.iterrows():
+        ref_value = row[ref_col_name]
+        test_value = row[test_col_name]
+        score_value = row[col_score_name]
+        
+        if ref_value in [' ', ''] and test_value not in [' ', '']:
+            if float(score_value) >= float(min_score):
+                id_temp_list = list_creator(test_value)
+                for id_item in id_temp_list:
+                    if id_item not in dict_id:
+                        dict_id[id_item] = 1
+                        list_score.append(score_value)
+                    else:
+                        dict_id[id_item] += 1
+                        
+    return dict_id, list_score
 
-    for i in range(len(df)):
-        if ((list_ref[i] == ' ') or (list_ref[i] == '')) and ((list_test[i] != ' ') or (list_test[i] != '')) :
-            if (float(list_score_tab[i]) >= float(min_score)):
-                id_temp_list = list_creator( list_test[i] )
-                for x in range(len(id_temp_list)) :
-                    if id_temp_list[x] not in dict_id :
-                        dict_id[id_temp_list[x]] = 1 
-                        list_score.append(list_score_tab[i])
-                    else :
-                        dict_id[id_temp_list[x]] += 1
-    return (dict_id,list_score)
                  
 #==================================================================================================================
 
