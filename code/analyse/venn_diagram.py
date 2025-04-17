@@ -181,10 +181,6 @@ def main():
         print(f"Number of PLM completed by " + col_list[-1] + ": ", count_plm_completed_by_other)
         print(f"Number of " + col_list[-1] + " completed by PLM: ", count_other_completed_by_plm)
 
-
-        print(count_plmIsSubset + count_otherIsSubset  + count_plm_completed_by_other + count_other_completed_by_plm + count_plm_empty + count_nothing + count_other_empty+ count_noIntersection)
-        print(len(filtered_tab))
-
 #==================================================================================================================
 
 if __name__ == "__main__":
