@@ -34,12 +34,27 @@ def list_creator(str_arg: str):
 
 #==================================================================================================================
 
-def plot_creator(dict_id,output):
+import matplotlib.pyplot as plt
+
+def plot_creator(dict_id, output):
     """
+
+    Args:
+        dict_id (dict): 
+        output (str): 
     """
-    for key,val in dict_id.items():
-        plt.bar(key,val)
-    plt.savefig(output,format = "jpeg")
+    plt.figure(figsize=(15, 8))
+    keys = list(dict_id.keys())
+    values = list(dict_id.values())
+    plt.bar(keys, values, color='skyblue')
+    plt.xlabel('Identifiants')
+    plt.ylabel('Nombre')
+    plt.title("Diagramme en barres des identifiants")
+    
+    plt.savefig(output, format="jpeg")
+
+    plt.close()
+
 
 
 #==================================================================================================================
