@@ -80,15 +80,15 @@ def id_score_finder(df, min_score, test_col_name, ref_col_name, col_score_name):
 
         if ref_value is None :
             ref_value = ''
-            
+
         if ref_value in [' ', ''] and test_value not in [' ', '']:
             print('je passe')
             if float(score_value) >= float(min_score):
+                list_score.append(score_value)
                 id_temp_list = list_creator(test_value)
                 for id_item in id_temp_list:
                     if id_item not in dict_id:
                         dict_id[id_item] = 1
-                        list_score.append(score_value)
                     else:
                         dict_id[id_item] += 1
                         
