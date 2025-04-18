@@ -6,6 +6,19 @@ from optparse import OptionParser
 
 #==================================================================================================================
 
+def jaccard_coefficient(set1, set2):
+    """
+    Calcule le coefficient de Jaccard entre deux ensembles.
+    
+    :param set1: Premier ensemble
+    :param set2: Deuxième ensemble
+    :return: Coefficient de Jaccard (float)
+    """
+    intersection = len(set1.intersection(set2))
+    union = len(set1.union(set2))
+    return intersection / union if union != 0 else 0.0
+
+#==================================================================================================================
 def list_creater(str_arg : str):
 	"""
 	returns from a comma-separated str list, a python list of str 
@@ -27,7 +40,6 @@ def list_creater(str_arg : str):
 	return col_list
 
 #==================================================================================================================
-
 def IsExist(col_list : list):
 	"""
 	returns true if all elements of col_list are contained in the existing column list 
@@ -48,9 +60,11 @@ def IsExist(col_list : list):
 			return False
 		
 	return True
+
 #==================================================================================================================
 # 											main
 #==================================================================================================================
+
 def main():
     usage = "python venn_diagram.py -i <input_file> -o <output_dir> -c <col_list> -n <cluster_number>\n"
     parser = OptionParser(usage)
@@ -128,14 +142,9 @@ def main():
 
                 # Write the column headers to each worksheet
                 headers = filtered_tab.columns.tolist()
-                worksheet1.write_row(0, 0, headers)
-                worksheet2.write_row(0, 0, headers)
-                worksheet3.write_row(0, 0, headers)
-                worksheet4.write_row(0, 0, headers)
-                worksheet5.write_row(0, 0, headers)
-                worksheet6.write_row(0, 0, headers)
-                worksheet7.write_row(0, 0, headers)
-                worksheet8.write_row(0, 0, headers)
+                for i in range(1, 9):
+                    locals()[f'worksheet{i}'].write_row(0, 0, headers)
+                    
 
             if len(plm_set) == 0 and len(other_set) == 0:
                 count_nothing += 1
@@ -159,13 +168,16 @@ def main():
 
             else:
                 if len(plm_set.intersection(other_set)) != 0:
+
                     if len(plm_set) >= len(other_set):
                         count_other_completed_by_plm += 1  
-                        worksheet7.write_row(count_other_completed_by_plm, 0, row.values.tolist())
+                        result = jaccard_coefficient(plm_set, other_set)
+                        row_with_jaccard = row.values.tolist() + [result]
+                        worksheet7.write_row(count_other_completed_by_plm, 0, row_with_jaccard)
+
                     elif len(other_set) > len(plm_set):
                         count_plm_completed_by_other += 1
                         worksheet6.write_row(count_plm_completed_by_other, 0, row.values.tolist())
-
                 else:
                     count_noIntersection += 1
                     worksheet8.write_row(count_noIntersection, 0, row.values.tolist())
@@ -181,6 +193,8 @@ def main():
         print(f"Number of PLM completed by " + col_list[-1] + ": ", count_plm_completed_by_other)
         print(f"Number of " + col_list[-1] + " completed by PLM: ", count_other_completed_by_plm)
 
+        print("Somme", count_plmIsSubset + count_otherIsSubset + count_plm_empty + count_other_empty + count_nothing  + count_noIntersection + count_plm_completed_by_other + count_other_completed_by_plm)
+        print("Sous-somme des prédictions existantes", count_plmIsSubset + count_otherIsSubset + count_plm_completed_by_other + count_other_completed_by_plm+count_noIntersection)
 #==================================================================================================================
 
 if __name__ == "__main__":
