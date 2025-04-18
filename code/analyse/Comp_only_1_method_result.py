@@ -13,9 +13,6 @@ def list_creator(str_arg: str):
 
     Args:
     str_arg: The input string.
-
-    Returns:
-    A list of substrings.
     """
     col_list = [] 
     name = ''
@@ -34,22 +31,20 @@ def list_creator(str_arg: str):
 
 #==================================================================================================================
 
-import matplotlib.pyplot as plt
-
-def plot_creator(dict_id, output):
+def plot_creator(dict_id : dict, output :str):
     """
+    Create a bar plot of number use of each id (InterPro or Pfam for example).
 
     Args:
-        dict_id (dict): 
-        output (str): 
+        dict_id : a dict containing for key an id (ex : IPR003593) and for value the number of apparition of this id. 
+        output : the path of the output file. 
     """
     plt.figure(figsize=(15, 8))
     keys = list(dict_id.keys())
     values = list(dict_id.values())
     plt.bar(keys, values, color='skyblue')
-    plt.xlabel('Identifiants')
-    plt.ylabel('Nombre')
-    plt.title("Diagramme en barres des identifiants")
+    plt.xlabel('Id')
+    plt.ylabel('Number of apparition')
     
     plt.savefig(output, format="jpeg")
 
@@ -59,15 +54,17 @@ def plot_creator(dict_id, output):
 
 #==================================================================================================================
 
-def id_score_finder(df, min_score, test_col_name, ref_col_name, col_score_name):
+def id_score_finder(df, min_score : str, test_col_name : str, ref_col_name : str, col_score_name : str):
     """
+    Create one dictid list and a score list from a tab (df). Dict_id will contain all id for row that have nothing in ref column, but an annotation in test column. And the 
+    score list will contain all the score for this type of case.
 
     Args:
-        df: 
-        min_score: 
-        test_col_name: 
-        ref_col_name: 
-        col_score_name: 
+        df : a panda dataframe
+        min_score : the minimal score
+        test_col_name : the name of the annotation col for the tested method
+        ref_col_name : the name of the annotation col for the reference method
+        col_score_name : the name of a score column. 
     """
     dict_id = {}
     list_score = []
@@ -76,7 +73,6 @@ def id_score_finder(df, min_score, test_col_name, ref_col_name, col_score_name):
         ref_value = row[ref_col_name]
         test_value = row[test_col_name]
         score_value = row[col_score_name]
-        #print(f"ref_value :{ref_value},test_value : {test_value}, score_value : {score_value}")
 
         if ref_value is None :
             ref_value = ''
