@@ -53,7 +53,7 @@ def IsExist(col_list : list):
                'PROFILE_id', 'PROFILE_describe', 'NCBIFAM_id', 'NCBIFAM_describe', 'PROSITE_id', 
                'PROSITE_describe', 'HAMAP_id', 'HAMAP_describe', 'SMART_id', 'SMART_describe',
                'PIRSF_id', 'PIRSF_describe', 'PANTHER_id', 'PANTHER_describe', 'CATHGENE3D_id',
-               'CATHGENE3D_describe', 'SSF_id', 'SSF_describe', 'GO_C', 'GO_F', 'GO_P','Interpro_result','Pfam_result']
+               'CATHGENE3D_describe', 'SSF_id', 'SSF_describe', 'GO_C', 'GO_F', 'GO_P','Interpro_result','Pfam_result', 'GO_result']
 	
 	for elm in col_list:
 		if elm not in list_existing:
@@ -92,9 +92,17 @@ def main():
         print(col_list)
     else:
         print(col_list)
-        filtered_tab = tab.loc[:, col_list]
+        
+        # Process GO terms to extract only the GO IDs separated by two spaces
+        if col_list[-2].startswith('GO'):
+             filtered_tab = tab.loc[:, col_list]
+             filtered_tab[col_list[-2]] = filtered_tab[col_list[-2]].apply(
+                 lambda x: '  '.join([item.split(',')[0] for item in str(x).split(';') if item.startswith('GO:')])
+                 )
+        else:
+             filtered_tab = tab.loc[:, col_list]
         filtered_tab = filtered_tab[filtered_tab['ClusterNumber'].str.startswith('CK')]
-        print(filtered_tab)
+        print(filtered_tab.head())
 
         count_plmIsSubset = 0
         count_otherIsSubset = 0
