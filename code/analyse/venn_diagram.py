@@ -112,6 +112,7 @@ def main():
         count_plm_completed_by_other= 0
         count_other_completed_by_plm = 0
         count_noIntersection = 0
+        count_same = 0
 
         for index, row in filtered_tab.iterrows():  
 
@@ -137,7 +138,7 @@ def main():
 
             # Create a new Excel file with multiple sheets (only once, outside the loop)
             elif 'workbook' not in locals():
-                workbook = xlsxwriter.Workbook(output_dir + "/" +  str(col_list[-1]) + "_venn_analysis.xlsx")
+                workbook = xlsxwriter.Workbook(output_dir + "/" +  str(col_list[-2]) + "_venn_analysis.xlsx")
 
                 worksheet1 = workbook.add_worksheet("PLM_Subset")
                 worksheet2 = workbook.add_worksheet(str(col_list[-1])+"_Subset")
@@ -147,10 +148,12 @@ def main():
                 worksheet6 = workbook.add_worksheet("Plm_completed_by")
                 worksheet7 = workbook.add_worksheet("completed_by_PLM")
                 worksheet8 = workbook.add_worksheet("NoIntersection")
+                worksheet9 = workbook.add_worksheet("Same")
 
                 # Write the column headers to each worksheet
                 headers = filtered_tab.columns.tolist()
-                for i in range(1, 9):
+
+                for i in range(1, 10):
                     locals()[f'worksheet{i}'].write_row(0, 0, headers)
                     
 
@@ -165,33 +168,70 @@ def main():
             elif len(other_set) == 0:
                 count_other_empty += 1
                 worksheet4.write_row(count_other_empty, 0, row.values.tolist())
-
-            elif plm_set.issubset(other_set):
-                count_plmIsSubset += 1
-                worksheet1.write_row(count_plmIsSubset, 0, row.values.tolist())
-
-            elif other_set.issubset(plm_set):
-                count_otherIsSubset += 1
-                worksheet2.write_row(count_otherIsSubset, 0, row.values.tolist())
-
+            
+            elif plm_set == other_set:
+                count_same += 1
+                worksheet9.write_row(count_same, 0, row.values.tolist())
+            
             else:
-                if len(plm_set.intersection(other_set)) != 0:
+                 
 
-                    if len(plm_set) >= len(other_set):
-                        count_other_completed_by_plm += 1  
-                        result = jaccard_coefficient(plm_set, other_set)
-                        row_with_jaccard = row.values.tolist() + [result]
-                        worksheet7.write_row(count_other_completed_by_plm, 0, row_with_jaccard)
+                if plm_set.issubset(other_set):
+                    count_plmIsSubset += 1
+                    worksheet1.write_row(count_plmIsSubset, 0, row.values.tolist())
 
-                    elif len(other_set) > len(plm_set):
-                        count_plm_completed_by_other += 1
-                        worksheet6.write_row(count_plm_completed_by_other, 0, row.values.tolist())
+                elif other_set.issubset(plm_set):
+                    count_otherIsSubset += 1
+                    worksheet2.write_row(count_otherIsSubset, 0, row.values.tolist())
+
                 else:
-                    count_noIntersection += 1
-                    worksheet8.write_row(count_noIntersection, 0, row.values.tolist())
+
+                    if len(plm_set.intersection(other_set)) != 0:
+
+                        if len(plm_set) >= len(other_set):
+                            count_other_completed_by_plm += 1  
+                            result = jaccard_coefficient(plm_set, other_set)
+                            row_with_jaccard = row.values.tolist() + [result]
+                            worksheet7.write_row(count_other_completed_by_plm, 0, row_with_jaccard)
+
+                        elif len(other_set) > len(plm_set):
+                            count_plm_completed_by_other += 1
+                            worksheet6.write_row(count_plm_completed_by_other, 0, row.values.tolist())
+                    else:
+                        count_noIntersection += 1
+                        worksheet8.write_row(count_noIntersection, 0, row.values.tolist())
 
         workbook.close()
 
+
+        # Create a visual representation of the subsets
+        labels = [
+            "Subset = PLM",
+            "Subset = " + col_list[-1],
+            "No intersection",
+            "Same",
+            "Intersection"
+
+        ]
+
+        values = [
+            count_plmIsSubset,
+            count_otherIsSubset,
+            count_noIntersection,
+            count_same,
+            count_plm_completed_by_other + count_other_completed_by_plm
+        ]
+
+        # Create a pie chart
+        plt.figure(figsize=(10, 8))
+        plt.pie(values, labels=labels, autopct='%1.1f%%', startangle=140)
+        plt.title(f"Résulat comparatif de PLM et " + str(col_list[-2]))
+        plt.savefig(output_dir + f"/" + str(col_list[-2]) + "_distribution.png")
+        plt.close()
+        
+        print("#####################################################################")
+        print("Processing completed.")
+        print("#####################################################################")
         print("Number of PLM is susbset of " + col_list[-1] + ": ", count_plmIsSubset)
         print("Number of " + col_list[-1] + " is subset of PLM: ", count_otherIsSubset)
         print("Number of PLM empty: ", count_plm_empty)
@@ -200,9 +240,15 @@ def main():
         print("Number of no intersection: ", count_noIntersection)
         print(f"Number of PLM completed by " + col_list[-1] + ": ", count_plm_completed_by_other)
         print(f"Number of " + col_list[-1] + " completed by PLM: ", count_other_completed_by_plm)
+        print("Number of same: ", count_same)
+        print("#####################################################################")
+        print("Résultat total :")
+        tot = count_plmIsSubset + count_otherIsSubset + count_plm_empty + count_other_empty + count_nothing  + count_noIntersection + count_plm_completed_by_other + count_other_completed_by_plm
+        sous_tot = count_plmIsSubset + count_same+count_otherIsSubset + count_plm_completed_by_other + count_other_completed_by_plm+count_noIntersection
+        print("Somme total des CK analysé", tot)
+        print("Somme total des CK analysé avec prédictions existantes", sous_tot, "soit :", round((sous_tot / tot * 100),2), "%")
+        print("#####################################################################")
 
-        print("Somme", count_plmIsSubset + count_otherIsSubset + count_plm_empty + count_other_empty + count_nothing  + count_noIntersection + count_plm_completed_by_other + count_other_completed_by_plm)
-        print("Sous-somme des prédictions existantes", count_plmIsSubset + count_otherIsSubset + count_plm_completed_by_other + count_other_completed_by_plm+count_noIntersection)
 #==================================================================================================================
 
 if __name__ == "__main__":
