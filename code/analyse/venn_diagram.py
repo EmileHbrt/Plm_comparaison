@@ -3,6 +3,7 @@ from matplotlib_venn import venn2
 import pandas as pd
 import xlsxwriter
 from optparse import OptionParser
+from filtered_size import filtre_size
 
 #==================================================================================================================
 
@@ -66,24 +67,31 @@ def IsExist(col_list : list):
 #==================================================================================================================
 
 def main():
-    usage = "python venn_diagram.py -i <input_file> -o <output_dir> -c <col_list> -n <cluster_number>\n"
+    usage = "python venn_diagram.py -i <input_file> -o <output_dir> -c <col_list> -n <cluster_number> -s <size_sequence>\n"
     parser = OptionParser(usage)
     parser.add_option("-i", "--input_file", dest="input_file", help="path for the Interpro dataset")
     parser.add_option("-o", "--output_dir", dest="output_dir", help="path for the folder where the csv will be saved")
     parser.add_option("-c", "--col_list", dest="col_list", help="list of columns selected to be used")
     parser.add_option("-n", "--cluster_number", dest="cluster_number", help="create a venn diagram with this SeqCluster")
+    parser.add_option("-s", "--size_sequence", dest="size_sequence", help="size minimal of sequences to be analyzed")
 
     (options, args) = parser.parse_args()
     input_file = options.input_file
     output_dir  = options.output_dir
     col_list = options.col_list
     cluster_number = options.cluster_number
+    size_seq = options.size_sequence
 
     try:
         tab = pd.read_csv(input_file)
     except:
         print(' error with -i : correspond to the path of the dataset ')
     
+    if size_seq is not None: 
+        fasta = input("Copier le chemin de votre fichier fasta :")
+        seq_dict = filtre_size(fasta, int(size_seq))
+        tab = tab[tab['ClusterNumber'].isin(seq_dict.keys())]
+        
     col_list = list_creater(col_list)
 
     if not IsExist(col_list):
@@ -203,11 +211,13 @@ def main():
 
         workbook.close()
 
+        tot = count_plmIsSubset + count_otherIsSubset + count_plm_empty + count_other_empty + count_nothing  + count_noIntersection + count_plm_completed_by_other + count_other_completed_by_plm + count_same
+        sous_tot = count_plmIsSubset + count_same+count_otherIsSubset + count_plm_completed_by_other + count_other_completed_by_plm+count_noIntersection
 
         # Create a visual representation of the subsets
         labels = [
             "Subset = PLM",
-            "Subset = " + col_list[-1],
+            "Subset = db",
             "No intersection",
             "Same",
             "Intersection"
@@ -225,7 +235,8 @@ def main():
         # Create a pie chart
         plt.figure(figsize=(10, 8))
         plt.pie(values, labels=labels, autopct='%1.1f%%', startangle=140)
-        plt.title(f"Résulat comparatif de PLM et " + str(col_list[-2]))
+        plt.title(f"Résulat comparatif de PLM et db = " + str(col_list[-2]) + " sur " + str(sous_tot) + " clusters")
+        plt.legend(labels, bbox_to_anchor=(1.09, 0), loc="lower right", fontsize="small", title="Categories")
         plt.savefig(output_dir + f"/" + str(col_list[-2]) + "_distribution.png")
         plt.close()
         
@@ -243,8 +254,6 @@ def main():
         print("Number of same: ", count_same)
         print("#####################################################################")
         print("Résultat total :")
-        tot = count_plmIsSubset + count_otherIsSubset + count_plm_empty + count_other_empty + count_nothing  + count_noIntersection + count_plm_completed_by_other + count_other_completed_by_plm
-        sous_tot = count_plmIsSubset + count_same+count_otherIsSubset + count_plm_completed_by_other + count_other_completed_by_plm+count_noIntersection
         print("Somme total des CK analysé", tot)
         print("Somme total des CK analysé avec prédictions existantes", sous_tot, "soit :", round((sous_tot / tot * 100),2), "%")
         print("#####################################################################")
