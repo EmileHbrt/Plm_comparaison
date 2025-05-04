@@ -134,7 +134,7 @@ def main():
 
             # Create a Venn diagram
             if cluster_number is not None:
-                if row['SeqCluster'] == str(cluster_number):
+                if row['ClusterNumber'] == str(cluster_number):
                     plt.figure(figsize=(8, 8))
                     venn2([plm_set, other_set], ('PLM', str(col_list[-1])))
                     plt.title(f"Venn Diagram for {row['ClusterNumber']}")
