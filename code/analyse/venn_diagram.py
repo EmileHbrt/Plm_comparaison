@@ -3,7 +3,7 @@ from matplotlib_venn import venn2
 import pandas as pd
 import xlsxwriter
 from optparse import OptionParser
-from filtered_size import filtre_size
+from filtered_size import filtre_size, join_col
 
 #==================================================================================================================
 
@@ -91,7 +91,14 @@ def main():
         fasta = input("Copier le chemin de votre fichier fasta :")
         seq_dict = filtre_size(fasta, int(size_seq))
         tab = tab[tab['ClusterNumber'].isin(seq_dict.keys())]
-        
+
+        # Save the dataframe to a CSV file in the output directory
+        if output_dir is not None:
+            tab.to_csv(output_dir + f"/{'250AA.csv'}")
+            print(f"Filtered data saved to filtered_tab_by_250AA.csv")
+        else:
+            print("Output directory not provided. Skipping save operation.")
+    
     col_list = list_creater(col_list)
 
     if not IsExist(col_list):
@@ -100,16 +107,16 @@ def main():
         print(col_list)
     else:
         print(col_list)
+
+
+        if col_list[-1] == 'GO_result':
+            tab = join_col(input_file, ['GO_C', 'GO_F', 'GO_P'])
+            col_list[-2] = 'GO_joined'
         
-        # Process GO terms to extract only the GO IDs separated by two spaces
-        if col_list[-2].startswith('GO'):
-             filtered_tab = tab.loc[:, col_list]
-             filtered_tab[col_list[-2]] = filtered_tab[col_list[-2]].apply(
-                 lambda x: '  '.join([item.split(',')[0] for item in str(x).split(';') if item.startswith('GO:')])
-                 )
-        else:
-             filtered_tab = tab.loc[:, col_list]
+    
+        filtered_tab = tab.loc[:, col_list]
         filtered_tab = filtered_tab[filtered_tab['ClusterNumber'].str.startswith('CK')]
+
         print(filtered_tab.head())
 
         count_plmIsSubset = 0

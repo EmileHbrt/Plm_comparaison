@@ -1,3 +1,5 @@
+import pandas as pd
+
 def read_Fasta(fasta):
     """
     Read a FASTA file and return a dictionary with sequence IDs as keys and the length of the sequences as values.
@@ -30,3 +32,26 @@ def filtre_size(fasta, treshhold):
     filtered_sequences = {k.split()[0]: v for k, v in sequences.items() if v > treshhold}    
     return filtered_sequences
 
+### Annexe pour la réunion de GO termes - GO_C GO_F GO_P 
+
+def join_col(tab, col):
+    """
+    Joint les colonnes du tableaux 
+    """
+    table = pd.read_csv(tab)
+
+    headers = table.columns.tolist()
+
+    for elm in col :
+        if elm not in headers:
+            return "error with headers doesn't match" 
+
+    table['GO_joined'] = table[col].apply(
+        lambda row: '|'.join([elm.split(',')[0] for elm in ';'.join(row.dropna().astype(str)).strip(';').split(';') if elm.startswith('GO:')]),
+        axis=1
+    )
+    
+    return table
+
+
+print(filtre_size(r"C:\Users\dodol\Documents\GitHub\Plm_comparaison\data\CK.clusters.taxon.fasta", 250))
