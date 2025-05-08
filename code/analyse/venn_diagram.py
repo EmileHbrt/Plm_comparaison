@@ -92,7 +92,6 @@ def main():
         seq_dict = filtre_size(fasta, int(size_seq))
         tab = tab[tab['ClusterNumber'].isin(seq_dict.keys())]
 
-        # Save the dataframe to a CSV file in the output directory
         if output_dir is not None:
             tab.to_csv(output_dir + f"/{'250AA.csv'}")
             print(f"Filtered data saved to filtered_tab_by_250AA.csv")
