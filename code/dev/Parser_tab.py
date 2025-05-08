@@ -62,7 +62,8 @@ def main():
 
 	if options.score_arg is not None :
 		score_arg = options.score_arg
-		df = df.loc[float(df['score']) >= float(score_arg) ,:]
+		df['score'] = pd.to_numeric(df['score'].str.strip(), errors='coerce')
+		df = df.loc[df['score'].astype(float) >= float(score_arg) ,:]
 
 	if options.len_arg is not None :
 		len_arg = options.len_arg
