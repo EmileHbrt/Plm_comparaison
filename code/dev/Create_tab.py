@@ -34,6 +34,8 @@ def main():
     except:
         print(' error with -p : correspond to the path of the PlmSearch result')
 
+    i = 0
+
     for line in bestHit_file:
         dico = {
             'Protein_ID' : '',
@@ -80,7 +82,9 @@ def main():
         try: 
             protein_file = open(input_dir + '\\'+ AC + "_protein.dat")
         except:
-            print('error with -i : a protein file is missing :' , AC + "_protein.dat in the folder where the Uniport database have been splited")
+            print('error with -i : a protein file is missing :' , AC + "_protein.dat in the folder where the Uniprot database have been splited" , i )
+            i += 1
+            
             continue
     
         for li in protein_file:
@@ -96,18 +100,19 @@ def main():
                             dico[db_name] += parts[1].split()[0] + " "
                             if len(parts) > 2:
                                 dico[f"{db_name}_Description"] += parts[2].split()[0] + ","
-                            
-                            if db_name == 'GO':
-                                go_terms = parts[1].split(':')[1].strip()
-                                go_category = parts[2].split(':')[0].strip()
-                                go_description = parts[2].split(':')[1].strip()
+                            print(db_name)
+                        if db_name == 'GO':
+                            go_terms = parts[1].split(':')[1].strip()
+                            go_category = parts[2].split(':')[0].strip()
+                            go_description = parts[2].split(':')[1].strip()
+                            print(go_terms, go_description)
 
-                                if go_category == 'P':
-                                    dico['Go_terms biological_process'] += 'GO:'+ go_terms + ' ' + go_description + ','
-                                elif go_category == 'C':
-                                    dico['Go_terms cellular_component'] += 'GO:' + go_terms + ' ' + go_description + ','
-                                elif go_category == 'F':
-                                    dico['Go_terms molecular_function'] += ' GO:' + go_terms + ' ' + go_description + ','
+                            if go_category == 'P':
+                                dico['Go_terms biological_process'] += 'GO:'+ go_terms + ' ' + go_description + ','
+                            elif go_category == 'C':
+                                dico['Go_terms cellular_component'] += 'GO:' + go_terms + ' ' + go_description + ','
+                            elif go_category == 'F':
+                                dico['Go_terms molecular_function'] += ' GO:' + go_terms + ' ' + go_description + ','
         for key in dico:
             if key.endswith('_Description'):
                 dico[key] = dico[key][:-1]

@@ -29,7 +29,7 @@ def filtre_size(fasta, treshhold):
     Filter sequences based on a given threshold.
     """
     sequences = read_Fasta(fasta)
-    filtered_sequences = {k.split()[0]: v for k, v in sequences.items() if v > treshhold}    
+    filtered_sequences = {k.split()[0]: v for k, v in sequences.items() if v >= treshhold}    
     return filtered_sequences
 
 ### Annexe pour la réunion de GO termes - GO_C GO_F GO_P 
@@ -50,8 +50,7 @@ def join_col(tab, col):
         lambda row: '|'.join([elm.split(',')[0] for elm in ';'.join(row.dropna().astype(str)).strip(';').split(';') if elm.startswith('GO:')]),
         axis=1
     )
-    
+
     return table
 
 
-print(filtre_size(r"C:\Users\dodol\Documents\GitHub\Plm_comparaison\data\CK.clusters.taxon.fasta", 250))
