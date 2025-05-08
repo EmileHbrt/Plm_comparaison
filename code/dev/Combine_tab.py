@@ -2,6 +2,7 @@
 
 from optparse import OptionParser
 import pandas as pd
+import os
 
 #==================================================================================================================
 
@@ -13,38 +14,36 @@ def writer_tab(df, output : str ):
 	"df" : the panda table that you need to write
 	"output" : path for the outuput 
 	"""
-	df.to_csv(output,index=False)	
+
+	df.to_csv(os.path.abspath(output),index=False)	
       
 #==================================================================================================================
-
-def list_lecter(str_arg :str ):
+def list_lecter(str_arg: str):
     """
-    returns, from a list in str form, a list of arrays read with panda 
-
-    arg :
-    "str_arg" : list of path in str form 
+    Returns a list of pandas DataFrames from a comma-separated list of file paths.
     """
-    tab_list = [] 
-    path = ''
+    paths = str_arg.split(",")
+    tab_list = []
 
-    for elm in str_arg:
-        if elm == "," :
-            try:
-                tab = pd.read_csv( path , low_memory=False)
-            except:
-                print(' error with -i : comma-separated list of all the dataset paths you want to collect')
-				
-            tab_list.append(tab)
-            path = ''
-        else :
-            path += elm
-    try:
-        tab = pd.read_csv( path , low_memory=False)
-    except:
-        print(' error with -i : comma-separated list of all the dataset paths you want to collect')        
-    tab_list.append(tab)
+    for path in paths:
+        path = path.strip()
+        abs_path = os.path.abspath(path)
+        print(f"Trying to open: {abs_path}")  # Debugging info
 
-    return  tab_list
+        if not os.path.exists(abs_path):
+            print(f"Error: File not found -> {abs_path}")
+            continue
+
+        try:
+            tab = pd.read_csv(abs_path, low_memory=False)
+        except Exception as e:
+            print(f"Error reading {abs_path}: {e}")
+            tab = None  # Assign None if reading fails
+        
+        tab_list.append(tab)
+
+    return tab_list
+
 #==================================================================================================================
 
 def merge_tab(tab_list : list , shared_col : str) : 
@@ -78,6 +77,8 @@ def main():
     output_file = options.output_file 
     shared_col = options.combine_col
 
+
+
     tab_list = list_lecter(input_list)
 
     if len(tab_list) <= 1:
@@ -85,7 +86,7 @@ def main():
 
     for i, tab in enumerate(tab_list):
         if shared_col not in tab.columns:
-            print(tab.columns)
+            #print(tab.columns)
             raise KeyError(f"Column'{shared_col}' is missing in the file {i+1}.")
 
 
