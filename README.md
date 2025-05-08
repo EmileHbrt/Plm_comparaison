@@ -1,5 +1,7 @@
 # Annotation de Séquences Protéiques d'Alphacyanobactéries
 
+![Image](https://github.com/user-attachments/assets/eb076ea1-f352-48c7-9bcc-df6b3cd6d391)
+
 ## Description du projet
 
 Ce projet pédagogique tutoré vise à utiliser un model entrainé de Protein Language afin d'annoter des séquences protéiques d'alphacyanobactéries.
