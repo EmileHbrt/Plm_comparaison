@@ -7,7 +7,7 @@ from optparse import OptionParser
 #==================================================================================================================
 def writter_tab(dict, output):
     '''Create tab.csv '''
-    with open(output + '/comparaison_tab.csv', mode='a', newline='', encoding='utf-8') as file:
+    with open(output + '/informative_tab.csv', mode='a', newline='', encoding='utf-8') as file:
         writer = csv.DictWriter(file, fieldnames=dict.keys())
         if file.tell() == 0:  # Write header only if the file is empty
             writer.writeheader()

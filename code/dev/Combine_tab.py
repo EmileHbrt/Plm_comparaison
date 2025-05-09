@@ -66,17 +66,16 @@ def merge_tab(tab_list : list , shared_col : str) :
 #==================================================================================================================
 
 def main():
-    usage = usage = "python Combine_tab.py -i <list_input_file> -o <output_file> -c <combine_col> \n" 
+    usage = usage = "python Combine_tab.py -i <list_input_file> -o <output_dir> -c <combine_col> \n" 
     parser = OptionParser(usage)
     parser.add_option("-i", "--list_input_file", dest="list_input_file", help="comma-separated list of all the dataset paths you want to collect")
-    parser.add_option("-o", "--output_file", dest="output_file", help="path for the file combine")
+    parser.add_option("-o", "--output_dir", dest="output_dir", help="path for the file combine")
     parser.add_option("-c", "--combine_col", dest="combine_col", help="name of the column on which we want to group the various datasets")
 	
     (options, args) = parser.parse_args()
     input_list = options.list_input_file
-    output_file = options.output_file 
+    output_dir = options.output_dir 
     shared_col = options.combine_col
-
 
 
     tab_list = list_lecter(input_list)
@@ -93,7 +92,8 @@ def main():
     result = merge_tab(tab_list, shared_col) 
 
     try :
-        writer_tab(result, output_file)
+        output_path = os.path.join(output_dir, "combine_tab.csv")
+        writer_tab(result, output_path)
     except:
         print(' error with -o : correspond to the parsed dataset path ')
 

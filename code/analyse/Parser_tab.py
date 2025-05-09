@@ -3,6 +3,7 @@
 from optparse import OptionParser
 import pandas as pd
 import os
+from filtered_size import filtre_size
 
 #==================================================================================================================
 
@@ -66,10 +67,28 @@ def main():
 		df = df.loc[df['score'].astype(float) >= float(score_arg) ,:]
 
 	if options.len_arg is not None :
-		len_arg = options.len_arg
-		df['taille'] = pd.to_numeric(df['taille'].str.strip(), errors='coerce')
-		df = df.loc[df['taille'].astype(float) >= float(len_arg) ,:]
+		len_arg = options.len_arg 
 
+		if len_arg is not None: 
+			
+			fasta = input("Copier le chemin de votre fichier fasta :")
+			seq_dict = filtre_size(fasta, int(len_arg))
+			
+			df = df[df['ClusterNumber'].isin(seq_dict.keys())]
+
+	
+
+		###
+		# len_arg = options.len_arg
+		# print(len_arg)
+		# if 'taille' not in df.columns:
+		# 	df['taille'] = 0
+
+		# df['taille'] = pd.to_numeric(df['taille'].str.strip(), errors='coerce')
+		# df = df.loc[df['taille'].astype(float) < float(len_arg), :]
+		###
+		
+			
 	if options.col_choose is not None :
 		list_brute = options.col_choose
 		col_list = list_creater(list_brute)
@@ -78,7 +97,7 @@ def main():
 		df = df.loc[:,col_list]
 
 	try :
-		writer_tab(df, output_file)
+		writer_tab(df, output_file + "")
 	except:
 		print(' error with -o : correspond to the parsed dataset path ')
 
