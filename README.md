@@ -1,6 +1,6 @@
 # Annotation de Séquences Protéiques d'Alphacyanobactéries
 
-![Image](https://github.com/user-attachments/assets/01efb29e-a70d-460d-9655-20095e0110d1)
+![Image](https://github.com/user-attachments/assets/d6442d74-150e-4658-8604-41d54b064ca8)
 
 ## Description du projet
 
