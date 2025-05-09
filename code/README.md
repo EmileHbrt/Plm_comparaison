@@ -1,3 +1,3 @@
-- dev is the folder where we've developped a short parser method to get an informative csv that we call tab and which contains all proteins information and predictions using PLMsearch or Interpro and Pfam.
+- dev is the folder where we've developped some program which create and combine results to get an informative and complete csv
   
-- analyse is the folder where we've analysed the result and compare Plmsearch with others methods.
+- analyse is the folder where we've parsed the complete csv and analysed the result of comparaison between Plmsearch and others methods
