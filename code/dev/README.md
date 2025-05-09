@@ -11,6 +11,7 @@ python Uni_parse.py -i <input_file> -o <output_dir>
 ```
 
 # Interpro_parse.py example
+This code is used to get a mapping of InterPro Accession number with all database in InterPro
 
 Thie code is used to parse Interpro database.
 It creates, for each database in [[Interpro file](https://ftp.ebi.ac.uk/pub/databases/interpro/current_release/interpro.xml.gz)] <input_file>
@@ -26,33 +27,19 @@ Also a csv with all interpro_id and their EC_number.
 python Interpro_parse.py -i <input_file> -o <output_dir> 
 ```
 
-# Create_tab.py example 
+# Comparaison_tab.py example 
 
 This code is used to obtain an informative csv with the best prediction of Plmsearch for each unknowed CK in Cyanorak. 
 
 - `<bestHit_file>`: The path to the prediction of PLMsearch
-- `<input_dir>`: The path of the folder where Uniport have been splited 
+- `<Mapping_CK>`: The path where the CK is correleted with SeqCluster
+- `<Uprot_splited>`: The path of the folder where Uniport have been splited 
 - `<output_dir>`: The path where the output file will be saved.
 
 ```python
-# Example usage of Parser_tab.py
-python Create_tab.py -p <bestHit_file> -d <input_dir> -o <output_dir>
+# Example usage of Comparaison_tab.py
+python Comparaison_tab.py -p <bestHit_file> -m <Mapping_CK> -u <Uprot_splited> -o <output_dir>
 ```
-
-# Parser_tab.py example
-
-This code is used to parse the informative csv 
-
-- `<input_file>`: The path to the input file containing the data to be parsed.
-- `<output_file>`: The path where the output file will be saved.
-- `<score_arg>`: the minimum selection score for the output .
-- `<col_list>`: A comma-separated list of column names to include in the output file.
-
-```python
-# Example usage of Parser_tab.py
-python Parser_tab.py -i <input_file> -o <output_dir> -s <score_arg> -c <col_list>
-```
-
 # Combine_tab.py example
 
 This code is used to combine several tables based on a common column.
@@ -64,4 +51,19 @@ This code is used to combine several tables based on a common column.
 ```python
 # Example usage of Combine_tab.py
 python Combine_tab.py -i <list_input_file> -o <output_file> -c <combine_col>
+```
+  
+# Parser_tab.py example
+
+This code is used to parse the complete tab / comparaison_tab csv 
+
+- `<input_file>`: The path to the input file containing the data to be parsed.
+- `<output_file>`: The path where the output file will be saved.
+- `<score_arg>`: the minimum selection score for the output .
+- `<col_list>`: A comma-separated list of column names to include in the output file.
+- `<len_arg>`: the len minimal of sequences of amino-acids that will be parsed
+- 
+```python
+# Example usage of Parser_tab.py
+python Parser_tab.py -i <input_file> -o <output_file> -s <score_arg> -c <col_list> -t <len_arg>
 ```

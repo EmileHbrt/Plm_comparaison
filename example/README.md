@@ -17,20 +17,6 @@ The 'Output' file contains :
  
 ## How to use Dev codes
 
-###  Interpro_parse.py
-
-```python
-python code\dev\Interpro_parse.py -i example\Input\example_interpro.xml -o example\Output\File_Interpro_example
-```
-You can know see the results in Example\Output\File_Interpro_example !
-
-### Parser_tab.py 
-
-```python
-python code\dev\Parser_tab.py -i data\comparaison_tab.csv -o example\Output\parsed_example_tab.csv -s 0.8 -c SeqCluster,Prot_AC,score,RecName
-```
-You can now see a csv in the folder, with the four columns indicated and only scores above 0.8 !
-
 ### Uni_parse.py 
 
 ```pyton
@@ -38,16 +24,29 @@ python code\dev\Uni_parse.py -i example\Input\example_uniprot.txt -o example\Out
 ```
 You can know see the results in example\Output\File_Uniprot_example !
 
-### Create_tab.py
+###  Interpro_parse.py
+
+```python
+python code\dev\Interpro_parse.py -i example\Input\example_interpro.xml -o example\Output\File_Interpro_example
+```
+You can know see the results in Example\Output\File_Interpro_example !
+
+### Comparaison_tab.py
 ```pyhton
-python code\dev\Create_tab.py -p "example\Input\example_PLMSearch_bestFirstHits.out" -o example\Output\File_Uniprot_example
+python code\dev\Comparaison_tab.py -p "example\Input\example_PLMSearch_bestFirstHits.out" -m "data\CK_clusters_mapSeqClusters_clean.csv -u example\Output\File_Uniprot_example -o example\Output
 ```
 
 ### Combine_tab.py
 
 ```python
-python code\dev\Combine_tab.py -i data\comparaison_tab.csv,data\Interpros.filtered.csv,data\Pfam.filtered.csv,data\GoTerms_filtered_for_cyanorak.csv -o example\Output\combine_example_tab.csv -c SeqCluster
+python code\dev\Combine_tab.py -i example\Output\comparaison_tab.csv,data\Interpros.filtered.csv,data\Pfam.filtered.csv,data\GoTerms_filtered_for_cyanorak.csv -o example\Output\combine_example_tab.csv -c SeqCluster
 ```
+### Parser_tab.py 
+
+```python
+python code\dev\Parser_tab.py -i data\comparaison_tab.csv -o example\Output\parsed_example_tab.csv -s 0.8 -c SeqCluster,Prot_AC,score,RecName
+```
+You can now see a csv in the folder, with the four columns indicated and only scores above 0.8 !
 
 ## How to use Analyse codes
 
