@@ -2,24 +2,23 @@ from optparse import OptionParser
 import os
 import csv
 
+
 def main():
-    usage = "python Comparaison_tab.py -i <input_file> -m <csv_tomerge> -p <PLM_result> -u <Uprot_splited> -o <output_dir> \n"
+    usage = "python Comparaison_tab.py -p <PLM_result> -m <Mapping_CK> -u <Uprot_splited> -o <output_dir> \n"
     parser = OptionParser(usage)
-    parser.add_option("-i", "--input_file", dest="input_file", help="the path of informative csv")
-    parser.add_option("-m", "--csv_tomerge", dest="csv_tomerge", help="a str with comma of paths of csv that will be merge")
     parser.add_option("-p", "--PLM_result", dest="PLM_result", help="path to the PLM result file")
+    parser.add_option("-m", "--Mapping_CK", dest="Mapping_CK", help="Path for the mapping CK csv")
     parser.add_option("-u", "--Uprot_splited", dest="Uprot_splited", help="path to the folder containing Uprot split files")
     parser.add_option("-o", "--output_dir", dest="output_dir", help="path for the folder where the csv will be saved")
 
     (options, args) = parser.parse_args()
-    informative_csv = options.input_file
-    large_str_of_pathways = options.csv_tomerge
     best5hits = options.PLM_result
+    mapping = options.Mapping_CK
     uprot_folder = options.Uprot_splited
     output_dir  = options.output_dir
     
     # création du dictionaire des ClusterNumber: SeqCluster
-    with open(input("Entrer le fichier clé pour le mapping !!! sans guillemets -- #CKcluster_map_Seqcluster_clean.csv -- :"),"r",encoding="utf-8") as fichier_read :
+    with open(mapping, "r",encoding="utf-8") as fichier_read :
         lecteur = csv.reader(fichier_read, delimiter =",")
         Cluster_association_dict={}
         for ligne in lecteur:
@@ -29,11 +28,6 @@ def main():
                 Cluster_association_dict[ClusterNumber] = SeqCluster
 
     #print(Cluster_association_dict)
-
-    # Décomposer la chaîne de fichiers CSV en une liste
-    csv_files = large_str_of_pathways.split(',')
-
-    print(f"Fichiers CSV à traiter : {csv_files}")
 
     # Ouverture des fichiers
     with open(best5hits, "r", encoding="utf-8") as fichier_r_1, \
@@ -129,7 +123,7 @@ def main():
             try:
                 # Convertir les listes en chaînes pour l'écriture
                 row = [" ".join(db_dict[col]) if isinstance(db_dict[col], list) else db_dict[col] for col in colones]
-                print(f"Écriture de la ligne : {row}")
+                #print(f"Écriture de la ligne : {row}")
                 writer.writerow(row)
             except KeyError as e:
                 print(f"Clé manquante : {e}")
