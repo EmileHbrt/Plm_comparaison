@@ -1,23 +1,27 @@
-# Annotation de Séquences Protéiques d'Alphacyanobactéries
+# Comparaison de l'annotation protéique d'alpha-cyanobactérie par un model reposant sur les réseaux de neurones profonds et par InterProScan 
 
 ![Image](https://github.com/user-attachments/assets/afb9f125-205f-4c3c-8d2c-4cfdd300f3ec)
 ## Description du projet
 
-Ce projet pédagogique tutoré vise à utiliser un model entrainé de Protein Language afin d'annoter des séquences protéiques d'alphacyanobactéries.
-Ce projet nous permets de se familiariser avec les bases de données biologiques, les outils bioinformatiques, ainsi que les approches d'annotation automatisées.
+Les PicoCyanobactéries, sont les plus petits et les plus abondants micro-organismes photosynthétiques présents sur Terre, leur étude est donc essentielle pour appréhender les diverses relations écologiques se déroulant en milieu marin.
 
-## Étapes du projet
+Cyanorak<sup>1</sup> est un outil de bio-informatique dédié à la conservation, la comparaison et la visualisation des génomes de Picocyanobacteria. Il permet une meilleure compréhension de l’écologie, la physiologie et l’évolution de ces organismes.
 
-1. **Récupération des séquences protéiques** : Nous disposons d'un ensemble de séquence (query) non annonté sur Cyanorak[http://cyanorak.sb-roscoff.fr/cyanorak/?execution=e1s1]
-2. **Prédiction fonctionnelle** : Utilisation de l'outil et des bases de données biologiques pour identifier les domaines fonctionnels.
-3. **Annotation** : Annotation des séquences en fonction des résultats obtenus et analyse critique des résultats.
-5. **Rapport final** : Présentation des résultats sous forme de poster scientifique.
+L’annotation fonctionnelle permet, par la comparaison de séquences d'intérêts à des séquences déjà annotées, de repérer la présence de motifs spécifiques à certaines fonctions biologiques.
+
+L’annotation de séquences protéiques courantes se réalise grâce à des banques de domaines comme InterPro<sup>2</sup>, Pfam<sup>3</sup> ou Gene Ontology<sup>4</sup>. 
+Cependant, malgré ces banques de domaines, il reste de nombreuses protéines non annotées.
+
+Chaque année, de nombreux outils reposant sur des réseaux de neurones profonds voient le jour. 
+
+Notre objectif est de comparer PLMsearch<sup>5</sup> et InterProScan sur l’annotation protéique des séquences d’α-cyanobactérie, peu ou mal annoté de Cyanorak.
 
 ## Prérequis
 
 - Connaissance de base en biologie moléculaire.
 - Familiarité avec les bases de données biologiques.
-- Compétence d'utilisation de logiciels bioinformatiques
+- Savoir utiliser Python, Github et un tableur 
+- Connaissance succinte d'un modèle de deep learning (embeding space, K-mer, etc.)
 
 ## Outils et technologies
 
@@ -28,7 +32,7 @@ Ce projet nous permets de se familiariser avec les bases de données biologiques
 ## Résultats attendus
 
 Nous devront fournir un poster scientifique avec:
-- Une annotation détaillée d'un ensemble de séquences protéiques d'alphacyanobactéries.
+- Une analyse des résultats fournit par le model utilisé par rapport au prédiction d'InterProScan
 - Une analyse critique des résultats et des limites des méthodes utilisées.
 - Une présentation synthétique des travaux sous forme orale ou écrite.
 
