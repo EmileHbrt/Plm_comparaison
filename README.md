@@ -40,9 +40,12 @@ Nous devront fournir un poster scientifique avec:
  
  Encadrement : Juliana Silva Bernardes (UMR7144, juliana.silva_bernardes@sorbonne-universite.fr) et Laurence Garczarek UMR7144, laurence.garczarek@sb-roscoff.fr)
 
- <sup>1</sup> Garczarek et al. Nucleic Acids Research, 2021. https://doi.org/10.1093/nar/gkaa958
- <sup>2</sup>  Matthias Blum & al. InterPro: the protein sequence classification resource in 2025, Nucleic Acids Research, Volume 53, Issue D1, 6 January 2025, Pages D444–D456, https://doi.org/10.1093/nar/gkae1082
- <sup>3</sup> Pfam: The protein families database in 2021: J. Mistry, S. Chuguransky, L. Williams, M. Qureshi, G.A. Salazar, E.L.L. Sonnhammer, S.C.E. Tosatto, L. Paladin, S. Raj, L.J. <sup>4</sup>Richardson, R.D. Finn, A. Bateman, Nucleic Acids Research (2021) doi: 10.1093/nar/gkaa913
-Ashburner et al. Gene ontology: tool for the unification of biology. Nat Genet. 2000 May;25(1):25-9. DOI: 10.1038/75556
+<sup>1</sup> Garczarek et al. Nucleic Acids Research, 2021. https://doi.org/10.1093/nar/gkaa958
+
+<sup>2</sup>  Matthias Blum & al. InterPro: the protein sequence classification resource in 2025, Nucleic Acids Research, Volume 53, Issue D1, 6 January 2025, Pages D444–D456,      
+              https://doi.org/10.1093/nar/gkae1082
+<sup>3</sup> Pfam: The protein families database in 2021: J. Mistry, S. Chuguransky, L. Williams, M. Qureshi, G.A. Salazar, E.L.L. Sonnhammer, S.C.E. Tosatto, L. Paladin, S. Raj, L.J. 
+ <sup>4</sup>Richardson, R.D. Finn, A. Bateman, Nucleic Acids Research (2021) doi: 10.1093/nar/gkaa913
+             Ashburner et al. Gene ontology: tool for the unification of biology. Nat Genet. 2000 May;25(1):25-9. DOI: 10.1038/75556
 <sup>4 bis</sup>The Gene Ontology Consortium. The Gene Ontology knowledgebase in 2023. Genetics. 2023 May 4;224(1):iyad031. DOI: 10.1093/genetics/iyad031
- <sup>5</sup> Liu, Wei, et al. Nature communications, 2024. https://doi.org/10.1038/s41467-024-46808-5
+<sup>5</sup> Liu, Wei, et al. Nature communications, 2024. https://doi.org/10.1038/s41467-024-46808-5
