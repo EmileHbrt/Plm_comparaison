@@ -2,7 +2,6 @@ from optparse import OptionParser
 import os
 import csv
 
-
 def main():
     usage = "python Comparaison_tab.py -p <PLM_result> -m <Mapping_CK> -u <Uprot_splited> -o <output_dir> \n"
     parser = OptionParser(usage)

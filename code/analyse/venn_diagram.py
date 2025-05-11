@@ -6,20 +6,6 @@ from optparse import OptionParser
 from filtered_size import filtre_size, join_col
 
 #==================================================================================================================
-
-def jaccard_coefficient(set1, set2):
-    """
-    Calcule le coefficient de Jaccard entre deux ensembles.
-    
-    :param set1: Premier ensemble
-    :param set2: Deuxième ensemble
-    :return: Coefficient de Jaccard (float)
-    """
-    intersection = len(set1.intersection(set2))
-    union = len(set1.union(set2))
-    return intersection / union if union != 0 else 0.0
-
-#==================================================================================================================
 def list_creater(str_arg : str):
 	"""
 	returns from a comma-separated str list, a python list of str 
@@ -203,8 +189,7 @@ def main():
 
                         if len(plm_set) >= len(other_set):
                             count_other_completed_by_plm += 1  
-                            result = jaccard_coefficient(plm_set, other_set)
-                            row_with_jaccard = row.values.tolist() + [result]
+                            row_with_jaccard = row.values.tolist()
                             worksheet7.write_row(count_other_completed_by_plm, 0, row_with_jaccard)
 
                         elif len(other_set) > len(plm_set):
