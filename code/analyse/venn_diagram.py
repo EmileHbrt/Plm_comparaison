@@ -189,7 +189,6 @@ def main():
             
             else:
                  
-
                 if plm_set.issubset(other_set):
                     count_plmIsSubset += 1
                     worksheet1.write_row(count_plmIsSubset, 0, row.values.tolist())
